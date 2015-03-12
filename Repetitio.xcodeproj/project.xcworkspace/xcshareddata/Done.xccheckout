@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D57E4185-3E60-4CB4-AAB6-76A425B46DC9</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
+		<string>https://github.com/mwkoelb/MWKProgressIndicator.git</string>
+		<key>F2C92F1DDE2654B1414F106D0394D0E3D27EC2BE</key>
+		<string>https://github.com/sgryschuk/SGNavigationProgress.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
+		<string>MWKProgressIndicator/</string>
+		<key>F2C92F1DDE2654B1414F106D0394D0E3D27EC2BE</key>
+		<string>SGNavigationProgress/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mwkoelb/MWKProgressIndicator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MWKProgressIndicator</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2C92F1DDE2654B1414F106D0394D0E3D27EC2BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SGNavigationProgress</string>
+		</dict>
+	</array>
+</dict>
+</plist>

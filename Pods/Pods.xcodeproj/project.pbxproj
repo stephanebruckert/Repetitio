@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA194D63CE1AF28190B95AF /* SGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCFDC1BC88021BFFE72965 /* SGProgressView.m */; };
+		1232658F16D9A3995F7E601F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */; };
+		1825E6FE69DF343305F0924A /* UINavigationController+SGProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */; };
+		2AD661417046270131F8C55E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF42A90CF585BEE80EA2408 /* Foundation.framework */; };
+		8F902AE7D2E6593B5B6242CE /* UINavigationController+SGProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */; };
+		AD4770AD57E9026441D5DE7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF42A90CF585BEE80EA2408 /* Foundation.framework */; };
+		BF31E72AD2057E701C1E4CBA /* SGProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */; };
+		D692C434F5A357AA5B3A01E2 /* Pods-SGNavigationProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		821C37C1AF103E09D702D9D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B8A2A17D246984EAA99F7A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF23EFBC621F912A3F433822;
+			remoteInfo = "Pods-SGNavigationProgress";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003720C8E14D03EB28DE7E7B /* Pods-SGNavigationProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress.xcconfig"; sourceTree = "<group>"; };
+		13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGNavigationProgress-dummy.m"; sourceTree = "<group>"; };
+		1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		2D3CB2B4A720AB85F1E2E8F7 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FA02F8ECE0AE1BF127AFD55 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		448E9ACB4A2BA96286D03BDE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+SGProgress.h"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.h"; sourceTree = "<group>"; };
+		73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGNavigationProgress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813119D0528642B01D3FFA9F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGProgressView.h; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.h"; sourceTree = "<group>"; };
+		95DCFDC1BC88021BFFE72965 /* SGProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGProgressView.m; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.m"; sourceTree = "<group>"; };
+		AA207C2E994501AFAF88966E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0B46150BB3D9452EA579C5 /* Pods-SGNavigationProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGNavigationProgress-prefix.pch"; sourceTree = "<group>"; };
+		BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress-Private.xcconfig"; sourceTree = "<group>"; };
+		DBF42A90CF585BEE80EA2408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E8EB344A38BA46674C2F7F21 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+SGProgress.m"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CBEB21DC3D56B5ADA504B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4770AD57E9026441D5DE7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69160BBED2CD1C39ED4ECBA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD661417046270131F8C55E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288811ABEEA4CD013C80E266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69BFEC9C7A37F832848E557D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C926B23209C3528FCA47CE1 /* SGNavigationProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */,
+				95DCFDC1BC88021BFFE72965 /* SGProgressView.m */,
+				4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */,
+				F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */,
+				A387F92029A6510E7F9CD5A5 /* Support Files */,
+			);
+			path = SGNavigationProgress;
+			sourceTree = "<group>";
+		};
+		61ACFEC7EBCADD681824936F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF2197A0351F060A1B74123 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		69BFEC9C7A37F832848E557D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DBF42A90CF585BEE80EA2408 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9D38FF9342B72FB9D7DA4BA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA207C2E994501AFAF88966E /* libPods.a */,
+				73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A387F92029A6510E7F9CD5A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				003720C8E14D03EB28DE7E7B /* Pods-SGNavigationProgress.xcconfig */,
+				C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */,
+				13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */,
+				BB0B46150BB3D9452EA579C5 /* Pods-SGNavigationProgress-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SGNavigationProgress";
+			sourceTree = "<group>";
+		};
+		CCF2197A0351F060A1B74123 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D3CB2B4A720AB85F1E2E8F7 /* Pods-acknowledgements.markdown */,
+				E8EB344A38BA46674C2F7F21 /* Pods-acknowledgements.plist */,
+				82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */,
+				813119D0528642B01D3FFA9F /* Pods-environment.h */,
+				3FA02F8ECE0AE1BF127AFD55 /* Pods-resources.sh */,
+				BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */,
+				1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		E588D1562691526B8670804E = {
+			isa = PBXGroup;
+			children = (
+				448E9ACB4A2BA96286D03BDE /* Podfile */,
+				288811ABEEA4CD013C80E266 /* Frameworks */,
+				F6A7133592859EF27FC7A48F /* Pods */,
+				9D38FF9342B72FB9D7DA4BA2 /* Products */,
+				61ACFEC7EBCADD681824936F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A7133592859EF27FC7A48F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C926B23209C3528FCA47CE1 /* SGNavigationProgress */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0512857A8642A1BCA0EB77BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31E72AD2057E701C1E4CBA /* SGProgressView.h in Headers */,
+				8F902AE7D2E6593B5B6242CE /* UINavigationController+SGProgress.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2824F7AE4CB2B4E7E2B0AA88 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94537678F23E5CF86C26E991 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F276B4A1AA62F04026B9E16F /* Sources */,
+				69160BBED2CD1C39ED4ECBA9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E49649D7FDF2DC084C05468 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = AA207C2E994501AFAF88966E /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95489EF88DFF55CE9388C122 /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */;
+			buildPhases = (
+				46157B075CCFC4048C33C22A /* Sources */,
+				0CBEB21DC3D56B5ADA504B14 /* Frameworks */,
+				0512857A8642A1BCA0EB77BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SGNavigationProgress";
+			productName = "Pods-SGNavigationProgress";
+			productReference = 73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B8A2A17D246984EAA99F7A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 736F7B9EA68A9408C6871996 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E588D1562691526B8670804E;
+			productRefGroup = 9D38FF9342B72FB9D7DA4BA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2824F7AE4CB2B4E7E2B0AA88 /* Pods */,
+				CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46157B075CCFC4048C33C22A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D692C434F5A357AA5B3A01E2 /* Pods-SGNavigationProgress-dummy.m in Sources */,
+				0CA194D63CE1AF28190B95AF /* SGProgressView.m in Sources */,
+				1825E6FE69DF343305F0924A /* UINavigationController+SGProgress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F276B4A1AA62F04026B9E16F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1232658F16D9A3995F7E601F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E49649D7FDF2DC084C05468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SGNavigationProgress";
+			target = CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */;
+			targetProxy = 821C37C1AF103E09D702D9D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		431671FFD9B62FA792E251ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SGNavigationProgress/Pods-SGNavigationProgress-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7582542D43C260AF9FB61B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8A783326A51E1E3E59BDBF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B511CC3FEB54A70BCBF85B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SGNavigationProgress/Pods-SGNavigationProgress-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD41B70D07F1BC35D5ACBC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8B462B03B8AD7F7FEBA1D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		736F7B9EA68A9408C6871996 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A783326A51E1E3E59BDBF8B /* Debug */,
+				E8B462B03B8AD7F7FEBA1D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94537678F23E5CF86C26E991 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD41B70D07F1BC35D5ACBC32 /* Debug */,
+				7582542D43C260AF9FB61B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95489EF88DFF55CE9388C122 /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B511CC3FEB54A70BCBF85B97 /* Debug */,
+				431671FFD9B62FA792E251ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B8A2A17D246984EAA99F7A3 /* Project object */;
+}

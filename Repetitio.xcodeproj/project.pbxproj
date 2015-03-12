@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DB2325C914FFE0750FC2A54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70622656098B82BDD6AC8352 /* libPods.a */; };
+		CC4DD90C1972934F00FDBD03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90B1972934F00FDBD03 /* Foundation.framework */; };
+		CC4DD90E1972934F00FDBD03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90D1972934F00FDBD03 /* CoreGraphics.framework */; };
+		CC4DD9101972934F00FDBD03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90F1972934F00FDBD03 /* UIKit.framework */; };
+		F492CC231AB22770008629C5 /* RPAddToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC181AB22770008629C5 /* RPAddToDoViewController.m */; };
+		F492CC241AB22770008629C5 /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC1A1AB22770008629C5 /* RPAppDelegate.m */; };
+		F492CC251AB22770008629C5 /* RPGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC1C1AB22770008629C5 /* RPGameViewController.m */; };
+		F492CC261AB22770008629C5 /* RPToDoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC1E1AB22770008629C5 /* RPToDoCell.m */; };
+		F492CC271AB22770008629C5 /* RPUpdateToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC201AB22770008629C5 /* RPUpdateToDoViewController.m */; };
+		F492CC281AB22770008629C5 /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC221AB22770008629C5 /* RPViewController.m */; };
+		F492CC321AB2278B008629C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F492CC2A1AB2278B008629C5 /* .gitignore */; };
+		F492CC331AB2278B008629C5 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC2B1AB2278B008629C5 /* error.png */; };
+		F492CC341AB2278B008629C5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F492CC2C1AB2278B008629C5 /* LICENSE */; };
+		F492CC351AB2278B008629C5 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC2D1AB2278B008629C5 /* loading.png */; };
+		F492CC361AB2278B008629C5 /* MWKProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC2F1AB2278B008629C5 /* MWKProgressIndicator.m */; };
+		F492CC371AB2278B008629C5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F492CC301AB2278B008629C5 /* README.md */; };
+		F492CC381AB2278B008629C5 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC311AB2278B008629C5 /* success.png */; };
+		F492CC421AB22820008629C5 /* button-done-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC3E1AB22820008629C5 /* button-done-normal.png */; };
+		F492CC431AB22820008629C5 /* button-done-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */; };
+		F492CC441AB22820008629C5 /* button-done-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC401AB22820008629C5 /* button-done-selected.png */; };
+		F492CC451AB22820008629C5 /* button-done-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC411AB22820008629C5 /* button-done-selected@2x.png */; };
+		F492CC491AB22840008629C5 /* Done.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F492CC461AB22840008629C5 /* Done.xcdatamodeld */; };
+		F492CC4B1AB22859008629C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F492CC4A1AB22859008629C5 /* Images.xcassets */; };
+		F492CC501AB22883008629C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC4D1AB22883008629C5 /* main.m */; };
+		F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F492CC521AB2289D008629C5 /* InfoPlist.strings */; };
+		F492CC561AB2304B008629C5 /* Repetitio-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */; };
+		F492CC571AB23053008629C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F492CC3A1AB22805008629C5 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		F492CC551AB23035008629C5 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.bplist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		10D4E8EC1E46BB49697317E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6294A17D025F0446DAA2C698 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		70622656098B82BDD6AC8352 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4DD9081972934F00FDBD03 /* Repetitio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetitio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4DD90B1972934F00FDBD03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC4DD90D1972934F00FDBD03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC4DD90F1972934F00FDBD03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC4DD92A1972934F00FDBD03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F492CC171AB22768008629C5 /* RPAddToDoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPAddToDoViewController.h; path = Repetitio/RPAddToDoViewController.h; sourceTree = SOURCE_ROOT; };
+		F492CC181AB22770008629C5 /* RPAddToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPAddToDoViewController.m; path = Repetitio/RPAddToDoViewController.m; sourceTree = SOURCE_ROOT; };
+		F492CC191AB22770008629C5 /* RPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPAppDelegate.h; path = Repetitio/RPAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		F492CC1A1AB22770008629C5 /* RPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPAppDelegate.m; path = Repetitio/RPAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		F492CC1B1AB22770008629C5 /* RPGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPGameViewController.h; path = Repetitio/RPGameViewController.h; sourceTree = SOURCE_ROOT; };
+		F492CC1C1AB22770008629C5 /* RPGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPGameViewController.m; path = Repetitio/RPGameViewController.m; sourceTree = SOURCE_ROOT; };
+		F492CC1D1AB22770008629C5 /* RPToDoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPToDoCell.h; path = Repetitio/RPToDoCell.h; sourceTree = SOURCE_ROOT; };
+		F492CC1E1AB22770008629C5 /* RPToDoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPToDoCell.m; path = Repetitio/RPToDoCell.m; sourceTree = SOURCE_ROOT; };
+		F492CC1F1AB22770008629C5 /* RPUpdateToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPUpdateToDoViewController.h; path = Repetitio/RPUpdateToDoViewController.h; sourceTree = SOURCE_ROOT; };
+		F492CC201AB22770008629C5 /* RPUpdateToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPUpdateToDoViewController.m; path = Repetitio/RPUpdateToDoViewController.m; sourceTree = SOURCE_ROOT; };
+		F492CC211AB22770008629C5 /* RPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPViewController.h; path = Repetitio/RPViewController.h; sourceTree = SOURCE_ROOT; };
+		F492CC221AB22770008629C5 /* RPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPViewController.m; path = Repetitio/RPViewController.m; sourceTree = SOURCE_ROOT; };
+		F492CC2A1AB2278B008629C5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F492CC2B1AB2278B008629C5 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		F492CC2C1AB2278B008629C5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F492CC2D1AB2278B008629C5 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		F492CC2E1AB2278B008629C5 /* MWKProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKProgressIndicator.h; sourceTree = "<group>"; };
+		F492CC2F1AB2278B008629C5 /* MWKProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKProgressIndicator.m; sourceTree = "<group>"; };
+		F492CC301AB2278B008629C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F492CC311AB2278B008629C5 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		F492CC3B1AB22805008629C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		F492CC3E1AB22820008629C5 /* button-done-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-normal.png"; path = "Repetitio/button-done-normal.png"; sourceTree = SOURCE_ROOT; };
+		F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-normal@2x.png"; path = "Repetitio/button-done-normal@2x.png"; sourceTree = SOURCE_ROOT; };
+		F492CC401AB22820008629C5 /* button-done-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-selected.png"; path = "Repetitio/button-done-selected.png"; sourceTree = SOURCE_ROOT; };
+		F492CC411AB22820008629C5 /* button-done-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-selected@2x.png"; path = "Repetitio/button-done-selected@2x.png"; sourceTree = SOURCE_ROOT; };
+		F492CC471AB22840008629C5 /* Done 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Done 2.xcdatamodel"; sourceTree = "<group>"; };
+		F492CC481AB22840008629C5 /* Done.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Done.xcdatamodel; sourceTree = "<group>"; };
+		F492CC4A1AB22859008629C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Repetitio/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		F492CC4D1AB22883008629C5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Repetitio/main.m; sourceTree = SOURCE_ROOT; };
+		F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Repetitio-Info.plist"; path = "Repetitio/Repetitio-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F492CC4F1AB22883008629C5 /* Repetitio-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Repetitio-Prefix.pch"; path = "Repetitio/Repetitio-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		F492CC531AB2289D008629C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Repetitio/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC4DD9051972934F00FDBD03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4DD90E1972934F00FDBD03 /* CoreGraphics.framework in Frameworks */,
+				CC4DD9101972934F00FDBD03 /* UIKit.framework in Frameworks */,
+				CC4DD90C1972934F00FDBD03 /* Foundation.framework in Frameworks */,
+				8DB2325C914FFE0750FC2A54 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCC1C858EA4946F675153F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10D4E8EC1E46BB49697317E1 /* Pods.debug.xcconfig */,
+				6294A17D025F0446DAA2C698 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC4DD8FF1972934F00FDBD03 = {
+			isa = PBXGroup;
+			children = (
+				CC4DD9111972934F00FDBD03 /* Repetitio */,
+				CC4DD90A1972934F00FDBD03 /* Frameworks */,
+				CC4DD9091972934F00FDBD03 /* Products */,
+				1FCC1C858EA4946F675153F0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CC4DD9091972934F00FDBD03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC4DD9081972934F00FDBD03 /* Repetitio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4DD90A1972934F00FDBD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC4DD90B1972934F00FDBD03 /* Foundation.framework */,
+				CC4DD90D1972934F00FDBD03 /* CoreGraphics.framework */,
+				CC4DD90F1972934F00FDBD03 /* UIKit.framework */,
+				CC4DD92A1972934F00FDBD03 /* XCTest.framework */,
+				70622656098B82BDD6AC8352 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC4DD9111972934F00FDBD03 /* Repetitio */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC171AB22768008629C5 /* RPAddToDoViewController.h */,
+				F492CC181AB22770008629C5 /* RPAddToDoViewController.m */,
+				F492CC191AB22770008629C5 /* RPAppDelegate.h */,
+				F492CC1A1AB22770008629C5 /* RPAppDelegate.m */,
+				F492CC1B1AB22770008629C5 /* RPGameViewController.h */,
+				F492CC1C1AB22770008629C5 /* RPGameViewController.m */,
+				F492CC1D1AB22770008629C5 /* RPToDoCell.h */,
+				F492CC1E1AB22770008629C5 /* RPToDoCell.m */,
+				F492CC1F1AB22770008629C5 /* RPUpdateToDoViewController.h */,
+				F492CC201AB22770008629C5 /* RPUpdateToDoViewController.m */,
+				F492CC211AB22770008629C5 /* RPViewController.h */,
+				F492CC221AB22770008629C5 /* RPViewController.m */,
+				F492CC391AB22805008629C5 /* Base.lproj */,
+				F4AD28CB1AB20A9000EBEF67 /* Misc */,
+				F492CC461AB22840008629C5 /* Done.xcdatamodeld */,
+				F492CC4A1AB22859008629C5 /* Images.xcassets */,
+				CC4DD9121972934F00FDBD03 /* Supporting Files */,
+			);
+			name = Repetitio;
+			path = Done;
+			sourceTree = "<group>";
+		};
+		CC4DD9121972934F00FDBD03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC521AB2289D008629C5 /* InfoPlist.strings */,
+				F492CC4D1AB22883008629C5 /* main.m */,
+				F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */,
+				F492CC4F1AB22883008629C5 /* Repetitio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F492CC291AB2278B008629C5 /* MWKProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC2A1AB2278B008629C5 /* .gitignore */,
+				F492CC2B1AB2278B008629C5 /* error.png */,
+				F492CC2C1AB2278B008629C5 /* LICENSE */,
+				F492CC2D1AB2278B008629C5 /* loading.png */,
+				F492CC2E1AB2278B008629C5 /* MWKProgressIndicator.h */,
+				F492CC2F1AB2278B008629C5 /* MWKProgressIndicator.m */,
+				F492CC301AB2278B008629C5 /* README.md */,
+				F492CC311AB2278B008629C5 /* success.png */,
+			);
+			name = MWKProgressIndicator;
+			path = Repetitio/MWKProgressIndicator;
+			sourceTree = SOURCE_ROOT;
+		};
+		F492CC391AB22805008629C5 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC3A1AB22805008629C5 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = Repetitio/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		F492CC3D1AB22816008629C5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC3E1AB22820008629C5 /* button-done-normal.png */,
+				F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */,
+				F492CC401AB22820008629C5 /* button-done-selected.png */,
+				F492CC411AB22820008629C5 /* button-done-selected@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F4AD28CB1AB20A9000EBEF67 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F492CC3D1AB22816008629C5 /* Images */,
+				F492CC291AB2278B008629C5 /* MWKProgressIndicator */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC4DD9071972934F00FDBD03 /* Repetitio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4DD93A1972934F00FDBD03 /* Build configuration list for PBXNativeTarget "Repetitio" */;
+			buildPhases = (
+				B158EC260CF11A1EA94A28B1 /* Check Pods Manifest.lock */,
+				CC4DD9041972934F00FDBD03 /* Sources */,
+				CC4DD9051972934F00FDBD03 /* Frameworks */,
+				CC4DD9061972934F00FDBD03 /* Resources */,
+				38F9ACE9B7934BA17807FB9B /* Copy Pods Resources */,
+			);
+			buildRules = (
+				F492CC551AB23035008629C5 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Repetitio;
+			productName = Done;
+			productReference = CC4DD9081972934F00FDBD03 /* Repetitio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC4DD9001972934F00FDBD03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TSP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tuts+";
+			};
+			buildConfigurationList = CC4DD9031972934F00FDBD03 /* Build configuration list for PBXProject "Repetitio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC4DD8FF1972934F00FDBD03;
+			productRefGroup = CC4DD9091972934F00FDBD03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC4DD9071972934F00FDBD03 /* Repetitio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC4DD9061972934F00FDBD03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F492CC571AB23053008629C5 /* Main.storyboard in Resources */,
+				F492CC561AB2304B008629C5 /* Repetitio-Info.plist in Resources */,
+				F492CC431AB22820008629C5 /* button-done-normal@2x.png in Resources */,
+				F492CC421AB22820008629C5 /* button-done-normal.png in Resources */,
+				F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */,
+				F492CC441AB22820008629C5 /* button-done-selected.png in Resources */,
+				F492CC381AB2278B008629C5 /* success.png in Resources */,
+				F492CC331AB2278B008629C5 /* error.png in Resources */,
+				F492CC341AB2278B008629C5 /* LICENSE in Resources */,
+				F492CC351AB2278B008629C5 /* loading.png in Resources */,
+				F492CC4B1AB22859008629C5 /* Images.xcassets in Resources */,
+				F492CC451AB22820008629C5 /* button-done-selected@2x.png in Resources */,
+				F492CC321AB2278B008629C5 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F9ACE9B7934BA17807FB9B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B158EC260CF11A1EA94A28B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC4DD9041972934F00FDBD03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F492CC491AB22840008629C5 /* Done.xcdatamodeld in Sources */,
+				F492CC271AB22770008629C5 /* RPUpdateToDoViewController.m in Sources */,
+				F492CC281AB22770008629C5 /* RPViewController.m in Sources */,
+				F492CC231AB22770008629C5 /* RPAddToDoViewController.m in Sources */,
+				F492CC371AB2278B008629C5 /* README.md in Sources */,
+				F492CC241AB22770008629C5 /* RPAppDelegate.m in Sources */,
+				F492CC261AB22770008629C5 /* RPToDoCell.m in Sources */,
+				F492CC361AB2278B008629C5 /* MWKProgressIndicator.m in Sources */,
+				F492CC501AB22883008629C5 /* main.m in Sources */,
+				F492CC251AB22770008629C5 /* RPGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F492CC3A1AB22805008629C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F492CC3B1AB22805008629C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F492CC521AB2289D008629C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F492CC531AB2289D008629C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC4DD9381972934F00FDBD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC4DD9391972934F00FDBD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC4DD93B1972934F00FDBD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D4E8EC1E46BB49697317E1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repetitio/Repetitio-Prefix.pch";
+				INFOPLIST_FILE = "Repetitio/Repetitio-Info.plist";
+				PRODUCT_NAME = Repetitio;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC4DD93C1972934F00FDBD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6294A17D025F0446DAA2C698 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repetitio/Repetitio-Prefix.pch";
+				INFOPLIST_FILE = "Repetitio/Repetitio-Info.plist";
+				PRODUCT_NAME = Repetitio;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC4DD9031972934F00FDBD03 /* Build configuration list for PBXProject "Repetitio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4DD9381972934F00FDBD03 /* Debug */,
+				CC4DD9391972934F00FDBD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4DD93A1972934F00FDBD03 /* Build configuration list for PBXNativeTarget "Repetitio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4DD93B1972934F00FDBD03 /* Debug */,
+				CC4DD93C1972934F00FDBD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F492CC461AB22840008629C5 /* Done.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F492CC471AB22840008629C5 /* Done 2.xcdatamodel */,
+				F492CC481AB22840008629C5 /* Done.xcdatamodel */,
+			);
+			currentVersion = F492CC471AB22840008629C5 /* Done 2.xcdatamodel */;
+			name = Done.xcdatamodeld;
+			path = ../Repetitio/Done.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC4DD9001972934F00FDBD03 /* Project object */;
+}
