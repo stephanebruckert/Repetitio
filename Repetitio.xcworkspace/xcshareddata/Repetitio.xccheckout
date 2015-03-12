@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>469029A2-4769-42A0-A26E-30EF547C8270</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Repetitio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
+		<string>https://github.com/mwkoelb/MWKProgressIndicator.git</string>
+		<key>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</key>
+		<string>https://github.com/stephanebruckert/Repetitio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Repetitio.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
+		<string>..Repetitio/MWKProgressIndicator/</string>
+		<key>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stephanebruckert/Repetitio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MWKProgressIndicator</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Repetitio</string>
+		</dict>
+	</array>
+</dict>
+</plist>

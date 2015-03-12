@@ -7,198 +7,1252 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA194D63CE1AF28190B95AF /* SGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCFDC1BC88021BFFE72965 /* SGProgressView.m */; };
-		1232658F16D9A3995F7E601F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */; };
-		1825E6FE69DF343305F0924A /* UINavigationController+SGProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */; };
-		2AD661417046270131F8C55E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF42A90CF585BEE80EA2408 /* Foundation.framework */; };
-		8F902AE7D2E6593B5B6242CE /* UINavigationController+SGProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */; };
-		AD4770AD57E9026441D5DE7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF42A90CF585BEE80EA2408 /* Foundation.framework */; };
-		BF31E72AD2057E701C1E4CBA /* SGProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */; };
-		D692C434F5A357AA5B3A01E2 /* Pods-SGNavigationProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */; };
+		00E51CE5EF573A8221877B17 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9F0B14647AFF75A0966022 /* EXTScope.h */; };
+		037A27B2F750E71B1A8C4A47 /* NSURLConnection+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1823658D878F288CA495AA18 /* NSURLConnection+BlocksKit.h */; };
+		06B7DEAAF33497BC808EE80F /* UITextField+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2CA594C49B26D794A329F8 /* UITextField+BlocksKit.m */; };
+		07AFBE26DDF485E6BE90C53D /* SGProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = F420B5173804D3171FE8F696 /* SGProgressView.h */; };
+		084DE4972ABBA9E0CB70E6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		0863FC89401F64D7F4E64505 /* PAYFormHeader_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = D61D9AE79A3BBCCCFFD1D4D9 /* PAYFormHeader_protected.h */; };
+		0B95FA24E9AC8491C7B7DE7D /* PAYFormButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D687E0F4ACAD9346FE98CFFE /* PAYFormButtonGroup.m */; };
+		0B98644CA2FAB05B4772F3F5 /* PAYFormRow.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD46ADE90389F65B66B4403 /* PAYFormRow.h */; };
+		0C8D1AA2C2EA32959C476733 /* PAYValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0578C0B899BF79F17D9BB0 /* PAYValidation.h */; };
+		0CF5FB4246F8C59A0FA081F9 /* PAYNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 3832F68AC57A819734ED21A4 /* PAYNotifications.m */; };
+		0DDD0D58F7FA351D97F21855 /* UIAlertView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3944FE288B0A309E8C4CB445 /* UIAlertView+BlocksKit.h */; };
+		0E1F833F0EA16F0D102B2A9A /* Pods-SZTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA2BB1B469B89AC98A8B24 /* Pods-SZTextView-dummy.m */; };
+		0E56EC73DDBAC35876E552FC /* UIColor+PAYHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D736BC9A59E0101EBF076E /* UIColor+PAYHex.h */; };
+		0EE968694CB97AC46AE06837 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = B730CB06E5728FDE1C9A93A7 /* EXTKeyPathCoding.h */; };
+		0F3E9786C2489698BC4ECE60 /* PAYFormMultiLineTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B1410F66DAAEF5D7DAC1A0A9 /* PAYFormMultiLineTextField.h */; };
+		11B5C36D2610DD440E65605A /* PAYStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC2A9F50131F69C914E211A /* PAYStyle.h */; };
+		11D8D422A540A4B71AC6DD62 /* PAYFormTableBuilder_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CADA6CF9641A8763EC74C2 /* PAYFormTableBuilder_protected.h */; };
+		13467A76986241F665E3BC5B /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EB5D4E9520CC2AE2E43675 /* extobjc.h */; };
+		138B6F09633C302F50D913B7 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C904A8C7435933D99CAAE03 /* NSInvocation+EXT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		13F53249795ACD6C12F73257 /* PAYErrorCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE19E9DF3FDB0C37FAF4E4D /* PAYErrorCodes.h */; };
+		14E1CE1EBB72449336562DD1 /* PAYFormSectionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279E5EB726443D0D1ADC2DC /* PAYFormSectionBuilder.m */; };
+		17ACB4D7648C50BB5A9A4BEC /* PAYFormView_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B851B755C0242E5654516B6 /* PAYFormView_protected.h */; };
+		1A365EFBA0A808AAB4ED55DC /* PAYFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C95921772C3B80CAC8B8A20 /* PAYFormField.m */; };
+		1B9EE00B5E0852707D1A16F0 /* NSObject+BKBlockExecution.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CAEF710B298857FCDBE1D4 /* NSObject+BKBlockExecution.h */; };
+		225E47F07C9D1C85DDAC0143 /* NSMutableArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 772F0F78BEF237C3DD62A876 /* NSMutableArray+BlocksKit.h */; };
+		23053A2ACCB1B7F532B11DC7 /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = CF65505B3D3C18417C69D742 /* EXTNil.h */; };
+		24E8AE5E5BEB9B7AE8611F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB1C94C5BB5EC9D420EFD9 /* UIKit.framework */; };
+		25F88A2E44AC505E10E63FB9 /* NSURLConnection+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DCE195FE5561FB60D4F0D /* NSURLConnection+BlocksKit.m */; };
+		271B4948C07E28974F8D744B /* UIGestureRecognizer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 464373DC27A35FDF96A1D0BD /* UIGestureRecognizer+BlocksKit.h */; };
+		275AC15ED9397B7C0765EB5D /* NSInvocation+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7F2FE559B09D7EDE0E9417 /* NSInvocation+BlocksKit.h */; };
+		280EEBDD2111007F27F6D4FF /* PAYFormTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AF4E1FDD6BC32EA82C66C0 /* PAYFormTableViewController.h */; };
+		2815AEFDC556050329D3BFDC /* PAYFormTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84BF74A0F04357BFE75FF9F /* PAYFormTableView.m */; };
+		289BF80A871ABAEDE95EDF77 /* PAYTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = DC550112D9C68CD5E9554E20 /* PAYTheme.h */; };
+		28AF2BF5613FABB788B38626 /* UIAlertView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA9CE59252D1DAACBA0EB /* UIAlertView+BlocksKit.m */; };
+		2A4291D1711D85C95ED27E0F /* PAYDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1799BF5BDAD3F55E857DC6 /* PAYDefaultTheme.m */; };
+		2A9C467FC0E1E842E2094468 /* NSMutableOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FA6158877F1BB257FD62A9 /* NSMutableOrderedSet+BlocksKit.h */; };
+		2AF6D483AFA1496FBB0ED635 /* UIWebView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D4689CE1C84A5C5A04F29B /* UIWebView+BlocksKit.h */; };
+		2C01294DD192C929CFEB3DBE /* EXTSelectorChecking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDB30DFF07F136C0A4DB1A3 /* EXTSelectorChecking.h */; };
+		2CE7A75BE43B4DD997B23F68 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD75F0FD9BBAA487BE7E26B /* EXTSelectorChecking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D60F4A30791071BC5A6AE06 /* PAYFormSingleLineTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 81510EB9A040FB3BA5938B47 /* PAYFormSingleLineTextField.h */; };
+		2DA5D5E408FCD6446472D3C9 /* MFMessageComposeViewController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9052672FEB576F5659F544BB /* MFMessageComposeViewController+BlocksKit.m */; };
+		31E34A83A226837CBEE0C024 /* PAYMessageInterceptor_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1407711646FD9D61EC54F6 /* PAYMessageInterceptor_protected.h */; };
+		321A73F6EDB8CF73626B65C1 /* NSInvocation+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CC1B366241F7BD089301F /* NSInvocation+BlocksKit.m */; };
+		3300CC3B5352D4EE0BCF7DBA /* PAYFormButtonGroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3689962EF8816BFE7C214AE /* PAYFormButtonGroupBuilder.m */; };
+		33D2EAB81B22EF2DD934801A /* NSCache+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0151253D8C876D23DF4AC72E /* NSCache+BlocksKit.h */; };
+		34619EEDE087DFDBAF235085 /* A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A756C2EE969C7B820368D1 /* A2DynamicDelegate.m */; };
+		34BE8219D9F298EB02656F12 /* PAYFormButtonGroupBuilder_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7611CA0331396273DD77D2 /* PAYFormButtonGroupBuilder_protected.h */; };
+		3681B0E27967E2BF1E3ED9D6 /* PAYFormTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0434264E6A528198745159C /* PAYFormTableView.h */; };
+		377C8B66C0EA806F30775617 /* PAYValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81756E4EF8443B61F46879B4 /* PAYValidation.m */; };
+		3A25CD7222C45F1BE9D0997D /* PAYFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 085E518D44A71EF2933B34BC /* PAYFormTextField.m */; };
+		3B984BB3314EFA844E7B0198 /* PAYFormSectionBuilder_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 244B236F444F032EC40D0315 /* PAYFormSectionBuilder_protected.h */; };
+		3BDC44E2120A5A51B363EA90 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC807581F3CD2D6F0661344 /* metamacros.h */; };
+		40AE9DE8FA2B5C55D5ED440C /* MFMailComposeViewController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BE3814822572B7686F43D1 /* MFMailComposeViewController+BlocksKit.m */; };
+		414252A9AED732D5E10B430B /* NSObject+A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F729C414D3F728E024C29A /* NSObject+A2DynamicDelegate.h */; };
+		41477C50EEFCAF4D69B913D0 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FF085489D6B12963E0E95 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		43E3D597CBF150F9E9EFA521 /* UIView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA17CBB9850D49420CF3D106 /* UIView+BlocksKit.h */; };
+		4697DC48AF7015081FA2459A /* NSObject+A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B95B22A20B1838F571DD46 /* NSObject+A2BlockDelegate.h */; };
+		47D32032398A44CAA2742FBF /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01CC286271EE5D7A84A12B /* NSMutableSet+BlocksKit.m */; };
+		496AF29658BDFA7B46DA7B1A /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 889850F82B7A5A8EABF0A5C6 /* UIView+BlocksKit.m */; };
+		49CC3502374022ABE5E9A601 /* UIBarButtonItem+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7FE5A039A000FD870E480C /* UIBarButtonItem+BlocksKit.h */; };
+		49F921C987DA9DDF77930901 /* PAYFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DEBFCB304FD54CF0805F44 /* PAYFormSection.h */; };
+		4AD913CA8D00B1D87ED1E9FD /* NSDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD3459E66CA5F1084B65347 /* NSDictionary+BlocksKit.h */; };
+		4BABC964FDA27CAE3A5F81B9 /* EXTConcreteProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 903AC5EAA13D1D12649BD6DD /* EXTConcreteProtocol.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		50160490A612537298B726F0 /* PAYFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 378B8C9C8AE67720D3DE6237 /* PAYFormView.m */; };
+		51A1B184D8FF8F094171D644 /* PAYFormSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8288D792F5A8B2DF53654 /* PAYFormSwitch.m */; };
+		543805951F90B4F3C3DC937D /* PAYFormTableBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA742734A936513BB5EA5922 /* PAYFormTableBuilder.h */; };
+		565455449AF2C3F5E68E6266 /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = B92F0CB952AD80131A76DF85 /* NSObject+BKBlockExecution.m */; };
+		568C6C9CAD8BD317819A5AB9 /* PAYHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DBC6A305F0001C6EA6BF59 /* PAYHeaderView.h */; };
+		5794D8D057E14F9D4732DA6A /* NSInvocation+EXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 29466590A44143E97D4DA902 /* NSInvocation+EXT.h */; };
+		579E8FEE2CCD6982F1D48366 /* PAYTextLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 410A59174EBED877CB50C06E /* PAYTextLabel.h */; };
+		5B46E697489ED2914BAE47F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		5B652080EF44CBBB630DDCA0 /* PAYFormButtonGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BDD451608793D08684DD66 /* PAYFormButtonGroup.h */; };
+		5C63FD6021159237F7427437 /* UIColor+PAYHex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CF6D621E1C286D2E0046F1 /* UIColor+PAYHex.m */; };
+		5C8B8EE2A5EA5B988ABB5CE5 /* UIPopoverController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355C2E003D5156CE4FD0417 /* UIPopoverController+BlocksKit.m */; };
+		5E39B54D7F8F0361E8BCB083 /* BlocksKit+MessageUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 511E1056ACEE76376820D648 /* BlocksKit+MessageUI.h */; };
+		609AE72E5FB4B8FDD0296711 /* Pods-BlocksKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C014EBB269A4A06F379BC39 /* Pods-BlocksKit-dummy.m */; };
+		60BE0D4C5796E320A8420201 /* PAYFormButtonGroupBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD8257F62E09122D1D7D903 /* PAYFormButtonGroupBuilder.h */; };
+		67CCD37A22D5C9E5A90979FB /* UITextField+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B72963222700E91E1977E2 /* UITextField+BlocksKit.h */; };
+		686C5F6D050B80886F9C630F /* UIPopoverController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 002AF8A0CC2E0A47F1A748F2 /* UIPopoverController+BlocksKit.h */; };
+		69CA23188688256029FF437B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D83F6CDF23E5C086337874 /* MessageUI.framework */; };
+		69F19EDE8A4F723078693798 /* PAYFormSectionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AD3B7B9C28A3799D8FCE13 /* PAYFormSectionBuilder.h */; };
+		6AF220BF6C6B0C424BB99DA1 /* SZTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3F371EB502CE00635783B4 /* SZTextView.h */; };
+		6C6F276212AC257F5F10CCFE /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F3AB1A44F3DAD327F781D9 /* UIGestureRecognizer+BlocksKit.m */; };
+		6D8E757D5707B8292BC797F6 /* PAYFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D21853A519B543F53055F8E0 /* PAYFormSection.m */; };
+		6EC7ECD69B4760846E6BE521 /* PAYFormField_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 979D354ED02B1C8BB59DBDC6 /* PAYFormField_protected.h */; };
+		6F12893C017E6EDA7F87AB38 /* NSMutableSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B140A6316E916A62020078 /* NSMutableSet+BlocksKit.h */; };
+		6F60515017F6B725541E5759 /* EXTConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D1387562B90CE86C7C5ED379 /* EXTConcreteProtocol.h */; };
+		6F688353C3CBBDE0D18500A3 /* UIActionSheet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F70D8B259A6FCF8D94B1ABB3 /* UIActionSheet+BlocksKit.h */; };
+		7018C27DCB2ABF6027156A50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		701F666612114704F8F89D00 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC16971A3B6E96C3A7CF411 /* SZTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7087653DF7E8767EDEB69AA7 /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A5EF25095965CDC6AEDD8 /* NSMutableDictionary+BlocksKit.m */; };
+		72159C6449104886D03502D1 /* PAYFormButton_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0256C6D967F8A09D3CA986AC /* PAYFormButton_protected.h */; };
+		749A035F61C3D694E8D5C09E /* EXTSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ABE890FC4E784FD95FD06 /* EXTSafeCategory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		78275F256295A6070CBF7EED /* PAYFormView+PAYFormDefaultErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA5D671DC90B150FD38FBA /* PAYFormView+PAYFormDefaultErrorHandler.m */; };
+		785421AC9F69DB1CF50A218A /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = BA067C595E5BF02777AAB8E4 /* NSMethodSignature+EXT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		78FEABFBA64ED148E4DBE875 /* PAYMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A410ABA0135A61CE7BC7 /* PAYMessageInterceptor.m */; };
+		791108FB098350CB6E203902 /* PAYFormButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E652C53A974AB30A1307EACD /* PAYFormButton.h */; };
+		79B2FB03108F2753A967DE7F /* NSOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF0D0C71A22107120317A5D /* NSOrderedSet+BlocksKit.h */; };
+		7C78BE264D6D27A6846AE95F /* EXTSafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = D62C0E386866DD0B0938F32E /* EXTSafeCategory.h */; };
+		7CA80BFE44494A9C860A608A /* PAYFormMultiLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978AA0CF506715FAAB0B8F3 /* PAYFormMultiLineTextField.m */; };
+		7CCD997A3F0293F533678EC5 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 44874BBC109BBFF2450B5C55 /* NSTimer+BlocksKit.m */; };
+		7CEE099AED6042F35238A5C7 /* NSTimer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AEBBBB9D77D0BFFBE006DD /* NSTimer+BlocksKit.h */; };
+		7DCF3048A21B4A1B0725D5CA /* UIView+PAYKeyboardHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = BD40E555A016E5DF7FB4055B /* UIView+PAYKeyboardHandling.m */; };
+		7F031ECD2B8C6E1B72551C43 /* PAYFormView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFB16FA39692603147C8 /* PAYFormView.h */; };
+		7F19A9B5AE92F19DC601E620 /* NSIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B7FB4191824D52EAF07686 /* NSIndexSet+BlocksKit.h */; };
+		80798EFDD89515092C5E5DA9 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EE95267DDCF332DB4F892 /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		808E4D50CD4C3DD6B226F24C /* BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F37A3316CA3FFF101AB2D964 /* BlocksKit.h */; };
+		82101ECDE19CFC66FF4D4A2E /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8711D2850044DE2D26A95D /* EXTNil.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83B64EB9D2B25CA5E774D9EA /* PAYFormHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A7BCD7C4F21C1615A95961 /* PAYFormHeader.m */; };
+		857C0396FDEA1AD9792C089F /* PAYFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E39A039C76B786F800A4E575 /* PAYFormTextField.h */; };
+		87F894C5CF6C4879059C1257 /* PAYFormErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 502E88461B8FED89756EAA6E /* PAYFormErrorMessage.h */; };
+		882D926799F6B3CD47E9997C /* A2BlockInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3E0888E6B677447B5E041A /* A2BlockInvocation.h */; };
+		8BE8381BB1612479EF679C12 /* PAYFormTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3786220225395CC11791246E /* PAYFormTable.h */; };
+		8DE8E33192C21555EECD766C /* PAYErrorCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C56E0258070ECC88F36F7F /* PAYErrorCodes.m */; };
+		8E02CC64AA8FD708EB4C7C24 /* PAYFormDefaultErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 41268BBF899D1CE2C10DF40F /* PAYFormDefaultErrorHandler.h */; };
+		8E60C6DE9F4276E84FA3E08D /* PAYFormView+PAYFormDefaultErrorHandlerProtected.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30DD1C6F3A9355015CDB25 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.m */; };
+		8EAC8BC2AE5935BD3F614828 /* Pods-PAYFormBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CED401067199FE89325BB /* Pods-PAYFormBuilder-dummy.m */; };
+		90D55D86384104195AC279D0 /* PAYFormSingleLineTextField_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = E2403A5380611BC54E94A927 /* PAYFormSingleLineTextField_protected.h */; };
+		9168BCE056CCBDB5C8A905EE /* NSDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D822302C9FED939055076B28 /* NSDictionary+BlocksKit.m */; };
+		92ECF5CFC84F0A449E3416A4 /* PAYFormView+PAYFormDefaultErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A609A9118507C55766AE86E /* PAYFormView+PAYFormDefaultErrorHandler.h */; };
+		93977141AAD65952385CD590 /* UIActionSheet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A988B4D7A198D9C862C5D94 /* UIActionSheet+BlocksKit.m */; };
+		93DDCF42B4D3F8767F7B5264 /* NSObject+A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 283801A3BE7BED8C4E7A176A /* NSObject+A2BlockDelegate.m */; };
+		9666D876C7D5F01B2F85E40C /* PAYFormHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6537E11BFB91A67C519D7C72 /* PAYFormHeader.h */; };
+		9BB5DBC45BE7705AF9CB1DCD /* PAYFormSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DB6D5655AD75C8E34C1D1B /* PAYFormSwitch.h */; };
+		9FDB8C996FA4AC1E92F6E721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		A0417EB8E6CBF65017846236 /* PAYFormErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DB08B8110E9F51FECF0F62 /* PAYFormErrorMessage.m */; };
+		A0684AAD662877F9ECDAE2E7 /* NSMethodSignature+EXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA88B37D4B34AEEF9B13207 /* NSMethodSignature+EXT.h */; };
+		A300175DAB9C969B1FA4F79D /* NSMutableOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A2567026857DDEB345D41 /* NSMutableOrderedSet+BlocksKit.m */; };
+		A4C3AE85C6E5E65772122DE5 /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C50A7D627E8509C4E3DC171 /* EXTSynthesize.h */; };
+		A6B6CCC2F9DF53B87561C6C9 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B122CB2BFBEC3EA01D059D1 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.h */; };
+		A71307A9854DBA992B1C8CDA /* PAYFormMultiLineTextField_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4E1177BF37867332E53C87 /* PAYFormMultiLineTextField_protected.h */; };
+		A8380EBDD47308C6E709C9FF /* NSObject+BKBlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B75B98A00581091811E14E /* NSObject+BKBlockObservation.m */; };
+		A8D2590C6E2E00AF3FDE2937 /* PAYFormSwitch_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D54CEDDFD6B76EA341F8D12 /* PAYFormSwitch_protected.h */; };
+		AA3B31231626D5EDA44A10E3 /* UIWebView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D211F2FE10BB2E7C9E55DDA /* UIWebView+BlocksKit.m */; };
+		AA84CE6A5CF672A3C91DD7B5 /* PAYFormButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7771F8A1B6FBF56F04B49F /* PAYFormButton.m */; };
+		AB1D46D3AB8C2C001484546B /* Pods-libextobjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B038E40071FFBD719D2A57 /* Pods-libextobjc-dummy.m */; };
+		AC60B3B5E7AFD7BB16D3D630 /* UINavigationController+SGProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEE46D4EC34858AF27CB91F /* UINavigationController+SGProgress.h */; };
+		AE1C19C83BEB1713EBFC1B6A /* PAYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5A3765EF43227EE61FD648 /* PAYHeaderView.m */; };
+		B26835FE98E1E8A1EF02B43C /* UIImagePickerController+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1E8A83D11844498D5E91F5 /* UIImagePickerController+BlocksKit.m */; };
+		B3176E12F7F7AD8B94DB2AEC /* NSError+PAYComfort.h in Headers */ = {isa = PBXBuildFile; fileRef = B35B2A20C1B1E39C07E8AB34 /* NSError+PAYComfort.h */; };
+		B340DE1DD3583FD6C1BE69DE /* PAYFormSingleLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7E0736448A0D1AE55501CE /* PAYFormSingleLineTextField.m */; };
+		B386C7C9EE4CAA20189E3249 /* PAYValidatableFormCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6A808EB9D069C10D73223A /* PAYValidatableFormCell.h */; };
+		B56FACDD7F93B004438858DB /* PAYFormDefaultErrorHandler_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F55F54104C43804626AB5E /* PAYFormDefaultErrorHandler_protected.h */; };
+		B7B954A611C97E974C273552 /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6790370E51991EBC5CA49D8 /* A2DynamicDelegate.h */; };
+		BA459C09BDB6654E0D8D402C /* UIImagePickerController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 663E50C58BD3506AC3508F6B /* UIImagePickerController+BlocksKit.h */; };
+		BAA5D0C744141CD8FE36E63E /* BKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E33AD3B8815FBA9CF4FC0C41 /* BKMacros.h */; };
+		BB2E200E2891A31CE3645165 /* BlocksKit+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D9B5C4679E51E20BAE3080 /* BlocksKit+UIKit.h */; };
+		BD37DECC8982CA517660BAD2 /* UIView+PAYKeyboardHandling_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2476A7014E3153CE03B626 /* UIView+PAYKeyboardHandling_protected.h */; };
+		BD453F551BF81D8118BC5737 /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E27D38F3ED5734C353AA7 /* UIBarButtonItem+BlocksKit.m */; };
+		BE77A0AF552A7A9A188E8701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		BEB70DFE57A76C52AF25CCE4 /* EXTADT.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75D233801300ED182FFBC4 /* EXTADT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BEE90794E040A84AA2C3BFDA /* UIControl+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C3B7337E11A1EAF79E1793 /* UIControl+BlocksKit.h */; };
+		C039C152359C5CADD47988B9 /* NSObject+BKAssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = A329E4B43E64F88FD30001E9 /* NSObject+BKAssociatedObjects.h */; };
+		C5B2E2E5A1F227FC111B14CD /* MFMessageComposeViewController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E1861C23AF8F644BE68A728F /* MFMessageComposeViewController+BlocksKit.h */; };
+		C6BA5F24AAD184F5DF4248A6 /* PAYFormErrorMessage_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = F1550882CC0166A0C74FA587 /* PAYFormErrorMessage_protected.h */; };
+		C96E2B4F2C38EB6A3480D9B1 /* NSObject+BKBlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1030F998B50E3A6F1ED27E83 /* NSObject+BKBlockObservation.h */; };
+		CC0C09378FFA8EB88BF23AAC /* NSError+PAYComfort.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E17EA9E1F0649F0838C1ACD /* NSError+PAYComfort.m */; };
+		CE33929E3958FB4BDEFC6A8A /* NSObject+A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417958B041ACA98DE6C8D7DD /* NSObject+A2DynamicDelegate.m */; };
+		CEDA47D75BD6AB8FA6DB540E /* PAYStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13405A5E00D2A67D8A5DDD /* PAYStyle.m */; };
+		CF21BA053E524B02C7E25866 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */; };
+		CF5048F89416E6496092F0D6 /* NSMutableDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBF2840535F0AD1CA217C32 /* NSMutableDictionary+BlocksKit.h */; };
+		D13DDD84B3831A1E2E48864F /* PAYFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1916CDBB79C86FF2B80AFE5D /* PAYFormField.h */; };
+		D6110DA8D2B90D40596B3A01 /* PAYFormButtonGroup_protected.h in Headers */ = {isa = PBXBuildFile; fileRef = DE15041810BD5682C4920225 /* PAYFormButtonGroup_protected.h */; };
+		D6E358BD8EE807C8BDB51DAC /* NSSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F72A2AE1E6A03FD94CF43389 /* NSSet+BlocksKit.m */; };
+		D8563A8BEAC6814F17AA936D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE217E4AFD19D7555CCDEFD3 /* Pods-dummy.m */; };
+		D9DE355825F4719DB8886B0C /* PAYFormTableBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B45DB9A6B5F810AF7BDDED /* PAYFormTableBuilder.m */; };
+		DB526BE11ABDA2F4C1663876 /* SGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C19DB1ED4E83578938F6270 /* SGProgressView.m */; };
+		DB53906BBB4D80049E2DB8BF /* NSArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDA8565ACA017035FA40C77 /* NSArray+BlocksKit.h */; };
+		DB5DCF9CC57F0AEF248B51D6 /* NSMutableArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F10313A840988F929146661F /* NSMutableArray+BlocksKit.m */; };
+		DE6DB74D1DD3CAC7B35B92B0 /* PAYFormTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A3653E0E0DB8D776126E7B04 /* PAYFormTable.m */; };
+		DE851A4137EBEBBD066D0024 /* NSMutableIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 401CED069954D62CDDCCEDD9 /* NSMutableIndexSet+BlocksKit.m */; };
+		E74023F1428BD034B8286D97 /* PAYFormBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9037E509AD741D4F3802A /* PAYFormBuilder.h */; };
+		E8438E2523ED13DFEF3EDEE8 /* PAYDefaultTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 21533A3460B4BB0DF013B655 /* PAYDefaultTheme.h */; };
+		E90C4338110505DEE5200513 /* PAYTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C57AD942E721F872ADA7193 /* PAYTextLabel.m */; };
+		E9A3EAE4256B0A15A35528A4 /* MFMailComposeViewController+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 760671947C96FC5BB23E2318 /* MFMailComposeViewController+BlocksKit.h */; };
+		EC453CEEE21AA4E14AA3D26A /* PAYFormTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73573409A8D6786CF4C85DD /* PAYFormTableViewController.m */; };
+		ED3A55D51BCEBA5B2DE6A127 /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = B8642F97B2E9780F1E00924F /* EXTADT.h */; };
+		ED5C06FED05AB1EF002F9E5F /* PAYNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 38549E073372D9EC6F6B67ED /* PAYNotifications.h */; };
+		EEFD771165F315624DE5D077 /* UINavigationController+SGProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = B48756FC8B54BDF04C8C9493 /* UINavigationController+SGProgress.m */; };
+		F0F6524AE58481C689536F88 /* PAYFormDefaultErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D865EC5E1EB5608FF0749 /* PAYFormDefaultErrorHandler.m */; };
+		F1EA85F84E6A55BBA5C711CA /* A2BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEA9D58463355E7500132E5 /* A2BlockInvocation.m */; };
+		F47595B888BC2EBAEE6BDDAE /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD1E1B9CC821334D4524B62 /* EXTRuntimeExtensions.h */; };
+		F5C51ABD815C8E2E2F190CC2 /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD5AEB01A56722A05C8AF6 /* NSArray+BlocksKit.m */; };
+		F692C762324108526227186A /* NSCache+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5CF68E5A1A0C88F4CF5CA /* NSCache+BlocksKit.m */; };
+		F75B77C19154EB3CA7162C00 /* NSMutableIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2842F271AC1E958298322B53 /* NSMutableIndexSet+BlocksKit.h */; };
+		F7E49AC5915A56E3AEDBC2F3 /* UIControl+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 87900A942C6315C85649CADE /* UIControl+BlocksKit.m */; };
+		F89B6FBB7FB2DD13272BFA3F /* NSIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 10488D767C1FD61A19E91C76 /* NSIndexSet+BlocksKit.m */; };
+		F8C27090F4E4682477E9F339 /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB223339D2F2A184ECBC9AF /* NSOrderedSet+BlocksKit.m */; };
+		FB6F488B0AF41E7BC34FB049 /* NSSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A04AD23D28E1202F989BD91 /* NSSet+BlocksKit.h */; };
+		FCD450C627D1FD9D20A280B0 /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 6433237CC180BF179BCCC352 /* NSObject+BKAssociatedObjects.m */; };
+		FEC21CCEE1A28CAADAC62F06 /* Pods-SGNavigationProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AA66C9197A96E840C59A83 /* Pods-SGNavigationProgress-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		821C37C1AF103E09D702D9D7 /* PBXContainerItemProxy */ = {
+		306AE6983998141BB74183F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8B8A2A17D246984EAA99F7A3 /* Project object */;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CF23EFBC621F912A3F433822;
+			remoteGlobalIDString = 22121621B977E385AD16BCEF;
+			remoteInfo = "Pods-BlocksKit";
+		};
+		3896510EB91219C3569BAEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22121621B977E385AD16BCEF;
+			remoteInfo = "Pods-BlocksKit";
+		};
+		540ED615967B6C7FD64D34AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E998FB0F9005F68FFA8F8979;
+			remoteInfo = "Pods-SZTextView";
+		};
+		83093458BDCE7489070D38BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E998FB0F9005F68FFA8F8979;
+			remoteInfo = "Pods-SZTextView";
+		};
+		8B2782BE5ACC83AB7A13BABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BFDB54A5F7116C7C02A247;
+			remoteInfo = "Pods-PAYFormBuilder";
+		};
+		D1BB578928768FE2D1AFDDCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DBD20E1730AC8BE48901DA0;
+			remoteInfo = "Pods-libextobjc";
+		};
+		D7342DA217C0DDBFBC98F1ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF3873F69B111BBA5EAB2AEA;
 			remoteInfo = "Pods-SGNavigationProgress";
+		};
+		F6A783D4A251D7ED3FFE3EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD0CA2D0966D57485BB2857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DBD20E1730AC8BE48901DA0;
+			remoteInfo = "Pods-libextobjc";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003720C8E14D03EB28DE7E7B /* Pods-SGNavigationProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress.xcconfig"; sourceTree = "<group>"; };
-		13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGNavigationProgress-dummy.m"; sourceTree = "<group>"; };
-		1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		2D3CB2B4A720AB85F1E2E8F7 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FA02F8ECE0AE1BF127AFD55 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		448E9ACB4A2BA96286D03BDE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+SGProgress.h"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.h"; sourceTree = "<group>"; };
-		73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGNavigationProgress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		813119D0528642B01D3FFA9F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGProgressView.h; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.h"; sourceTree = "<group>"; };
-		95DCFDC1BC88021BFFE72965 /* SGProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGProgressView.m; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.m"; sourceTree = "<group>"; };
-		AA207C2E994501AFAF88966E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0B46150BB3D9452EA579C5 /* Pods-SGNavigationProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGNavigationProgress-prefix.pch"; sourceTree = "<group>"; };
-		BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress-Private.xcconfig"; sourceTree = "<group>"; };
-		DBF42A90CF585BEE80EA2408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E8EB344A38BA46674C2F7F21 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+SGProgress.m"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.m"; sourceTree = "<group>"; };
+		002AF8A0CC2E0A47F1A748F2 /* UIPopoverController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPopoverController+BlocksKit.h"; path = "BlocksKit/UIKit/UIPopoverController+BlocksKit.h"; sourceTree = "<group>"; };
+		0151253D8C876D23DF4AC72E /* NSCache+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCache+BlocksKit.h"; path = "BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.h"; sourceTree = "<group>"; };
+		01C56E0258070ECC88F36F7F /* PAYErrorCodes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYErrorCodes.m; path = PAYFormBuilder/errorHandling/PAYErrorCodes.m; sourceTree = "<group>"; };
+		0256C6D967F8A09D3CA986AC /* PAYFormButton_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButton_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormButton_protected.h; sourceTree = "<group>"; };
+		042EE95267DDCF332DB4F892 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		067DCE195FE5561FB60D4F0D /* NSURLConnection+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.m"; sourceTree = "<group>"; };
+		085E518D44A71EF2933B34BC /* PAYFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormTextField.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormTextField.m; sourceTree = "<group>"; };
+		08CADA6CF9641A8763EC74C2 /* PAYFormTableBuilder_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTableBuilder_protected.h; path = PAYFormBuilder/controller/builder/PAYFormTableBuilder_protected.h; sourceTree = "<group>"; };
+		09D9B5C4679E51E20BAE3080 /* BlocksKit+UIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+UIKit.h"; path = "BlocksKit/BlocksKit+UIKit.h"; sourceTree = "<group>"; };
+		0A988B4D7A198D9C862C5D94 /* UIActionSheet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+BlocksKit.m"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.m"; sourceTree = "<group>"; };
+		0ADD5AEB01A56722A05C8AF6 /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+BlocksKit.m"; path = "BlocksKit/Core/NSArray+BlocksKit.m"; sourceTree = "<group>"; };
+		0B851B755C0242E5654516B6 /* PAYFormView_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormView_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormView_protected.h; sourceTree = "<group>"; };
+		0D7FE5A039A000FD870E480C /* UIBarButtonItem+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+BlocksKit.h"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.h"; sourceTree = "<group>"; };
+		0EBA5D671DC90B150FD38FBA /* PAYFormView+PAYFormDefaultErrorHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PAYFormView+PAYFormDefaultErrorHandler.m"; path = "PAYFormBuilder/errorHandling/PAYFormView+PAYFormDefaultErrorHandler.m"; sourceTree = "<group>"; };
+		1030F998B50E3A6F1ED27E83 /* NSObject+BKBlockObservation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKBlockObservation.h"; path = "BlocksKit/Core/NSObject+BKBlockObservation.h"; sourceTree = "<group>"; };
+		10488D767C1FD61A19E91C76 /* NSIndexSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+BlocksKit.m"; path = "BlocksKit/Core/NSIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		10B75B98A00581091811E14E /* NSObject+BKBlockObservation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockObservation.m"; path = "BlocksKit/Core/NSObject+BKBlockObservation.m"; sourceTree = "<group>"; };
+		13198B9D0903E493E4ABAF18 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		1355C2E003D5156CE4FD0417 /* UIPopoverController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPopoverController+BlocksKit.m"; path = "BlocksKit/UIKit/UIPopoverController+BlocksKit.m"; sourceTree = "<group>"; };
+		14AF4E1FDD6BC32EA82C66C0 /* PAYFormTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTableViewController.h; path = PAYFormBuilder/controller/PAYFormTableViewController.h; sourceTree = "<group>"; };
+		1823658D878F288CA495AA18 /* NSURLConnection+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+BlocksKit.h"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.h"; sourceTree = "<group>"; };
+		1916CDBB79C86FF2B80AFE5D /* PAYFormField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormField.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormField.h; sourceTree = "<group>"; };
+		1BC16971A3B6E96C3A7CF411 /* SZTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SZTextView.m; path = Classes/SZTextView.m; sourceTree = "<group>"; };
+		1C57AD942E721F872ADA7193 /* PAYTextLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYTextLabel.m; path = PAYFormBuilder/view/PAYTextLabel.m; sourceTree = "<group>"; };
+		1D0ABE890FC4E784FD95FD06 /* EXTSafeCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSafeCategory.m; path = extobjc/EXTSafeCategory.m; sourceTree = "<group>"; };
+		1D5A3765EF43227EE61FD648 /* PAYHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYHeaderView.m; path = PAYFormBuilder/view/PAYHeaderView.m; sourceTree = "<group>"; };
+		21533A3460B4BB0DF013B655 /* PAYDefaultTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYDefaultTheme.h; path = PAYFormBuilder/utils/theming/PAYDefaultTheme.h; sourceTree = "<group>"; };
+		21F55F54104C43804626AB5E /* PAYFormDefaultErrorHandler_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormDefaultErrorHandler_protected.h; path = PAYFormBuilder/errorHandling/PAYFormDefaultErrorHandler_protected.h; sourceTree = "<group>"; };
+		220FF085489D6B12963E0E95 /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = extobjc/EXTScope.m; sourceTree = "<group>"; };
+		22DB1C94C5BB5EC9D420EFD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		244B236F444F032EC40D0315 /* PAYFormSectionBuilder_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSectionBuilder_protected.h; path = PAYFormBuilder/controller/builder/PAYFormSectionBuilder_protected.h; sourceTree = "<group>"; };
+		24B140A6316E916A62020078 /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
+		2566686F7EBB13535084BC4B /* Pods-SGNavigationProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress.xcconfig"; sourceTree = "<group>"; };
+		26B72963222700E91E1977E2 /* UITextField+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+BlocksKit.h"; path = "BlocksKit/UIKit/UITextField+BlocksKit.h"; sourceTree = "<group>"; };
+		26DB08B8110E9F51FECF0F62 /* PAYFormErrorMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormErrorMessage.m; path = PAYFormBuilder/errorHandling/PAYFormErrorMessage.m; sourceTree = "<group>"; };
+		2710DF8BB712AE424E504A8E /* Pods-libextobjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-libextobjc-prefix.pch"; sourceTree = "<group>"; };
+		283801A3BE7BED8C4E7A176A /* NSObject+A2BlockDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2BlockDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2BlockDelegate.m"; sourceTree = "<group>"; };
+		2842F271AC1E958298322B53 /* NSMutableIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		28D736BC9A59E0101EBF076E /* UIColor+PAYHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+PAYHex.h"; path = "PAYFormBuilder/utils/UIColor+PAYHex.h"; sourceTree = "<group>"; };
+		29466590A44143E97D4DA902 /* NSInvocation+EXT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+EXT.h"; path = "extobjc/NSInvocation+EXT.h"; sourceTree = "<group>"; };
+		2A1407711646FD9D61EC54F6 /* PAYMessageInterceptor_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYMessageInterceptor_protected.h; path = PAYFormBuilder/utils/PAYMessageInterceptor_protected.h; sourceTree = "<group>"; };
+		2A83B3070D4BB0B859B19634 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2AF5F1D079FBCD490DF68D61 /* libPods-SZTextView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZTextView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5CC1B366241F7BD089301F /* NSInvocation+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+BlocksKit.m"; path = "BlocksKit/Core/NSInvocation+BlocksKit.m"; sourceTree = "<group>"; };
+		2D7611CA0331396273DD77D2 /* PAYFormButtonGroupBuilder_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButtonGroupBuilder_protected.h; path = PAYFormBuilder/controller/builder/PAYFormButtonGroupBuilder_protected.h; sourceTree = "<group>"; };
+		34D83F6CDF23E5C086337874 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		3786220225395CC11791246E /* PAYFormTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTable.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormTable.h; sourceTree = "<group>"; };
+		378B8C9C8AE67720D3DE6237 /* PAYFormView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormView.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormView.m; sourceTree = "<group>"; };
+		37AD3B7B9C28A3799D8FCE13 /* PAYFormSectionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSectionBuilder.h; path = PAYFormBuilder/controller/builder/PAYFormSectionBuilder.h; sourceTree = "<group>"; };
+		3832F68AC57A819734ED21A4 /* PAYNotifications.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYNotifications.m; path = PAYFormBuilder/privateProtocols/PAYNotifications.m; sourceTree = "<group>"; };
+		38549E073372D9EC6F6B67ED /* PAYNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYNotifications.h; path = PAYFormBuilder/privateProtocols/PAYNotifications.h; sourceTree = "<group>"; };
+		3944FE288B0A309E8C4CB445 /* UIAlertView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+BlocksKit.h"; path = "BlocksKit/UIKit/UIAlertView+BlocksKit.h"; sourceTree = "<group>"; };
+		398D1B6D4DFC17231C884D7D /* Pods-PAYFormBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PAYFormBuilder-prefix.pch"; sourceTree = "<group>"; };
+		39EA96E8495D98BDBBEFB7F9 /* Pods-BlocksKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocksKit-Private.xcconfig"; sourceTree = "<group>"; };
+		3A04AD23D28E1202F989BD91 /* NSSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+BlocksKit.h"; path = "BlocksKit/Core/NSSet+BlocksKit.h"; sourceTree = "<group>"; };
+		3D211F2FE10BB2E7C9E55DDA /* UIWebView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+BlocksKit.m"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.m"; sourceTree = "<group>"; };
+		3D75D233801300ED182FFBC4 /* EXTADT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTADT.m; path = extobjc/EXTADT.m; sourceTree = "<group>"; };
+		3EF5CF68E5A1A0C88F4CF5CA /* NSCache+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCache+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.m"; sourceTree = "<group>"; };
+		3FDA8565ACA017035FA40C77 /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+BlocksKit.h"; path = "BlocksKit/Core/NSArray+BlocksKit.h"; sourceTree = "<group>"; };
+		401CED069954D62CDDCCEDD9 /* NSMutableIndexSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableIndexSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		410A59174EBED877CB50C06E /* PAYTextLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYTextLabel.h; path = PAYFormBuilder/view/PAYTextLabel.h; sourceTree = "<group>"; };
+		41268BBF899D1CE2C10DF40F /* PAYFormDefaultErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormDefaultErrorHandler.h; path = PAYFormBuilder/errorHandling/PAYFormDefaultErrorHandler.h; sourceTree = "<group>"; };
+		417958B041ACA98DE6C8D7DD /* NSObject+A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2DynamicDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.m"; sourceTree = "<group>"; };
+		42EFA9CE59252D1DAACBA0EB /* UIAlertView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+BlocksKit.m"; path = "BlocksKit/UIKit/UIAlertView+BlocksKit.m"; sourceTree = "<group>"; };
+		44874BBC109BBFF2450B5C55 /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+BlocksKit.m"; path = "BlocksKit/Core/NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		464373DC27A35FDF96A1D0BD /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+BlocksKit.h"; path = "BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
+		46A8288D792F5A8B2DF53654 /* PAYFormSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormSwitch.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormSwitch.m; sourceTree = "<group>"; };
+		4978AA0CF506715FAAB0B8F3 /* PAYFormMultiLineTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormMultiLineTextField.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormMultiLineTextField.m; sourceTree = "<group>"; };
+		4A609A9118507C55766AE86E /* PAYFormView+PAYFormDefaultErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PAYFormView+PAYFormDefaultErrorHandler.h"; path = "PAYFormBuilder/errorHandling/PAYFormView+PAYFormDefaultErrorHandler.h"; sourceTree = "<group>"; };
+		4B122CB2BFBEC3EA01D059D1 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PAYFormView+PAYFormDefaultErrorHandlerProtected.h"; path = "PAYFormBuilder/errorHandling/PAYFormView+PAYFormDefaultErrorHandlerProtected.h"; sourceTree = "<group>"; };
+		4B7771F8A1B6FBF56F04B49F /* PAYFormButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormButton.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormButton.m; sourceTree = "<group>"; };
+		4C904A8C7435933D99CAAE03 /* NSInvocation+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+EXT.m"; path = "extobjc/NSInvocation+EXT.m"; sourceTree = "<group>"; };
+		4D1799BF5BDAD3F55E857DC6 /* PAYDefaultTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYDefaultTheme.m; path = PAYFormBuilder/utils/theming/PAYDefaultTheme.m; sourceTree = "<group>"; };
+		4F1A2567026857DDEB345D41 /* NSMutableOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableOrderedSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		4F38CFB16FA39692603147C8 /* PAYFormView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormView.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormView.h; sourceTree = "<group>"; };
+		4FD8257F62E09122D1D7D903 /* PAYFormButtonGroupBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButtonGroupBuilder.h; path = PAYFormBuilder/controller/builder/PAYFormButtonGroupBuilder.h; sourceTree = "<group>"; };
+		4FDC365E5B7A9FB4E4F1980F /* Pods-PAYFormBuilder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PAYFormBuilder-Private.xcconfig"; sourceTree = "<group>"; };
+		502E88461B8FED89756EAA6E /* PAYFormErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormErrorMessage.h; path = PAYFormBuilder/errorHandling/PAYFormErrorMessage.h; sourceTree = "<group>"; };
+		511E1056ACEE76376820D648 /* BlocksKit+MessageUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+MessageUI.h"; path = "BlocksKit/BlocksKit+MessageUI.h"; sourceTree = "<group>"; };
+		55DEBFCB304FD54CF0805F44 /* PAYFormSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSection.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormSection.h; sourceTree = "<group>"; };
+		5A0E27D38F3ED5734C353AA7 /* UIBarButtonItem+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+BlocksKit.m"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.m"; sourceTree = "<group>"; };
+		5ACA2BB1B469B89AC98A8B24 /* Pods-SZTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZTextView-dummy.m"; sourceTree = "<group>"; };
+		5BD1E1B9CC821334D4524B62 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		5CA88B37D4B34AEEF9B13207 /* NSMethodSignature+EXT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+EXT.h"; path = "extobjc/NSMethodSignature+EXT.h"; sourceTree = "<group>"; };
+		5D30DD1C6F3A9355015CDB25 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PAYFormView+PAYFormDefaultErrorHandlerProtected.m"; path = "PAYFormBuilder/errorHandling/PAYFormView+PAYFormDefaultErrorHandlerProtected.m"; sourceTree = "<group>"; };
+		60B45DB9A6B5F810AF7BDDED /* PAYFormTableBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormTableBuilder.m; path = PAYFormBuilder/controller/builder/PAYFormTableBuilder.m; sourceTree = "<group>"; };
+		63B9037E509AD741D4F3802A /* PAYFormBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormBuilder.h; path = PAYFormBuilder/PAYFormBuilder.h; sourceTree = "<group>"; };
+		6433237CC180BF179BCCC352 /* NSObject+BKAssociatedObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKAssociatedObjects.m"; path = "BlocksKit/Core/NSObject+BKAssociatedObjects.m"; sourceTree = "<group>"; };
+		6537E11BFB91A67C519D7C72 /* PAYFormHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormHeader.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormHeader.h; sourceTree = "<group>"; };
+		65EB5D4E9520CC2AE2E43675 /* extobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = extobjc.h; path = extobjc/extobjc.h; sourceTree = "<group>"; };
+		663E50C58BD3506AC3508F6B /* UIImagePickerController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+BlocksKit.h"; path = "BlocksKit/UIKit/UIImagePickerController+BlocksKit.h"; sourceTree = "<group>"; };
+		67A9848CFD0119C24BA08179 /* Pods-libextobjc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libextobjc.xcconfig"; sourceTree = "<group>"; };
+		6BEE50B99C17C1B7D45B5A72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C01CC286271EE5D7A84A12B /* NSMutableSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.m"; sourceTree = "<group>"; };
+		6C50A7D627E8509C4E3DC171 /* EXTSynthesize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSynthesize.h; path = extobjc/EXTSynthesize.h; sourceTree = "<group>"; };
+		6CDB30DFF07F136C0A4DB1A3 /* EXTSelectorChecking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSelectorChecking.h; path = extobjc/EXTSelectorChecking.h; sourceTree = "<group>"; };
+		6FD3459E66CA5F1084B65347 /* NSDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		719CED401067199FE89325BB /* Pods-PAYFormBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PAYFormBuilder-dummy.m"; sourceTree = "<group>"; };
+		72A7BCD7C4F21C1615A95961 /* PAYFormHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormHeader.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormHeader.m; sourceTree = "<group>"; };
+		73027694C34AE5C11C160817 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		73F3AB1A44F3DAD327F781D9 /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+BlocksKit.m"; path = "BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
+		760671947C96FC5BB23E2318 /* MFMailComposeViewController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MFMailComposeViewController+BlocksKit.h"; path = "BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.h"; sourceTree = "<group>"; };
+		772F0F78BEF237C3DD62A876 /* NSMutableArray+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+BlocksKit.h"; path = "BlocksKit/Core/NSMutableArray+BlocksKit.h"; sourceTree = "<group>"; };
+		7B1E8A83D11844498D5E91F5 /* UIImagePickerController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+BlocksKit.m"; path = "BlocksKit/UIKit/UIImagePickerController+BlocksKit.m"; sourceTree = "<group>"; };
+		7C19DB1ED4E83578938F6270 /* SGProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGProgressView.m; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.m"; sourceTree = "<group>"; };
+		7C95921772C3B80CAC8B8A20 /* PAYFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormField.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormField.m; sourceTree = "<group>"; };
+		7D54CEDDFD6B76EA341F8D12 /* PAYFormSwitch_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSwitch_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormSwitch_protected.h; sourceTree = "<group>"; };
+		7DC807581F3CD2D6F0661344 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = extobjc/metamacros.h; sourceTree = "<group>"; };
+		7E17EA9E1F0649F0838C1ACD /* NSError+PAYComfort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+PAYComfort.m"; path = "PAYFormBuilder/errorHandling/NSError+PAYComfort.m"; sourceTree = "<group>"; };
+		7E3F371EB502CE00635783B4 /* SZTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SZTextView.h; path = Classes/SZTextView.h; sourceTree = "<group>"; };
+		7E7D865EC5E1EB5608FF0749 /* PAYFormDefaultErrorHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormDefaultErrorHandler.m; path = PAYFormBuilder/errorHandling/PAYFormDefaultErrorHandler.m; sourceTree = "<group>"; };
+		7F7F2FE559B09D7EDE0E9417 /* NSInvocation+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+BlocksKit.h"; path = "BlocksKit/Core/NSInvocation+BlocksKit.h"; sourceTree = "<group>"; };
+		80AA66C9197A96E840C59A83 /* Pods-SGNavigationProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGNavigationProgress-dummy.m"; sourceTree = "<group>"; };
+		81510EB9A040FB3BA5938B47 /* PAYFormSingleLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSingleLineTextField.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormSingleLineTextField.h; sourceTree = "<group>"; };
+		81756E4EF8443B61F46879B4 /* PAYValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYValidation.m; path = PAYFormBuilder/utils/PAYValidation.m; sourceTree = "<group>"; };
+		8468999C1C0C52169B01FB39 /* Pods-libextobjc-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libextobjc-Private.xcconfig"; sourceTree = "<group>"; };
+		87900A942C6315C85649CADE /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+BlocksKit.m"; path = "BlocksKit/UIKit/UIControl+BlocksKit.m"; sourceTree = "<group>"; };
+		889850F82B7A5A8EABF0A5C6 /* UIView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BlocksKit.m"; path = "BlocksKit/UIKit/UIView+BlocksKit.m"; sourceTree = "<group>"; };
+		8A2476A7014E3153CE03B626 /* UIView+PAYKeyboardHandling_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+PAYKeyboardHandling_protected.h"; path = "PAYFormBuilder/view/categories/UIView+PAYKeyboardHandling_protected.h"; sourceTree = "<group>"; };
+		8A2638F0D48BD2B58022FB29 /* libPods-SGNavigationProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGNavigationProgress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD64475458CA9A9955B5612 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		8D3E0888E6B677447B5E041A /* A2BlockInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2BlockInvocation.h; path = BlocksKit/DynamicDelegate/A2BlockInvocation.h; sourceTree = "<group>"; };
+		903AC5EAA13D1D12649BD6DD /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTConcreteProtocol.m; path = extobjc/EXTConcreteProtocol.m; sourceTree = "<group>"; };
+		9052672FEB576F5659F544BB /* MFMessageComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMessageComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
+		9279E5EB726443D0D1ADC2DC /* PAYFormSectionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormSectionBuilder.m; path = PAYFormBuilder/controller/builder/PAYFormSectionBuilder.m; sourceTree = "<group>"; };
+		96F729C414D3F728E024C29A /* NSObject+A2DynamicDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+A2DynamicDelegate.h"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.h"; sourceTree = "<group>"; };
+		979D354ED02B1C8BB59DBDC6 /* PAYFormField_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormField_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormField_protected.h; sourceTree = "<group>"; };
+		9A8711D2850044DE2D26A95D /* EXTNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTNil.m; path = extobjc/EXTNil.m; sourceTree = "<group>"; };
+		9C014EBB269A4A06F379BC39 /* Pods-BlocksKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlocksKit-dummy.m"; sourceTree = "<group>"; };
+		9FA39D1BD9AB238E9FC95A6B /* Pods-SGNavigationProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGNavigationProgress-Private.xcconfig"; sourceTree = "<group>"; };
+		9FD75F0FD9BBAA487BE7E26B /* EXTSelectorChecking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSelectorChecking.m; path = extobjc/EXTSelectorChecking.m; sourceTree = "<group>"; };
+		A329E4B43E64F88FD30001E9 /* NSObject+BKAssociatedObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKAssociatedObjects.h"; path = "BlocksKit/Core/NSObject+BKAssociatedObjects.h"; sourceTree = "<group>"; };
+		A3653E0E0DB8D776126E7B04 /* PAYFormTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormTable.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormTable.m; sourceTree = "<group>"; };
+		A5760E6C200CEBD77E6847CC /* libPods-BlocksKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlocksKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8BE3814822572B7686F43D1 /* MFMailComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMailComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
+		A8D4689CE1C84A5C5A04F29B /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+BlocksKit.h"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
+		ABBF2840535F0AD1CA217C32 /* NSMutableDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSMutableDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		ABC2A9F50131F69C914E211A /* PAYStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYStyle.h; path = PAYFormBuilder/utils/theming/PAYStyle.h; sourceTree = "<group>"; };
+		AE9F0B14647AFF75A0966022 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = extobjc/EXTScope.h; sourceTree = "<group>"; };
+		AEE5717D17AA9B0727D3B4A5 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF2CA594C49B26D794A329F8 /* UITextField+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+BlocksKit.m"; path = "BlocksKit/UIKit/UITextField+BlocksKit.m"; sourceTree = "<group>"; };
+		B1410F66DAAEF5D7DAC1A0A9 /* PAYFormMultiLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormMultiLineTextField.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormMultiLineTextField.h; sourceTree = "<group>"; };
+		B35B2A20C1B1E39C07E8AB34 /* NSError+PAYComfort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+PAYComfort.h"; path = "PAYFormBuilder/errorHandling/NSError+PAYComfort.h"; sourceTree = "<group>"; };
+		B3AEBBBB9D77D0BFFBE006DD /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+BlocksKit.h"; path = "BlocksKit/Core/NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		B48756FC8B54BDF04C8C9493 /* UINavigationController+SGProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+SGProgress.m"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.m"; sourceTree = "<group>"; };
+		B5CF6D621E1C286D2E0046F1 /* UIColor+PAYHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PAYHex.m"; path = "PAYFormBuilder/utils/UIColor+PAYHex.m"; sourceTree = "<group>"; };
+		B6790370E51991EBC5CA49D8 /* A2DynamicDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2DynamicDelegate.h; path = BlocksKit/DynamicDelegate/A2DynamicDelegate.h; sourceTree = "<group>"; };
+		B730CB06E5728FDE1C9A93A7 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		B8642F97B2E9780F1E00924F /* EXTADT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTADT.h; path = extobjc/EXTADT.h; sourceTree = "<group>"; };
+		B92F0CB952AD80131A76DF85 /* NSObject+BKBlockExecution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockExecution.m"; path = "BlocksKit/Core/NSObject+BKBlockExecution.m"; sourceTree = "<group>"; };
+		BA067C595E5BF02777AAB8E4 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
+		BAF0D0C71A22107120317A5D /* NSOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BC7E0736448A0D1AE55501CE /* PAYFormSingleLineTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormSingleLineTextField.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormSingleLineTextField.m; sourceTree = "<group>"; };
+		BD40E555A016E5DF7FB4055B /* UIView+PAYKeyboardHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+PAYKeyboardHandling.m"; path = "PAYFormBuilder/view/categories/UIView+PAYKeyboardHandling.m"; sourceTree = "<group>"; };
+		BEE19E9DF3FDB0C37FAF4E4D /* PAYErrorCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYErrorCodes.h; path = PAYFormBuilder/errorHandling/PAYErrorCodes.h; sourceTree = "<group>"; };
+		C13783B847F7688EDBE44B68 /* Pods-SZTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZTextView-prefix.pch"; sourceTree = "<group>"; };
+		C2B7FB4191824D52EAF07686 /* NSIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		C2FA6158877F1BB257FD62A9 /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		C3B95B22A20B1838F571DD46 /* NSObject+A2BlockDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+A2BlockDelegate.h"; path = "BlocksKit/DynamicDelegate/NSObject+A2BlockDelegate.h"; sourceTree = "<group>"; };
+		C4CAEF710B298857FCDBE1D4 /* NSObject+BKBlockExecution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKBlockExecution.h"; path = "BlocksKit/Core/NSObject+BKBlockExecution.h"; sourceTree = "<group>"; };
+		C73573409A8D6786CF4C85DD /* PAYFormTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormTableViewController.m; path = PAYFormBuilder/controller/PAYFormTableViewController.m; sourceTree = "<group>"; };
+		C9B038E40071FFBD719D2A57 /* Pods-libextobjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-libextobjc-dummy.m"; sourceTree = "<group>"; };
+		C9C987BE8E7D42D6675C69A7 /* Pods-SGNavigationProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGNavigationProgress-prefix.pch"; sourceTree = "<group>"; };
+		C9FD1425EC3A12A43DF83722 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		CD0578C0B899BF79F17D9BB0 /* PAYValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYValidation.h; path = PAYFormBuilder/utils/PAYValidation.h; sourceTree = "<group>"; };
+		CE1FA2F33B34794DC2894C17 /* libPods-PAYFormBuilder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PAYFormBuilder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE217E4AFD19D7555CCDEFD3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		CE6A808EB9D069C10D73223A /* PAYValidatableFormCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYValidatableFormCell.h; path = PAYFormBuilder/controller/ViewHolder/PAYValidatableFormCell.h; sourceTree = "<group>"; };
+		CF4E1177BF37867332E53C87 /* PAYFormMultiLineTextField_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormMultiLineTextField_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormMultiLineTextField_protected.h; sourceTree = "<group>"; };
+		CF65505B3D3C18417C69D742 /* EXTNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTNil.h; path = extobjc/EXTNil.h; sourceTree = "<group>"; };
+		D1387562B90CE86C7C5ED379 /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTConcreteProtocol.h; path = extobjc/EXTConcreteProtocol.h; sourceTree = "<group>"; };
+		D1DB6D5655AD75C8E34C1D1B /* PAYFormSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSwitch.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormSwitch.h; sourceTree = "<group>"; };
+		D21853A519B543F53055F8E0 /* PAYFormSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormSection.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormSection.m; sourceTree = "<group>"; };
+		D3689962EF8816BFE7C214AE /* PAYFormButtonGroupBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormButtonGroupBuilder.m; path = PAYFormBuilder/controller/builder/PAYFormButtonGroupBuilder.m; sourceTree = "<group>"; };
+		D3C3B7337E11A1EAF79E1793 /* UIControl+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+BlocksKit.h"; path = "BlocksKit/UIKit/UIControl+BlocksKit.h"; sourceTree = "<group>"; };
+		D61D9AE79A3BBCCCFFD1D4D9 /* PAYFormHeader_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormHeader_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormHeader_protected.h; sourceTree = "<group>"; };
+		D62C0E386866DD0B0938F32E /* EXTSafeCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSafeCategory.h; path = extobjc/EXTSafeCategory.h; sourceTree = "<group>"; };
+		D687E0F4ACAD9346FE98CFFE /* PAYFormButtonGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormButtonGroup.m; path = PAYFormBuilder/controller/ViewHolder/PAYFormButtonGroup.m; sourceTree = "<group>"; };
+		D6A7C3AF2D898D0696691509 /* Pods-BlocksKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocksKit.xcconfig"; sourceTree = "<group>"; };
+		D822302C9FED939055076B28 /* NSDictionary+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BlocksKit.m"; path = "BlocksKit/Core/NSDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		D84BF74A0F04357BFE75FF9F /* PAYFormTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYFormTableView.m; path = PAYFormBuilder/view/PAYFormTableView.m; sourceTree = "<group>"; };
+		D9C2A410ABA0135A61CE7BC7 /* PAYMessageInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYMessageInterceptor.m; path = PAYFormBuilder/utils/PAYMessageInterceptor.m; sourceTree = "<group>"; };
+		DAEE46D4EC34858AF27CB91F /* UINavigationController+SGProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+SGProgress.h"; path = "SGNavigationProgress/UINavigationController+SGProgress/UINavigationController+SGProgress.h"; sourceTree = "<group>"; };
+		DC550112D9C68CD5E9554E20 /* PAYTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYTheme.h; path = PAYFormBuilder/utils/theming/PAYTheme.h; sourceTree = "<group>"; };
+		DCB223339D2F2A184ECBC9AF /* NSOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+BlocksKit.m"; path = "BlocksKit/Core/NSOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		DE15041810BD5682C4920225 /* PAYFormButtonGroup_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButtonGroup_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormButtonGroup_protected.h; sourceTree = "<group>"; };
+		DEEA9D58463355E7500132E5 /* A2BlockInvocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A2BlockInvocation.m; path = BlocksKit/DynamicDelegate/A2BlockInvocation.m; sourceTree = "<group>"; };
+		E0434264E6A528198745159C /* PAYFormTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTableView.h; path = PAYFormBuilder/view/PAYFormTableView.h; sourceTree = "<group>"; };
+		E1861C23AF8F644BE68A728F /* MFMessageComposeViewController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MFMessageComposeViewController+BlocksKit.h"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.h"; sourceTree = "<group>"; };
+		E2403A5380611BC54E94A927 /* PAYFormSingleLineTextField_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormSingleLineTextField_protected.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormSingleLineTextField_protected.h; sourceTree = "<group>"; };
+		E33AD3B8815FBA9CF4FC0C41 /* BKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKMacros.h; path = BlocksKit/Core/BKMacros.h; sourceTree = "<group>"; };
+		E39A039C76B786F800A4E575 /* PAYFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTextField.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormTextField.h; sourceTree = "<group>"; };
+		E652C53A974AB30A1307EACD /* PAYFormButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButton.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormButton.h; sourceTree = "<group>"; };
+		E764BBA184CCCF546E133E7A /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB0392CCF9088D1B2993890F /* libPods-libextobjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libextobjc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD46ADE90389F65B66B4403 /* PAYFormRow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormRow.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormRow.h; sourceTree = "<group>"; };
+		F09DBEC6EB5CCD0AE83392B2 /* Pods-BlocksKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlocksKit-prefix.pch"; sourceTree = "<group>"; };
+		F0DBC6A305F0001C6EA6BF59 /* PAYHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYHeaderView.h; path = PAYFormBuilder/view/PAYHeaderView.h; sourceTree = "<group>"; };
+		F10313A840988F929146661F /* NSMutableArray+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+BlocksKit.m"; path = "BlocksKit/Core/NSMutableArray+BlocksKit.m"; sourceTree = "<group>"; };
+		F1550882CC0166A0C74FA587 /* PAYFormErrorMessage_protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormErrorMessage_protected.h; path = PAYFormBuilder/errorHandling/PAYFormErrorMessage_protected.h; sourceTree = "<group>"; };
+		F1BDD451608793D08684DD66 /* PAYFormButtonGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormButtonGroup.h; path = PAYFormBuilder/controller/ViewHolder/PAYFormButtonGroup.h; sourceTree = "<group>"; };
+		F37A3316CA3FFF101AB2D964 /* BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlocksKit.h; path = BlocksKit/BlocksKit.h; sourceTree = "<group>"; };
+		F420B5173804D3171FE8F696 /* SGProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGProgressView.h; path = "SGNavigationProgress/UINavigationController+SGProgress/SGProgressView.h"; sourceTree = "<group>"; };
+		F6A756C2EE969C7B820368D1 /* A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A2DynamicDelegate.m; path = BlocksKit/DynamicDelegate/A2DynamicDelegate.m; sourceTree = "<group>"; };
+		F6F743A1DAB15A715D0A4878 /* Pods-SZTextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTextView.xcconfig"; sourceTree = "<group>"; };
+		F70D8B259A6FCF8D94B1ABB3 /* UIActionSheet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+BlocksKit.h"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.h"; sourceTree = "<group>"; };
+		F72A2AE1E6A03FD94CF43389 /* NSSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+BlocksKit.m"; path = "BlocksKit/Core/NSSet+BlocksKit.m"; sourceTree = "<group>"; };
+		F830C99E0061351438A465FB /* Pods-PAYFormBuilder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PAYFormBuilder.xcconfig"; sourceTree = "<group>"; };
+		FA17CBB9850D49420CF3D106 /* UIView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+BlocksKit.h"; path = "BlocksKit/UIKit/UIView+BlocksKit.h"; sourceTree = "<group>"; };
+		FA742734A936513BB5EA5922 /* PAYFormTableBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PAYFormTableBuilder.h; path = PAYFormBuilder/controller/builder/PAYFormTableBuilder.h; sourceTree = "<group>"; };
+		FAF67D7507556EF77D2EBA35 /* Pods-SZTextView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTextView-Private.xcconfig"; sourceTree = "<group>"; };
+		FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB9A5EF25095965CDC6AEDD8 /* NSMutableDictionary+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+BlocksKit.m"; path = "BlocksKit/Core/NSMutableDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		FC13405A5E00D2A67D8A5DDD /* PAYStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PAYStyle.m; path = PAYFormBuilder/utils/theming/PAYStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CBEB21DC3D56B5ADA504B14 /* Frameworks */ = {
+		476B5E5C4A014FD8C7A2226C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4770AD57E9026441D5DE7F /* Foundation.framework in Frameworks */,
+				BE77A0AF552A7A9A188E8701 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69160BBED2CD1C39ED4ECBA9 /* Frameworks */ = {
+		713E583F34A59E8CE6C1A096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD661417046270131F8C55E /* Foundation.framework in Frameworks */,
+				7018C27DCB2ABF6027156A50 /* Foundation.framework in Frameworks */,
+				69CA23188688256029FF437B /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D09778C720B8B566691BD74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF21BA053E524B02C7E25866 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F58C97163CA23EFB7A7043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FDB8C996FA4AC1E92F6E721 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3D4927EFDDE0DFFC2948B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DE4972ABBA9E0CB70E6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F825E9B466FD9FE4FF54E20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B46E697489ED2914BAE47F4 /* Foundation.framework in Frameworks */,
+				24E8AE5E5BEB9B7AE8611F61 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		288811ABEEA4CD013C80E266 /* Frameworks */ = {
+		0CB9DBA802856E88579EAC95 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				69BFEC9C7A37F832848E557D /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4C926B23209C3528FCA47CE1 /* SGNavigationProgress */ = {
-			isa = PBXGroup;
-			children = (
-				8EF1A5D17D4A4AC4DEA486E3 /* SGProgressView.h */,
-				95DCFDC1BC88021BFFE72965 /* SGProgressView.m */,
-				4F28B73114E6DD435DE1BF62 /* UINavigationController+SGProgress.h */,
-				F1F195F8DF83CBBBEDE78777 /* UINavigationController+SGProgress.m */,
-				A387F92029A6510E7F9CD5A5 /* Support Files */,
-			);
-			path = SGNavigationProgress;
-			sourceTree = "<group>";
-		};
-		61ACFEC7EBCADD681824936F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCF2197A0351F060A1B74123 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		69BFEC9C7A37F832848E557D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DBF42A90CF585BEE80EA2408 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		9D38FF9342B72FB9D7DA4BA2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA207C2E994501AFAF88966E /* libPods.a */,
-				73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A387F92029A6510E7F9CD5A5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				003720C8E14D03EB28DE7E7B /* Pods-SGNavigationProgress.xcconfig */,
-				C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */,
-				13CFF8645DEA859E1DCCC8F1 /* Pods-SGNavigationProgress-dummy.m */,
-				BB0B46150BB3D9452EA579C5 /* Pods-SGNavigationProgress-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-SGNavigationProgress";
-			sourceTree = "<group>";
-		};
-		CCF2197A0351F060A1B74123 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2D3CB2B4A720AB85F1E2E8F7 /* Pods-acknowledgements.markdown */,
-				E8EB344A38BA46674C2F7F21 /* Pods-acknowledgements.plist */,
-				82DCF33F8C1E9AAB11D70FB6 /* Pods-dummy.m */,
-				813119D0528642B01D3FFA9F /* Pods-environment.h */,
-				3FA02F8ECE0AE1BF127AFD55 /* Pods-resources.sh */,
-				BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */,
-				1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */,
+				E764BBA184CCCF546E133E7A /* Pods-acknowledgements.markdown */,
+				AEE5717D17AA9B0727D3B4A5 /* Pods-acknowledgements.plist */,
+				CE217E4AFD19D7555CCDEFD3 /* Pods-dummy.m */,
+				C9FD1425EC3A12A43DF83722 /* Pods-environment.h */,
+				73027694C34AE5C11C160817 /* Pods-resources.sh */,
+				13198B9D0903E493E4ABAF18 /* Pods.debug.xcconfig */,
+				8AD64475458CA9A9955B5612 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		E588D1562691526B8670804E = {
+		17AC9A762ACBE08B559B4E21 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				448E9ACB4A2BA96286D03BDE /* Podfile */,
-				288811ABEEA4CD013C80E266 /* Frameworks */,
-				F6A7133592859EF27FC7A48F /* Pods */,
-				9D38FF9342B72FB9D7DA4BA2 /* Products */,
-				61ACFEC7EBCADD681824936F /* Targets Support Files */,
+				2566686F7EBB13535084BC4B /* Pods-SGNavigationProgress.xcconfig */,
+				9FA39D1BD9AB238E9FC95A6B /* Pods-SGNavigationProgress-Private.xcconfig */,
+				80AA66C9197A96E840C59A83 /* Pods-SGNavigationProgress-dummy.m */,
+				C9C987BE8E7D42D6675C69A7 /* Pods-SGNavigationProgress-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SGNavigationProgress";
+			sourceTree = "<group>";
+		};
+		188D88BFF3FCE10E5CDCC85D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB5F5316ED3D3193DDD0AD03 /* Foundation.framework */,
+				34D83F6CDF23E5C086337874 /* MessageUI.framework */,
+				22DB1C94C5BB5EC9D420EFD9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1ADB264E0A0DEC037B368CD8 /* EXTSafeCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D62C0E386866DD0B0938F32E /* EXTSafeCategory.h */,
+				1D0ABE890FC4E784FD95FD06 /* EXTSafeCategory.m */,
+			);
+			name = EXTSafeCategory;
+			sourceTree = "<group>";
+		};
+		3AAEC808AF13CC0C59530E89 /* NSMethodSignature+EXT */ = {
+			isa = PBXGroup;
+			children = (
+				5CA88B37D4B34AEEF9B13207 /* NSMethodSignature+EXT.h */,
+				BA067C595E5BF02777AAB8E4 /* NSMethodSignature+EXT.m */,
+			);
+			name = "NSMethodSignature+EXT";
+			sourceTree = "<group>";
+		};
+		3B6232BD8994B1C268C7268C /* UmbrellaHeader */ = {
+			isa = PBXGroup;
+			children = (
+				65EB5D4E9520CC2AE2E43675 /* extobjc.h */,
+			);
+			name = UmbrellaHeader;
+			sourceTree = "<group>";
+		};
+		3F151DE5350A8E0C0488AA0F /* EXTSynthesize */ = {
+			isa = PBXGroup;
+			children = (
+				6C50A7D627E8509C4E3DC171 /* EXTSynthesize.h */,
+			);
+			name = EXTSynthesize;
+			sourceTree = "<group>";
+		};
+		42523368E9438B14C8DE9CFE /* EXTADT */ = {
+			isa = PBXGroup;
+			children = (
+				B8642F97B2E9780F1E00924F /* EXTADT.h */,
+				3D75D233801300ED182FFBC4 /* EXTADT.m */,
+			);
+			name = EXTADT;
+			sourceTree = "<group>";
+		};
+		5299533146DC5C09FB64131B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F743A1DAB15A715D0A4878 /* Pods-SZTextView.xcconfig */,
+				FAF67D7507556EF77D2EBA35 /* Pods-SZTextView-Private.xcconfig */,
+				5ACA2BB1B469B89AC98A8B24 /* Pods-SZTextView-dummy.m */,
+				C13783B847F7688EDBE44B68 /* Pods-SZTextView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SZTextView";
+			sourceTree = "<group>";
+		};
+		5A6CE59C5524D459F18AA338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72EDB492F867CA820668C6C6 /* BlocksKit */,
+				BCBEC3E4355A7569FEA5FDA9 /* PAYFormBuilder */,
+				EEE515D7CA3D4D5D985525F0 /* SGNavigationProgress */,
+				6BD9DC371868504CA505BCF4 /* SZTextView */,
+				81839D311A5EB17F814DA0A5 /* libextobjc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E07B9537B7D5825AE0D6E0E /* EXTConcreteProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				D1387562B90CE86C7C5ED379 /* EXTConcreteProtocol.h */,
+				903AC5EAA13D1D12649BD6DD /* EXTConcreteProtocol.m */,
+			);
+			name = EXTConcreteProtocol;
+			sourceTree = "<group>";
+		};
+		6BD9DC371868504CA505BCF4 /* SZTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F371EB502CE00635783B4 /* SZTextView.h */,
+				1BC16971A3B6E96C3A7CF411 /* SZTextView.m */,
+				5299533146DC5C09FB64131B /* Support Files */,
+			);
+			path = SZTextView;
+			sourceTree = "<group>";
+		};
+		72EDB492F867CA820668C6C6 /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC09E4234BC4B02E7650E2D5 /* Core */,
+				7E54A082726C708462FA3617 /* DynamicDelegate */,
+				91521A350DFC9A6967EA5D79 /* MessageUI */,
+				B77AC22EBD80288E19086FAD /* Support Files */,
+				ECD6A7FA13D703944A7496CD /* UIKit */,
+			);
+			path = BlocksKit;
+			sourceTree = "<group>";
+		};
+		73629AA2FEC32B8A74D62FC5 = {
+			isa = PBXGroup;
+			children = (
+				2A83B3070D4BB0B859B19634 /* Podfile */,
+				CB900C9CC896C0172B40875C /* Frameworks */,
+				5A6CE59C5524D459F18AA338 /* Pods */,
+				79D153C1C849833181DDEFF0 /* Products */,
+				9D2966CDF58D6A0C2EE42623 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6A7133592859EF27FC7A48F /* Pods */ = {
+		79D153C1C849833181DDEFF0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C926B23209C3528FCA47CE1 /* SGNavigationProgress */,
+				6BEE50B99C17C1B7D45B5A72 /* libPods.a */,
+				A5760E6C200CEBD77E6847CC /* libPods-BlocksKit.a */,
+				CE1FA2F33B34794DC2894C17 /* libPods-PAYFormBuilder.a */,
+				8A2638F0D48BD2B58022FB29 /* libPods-SGNavigationProgress.a */,
+				2AF5F1D079FBCD490DF68D61 /* libPods-SZTextView.a */,
+				EB0392CCF9088D1B2993890F /* libPods-libextobjc.a */,
 			);
-			name = Pods;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C75111BBEDA2D0CF59CFA0C /* EXTNil */ = {
+			isa = PBXGroup;
+			children = (
+				CF65505B3D3C18417C69D742 /* EXTNil.h */,
+				9A8711D2850044DE2D26A95D /* EXTNil.m */,
+			);
+			name = EXTNil;
+			sourceTree = "<group>";
+		};
+		7E54A082726C708462FA3617 /* DynamicDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E0888E6B677447B5E041A /* A2BlockInvocation.h */,
+				DEEA9D58463355E7500132E5 /* A2BlockInvocation.m */,
+				B6790370E51991EBC5CA49D8 /* A2DynamicDelegate.h */,
+				F6A756C2EE969C7B820368D1 /* A2DynamicDelegate.m */,
+				0151253D8C876D23DF4AC72E /* NSCache+BlocksKit.h */,
+				3EF5CF68E5A1A0C88F4CF5CA /* NSCache+BlocksKit.m */,
+				C3B95B22A20B1838F571DD46 /* NSObject+A2BlockDelegate.h */,
+				283801A3BE7BED8C4E7A176A /* NSObject+A2BlockDelegate.m */,
+				96F729C414D3F728E024C29A /* NSObject+A2DynamicDelegate.h */,
+				417958B041ACA98DE6C8D7DD /* NSObject+A2DynamicDelegate.m */,
+				1823658D878F288CA495AA18 /* NSURLConnection+BlocksKit.h */,
+				067DCE195FE5561FB60D4F0D /* NSURLConnection+BlocksKit.m */,
+			);
+			name = DynamicDelegate;
+			sourceTree = "<group>";
+		};
+		80AAF60F402E0D7973451913 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				AE9F0B14647AFF75A0966022 /* EXTScope.h */,
+				220FF085489D6B12963E0E95 /* EXTScope.m */,
+			);
+			name = EXTScope;
+			sourceTree = "<group>";
+		};
+		81839D311A5EB17F814DA0A5 /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				42523368E9438B14C8DE9CFE /* EXTADT */,
+				5E07B9537B7D5825AE0D6E0E /* EXTConcreteProtocol */,
+				831F0FF10F2B51E071F648FC /* EXTKeyPathCoding */,
+				7C75111BBEDA2D0CF59CFA0C /* EXTNil */,
+				1ADB264E0A0DEC037B368CD8 /* EXTSafeCategory */,
+				80AAF60F402E0D7973451913 /* EXTScope */,
+				EA619E51722A0FEC732FBB21 /* EXTSelectorChecking */,
+				3F151DE5350A8E0C0488AA0F /* EXTSynthesize */,
+				B967C437EA64BE89B7896E47 /* NSInvocation+EXT */,
+				3AAEC808AF13CC0C59530E89 /* NSMethodSignature+EXT */,
+				F72E770CB00E029BC5D09636 /* RuntimeExtensions */,
+				A03CCECF4730695F4A610688 /* Support Files */,
+				3B6232BD8994B1C268C7268C /* UmbrellaHeader */,
+			);
+			path = libextobjc;
+			sourceTree = "<group>";
+		};
+		831F0FF10F2B51E071F648FC /* EXTKeyPathCoding */ = {
+			isa = PBXGroup;
+			children = (
+				B730CB06E5728FDE1C9A93A7 /* EXTKeyPathCoding.h */,
+			);
+			name = EXTKeyPathCoding;
+			sourceTree = "<group>";
+		};
+		91521A350DFC9A6967EA5D79 /* MessageUI */ = {
+			isa = PBXGroup;
+			children = (
+				511E1056ACEE76376820D648 /* BlocksKit+MessageUI.h */,
+				760671947C96FC5BB23E2318 /* MFMailComposeViewController+BlocksKit.h */,
+				A8BE3814822572B7686F43D1 /* MFMailComposeViewController+BlocksKit.m */,
+				E1861C23AF8F644BE68A728F /* MFMessageComposeViewController+BlocksKit.h */,
+				9052672FEB576F5659F544BB /* MFMessageComposeViewController+BlocksKit.m */,
+			);
+			name = MessageUI;
+			sourceTree = "<group>";
+		};
+		9D2966CDF58D6A0C2EE42623 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CB9DBA802856E88579EAC95 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A03CCECF4730695F4A610688 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67A9848CFD0119C24BA08179 /* Pods-libextobjc.xcconfig */,
+				8468999C1C0C52169B01FB39 /* Pods-libextobjc-Private.xcconfig */,
+				C9B038E40071FFBD719D2A57 /* Pods-libextobjc-dummy.m */,
+				2710DF8BB712AE424E504A8E /* Pods-libextobjc-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-libextobjc";
+			sourceTree = "<group>";
+		};
+		B77AC22EBD80288E19086FAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6A7C3AF2D898D0696691509 /* Pods-BlocksKit.xcconfig */,
+				39EA96E8495D98BDBBEFB7F9 /* Pods-BlocksKit-Private.xcconfig */,
+				9C014EBB269A4A06F379BC39 /* Pods-BlocksKit-dummy.m */,
+				F09DBEC6EB5CCD0AE83392B2 /* Pods-BlocksKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-BlocksKit";
+			sourceTree = "<group>";
+		};
+		B967C437EA64BE89B7896E47 /* NSInvocation+EXT */ = {
+			isa = PBXGroup;
+			children = (
+				29466590A44143E97D4DA902 /* NSInvocation+EXT.h */,
+				4C904A8C7435933D99CAAE03 /* NSInvocation+EXT.m */,
+			);
+			name = "NSInvocation+EXT";
+			sourceTree = "<group>";
+		};
+		BCBEC3E4355A7569FEA5FDA9 /* PAYFormBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B35B2A20C1B1E39C07E8AB34 /* NSError+PAYComfort.h */,
+				7E17EA9E1F0649F0838C1ACD /* NSError+PAYComfort.m */,
+				21533A3460B4BB0DF013B655 /* PAYDefaultTheme.h */,
+				4D1799BF5BDAD3F55E857DC6 /* PAYDefaultTheme.m */,
+				BEE19E9DF3FDB0C37FAF4E4D /* PAYErrorCodes.h */,
+				01C56E0258070ECC88F36F7F /* PAYErrorCodes.m */,
+				63B9037E509AD741D4F3802A /* PAYFormBuilder.h */,
+				E652C53A974AB30A1307EACD /* PAYFormButton.h */,
+				4B7771F8A1B6FBF56F04B49F /* PAYFormButton.m */,
+				F1BDD451608793D08684DD66 /* PAYFormButtonGroup.h */,
+				D687E0F4ACAD9346FE98CFFE /* PAYFormButtonGroup.m */,
+				4FD8257F62E09122D1D7D903 /* PAYFormButtonGroupBuilder.h */,
+				D3689962EF8816BFE7C214AE /* PAYFormButtonGroupBuilder.m */,
+				2D7611CA0331396273DD77D2 /* PAYFormButtonGroupBuilder_protected.h */,
+				DE15041810BD5682C4920225 /* PAYFormButtonGroup_protected.h */,
+				0256C6D967F8A09D3CA986AC /* PAYFormButton_protected.h */,
+				41268BBF899D1CE2C10DF40F /* PAYFormDefaultErrorHandler.h */,
+				7E7D865EC5E1EB5608FF0749 /* PAYFormDefaultErrorHandler.m */,
+				21F55F54104C43804626AB5E /* PAYFormDefaultErrorHandler_protected.h */,
+				502E88461B8FED89756EAA6E /* PAYFormErrorMessage.h */,
+				26DB08B8110E9F51FECF0F62 /* PAYFormErrorMessage.m */,
+				F1550882CC0166A0C74FA587 /* PAYFormErrorMessage_protected.h */,
+				1916CDBB79C86FF2B80AFE5D /* PAYFormField.h */,
+				7C95921772C3B80CAC8B8A20 /* PAYFormField.m */,
+				979D354ED02B1C8BB59DBDC6 /* PAYFormField_protected.h */,
+				6537E11BFB91A67C519D7C72 /* PAYFormHeader.h */,
+				72A7BCD7C4F21C1615A95961 /* PAYFormHeader.m */,
+				D61D9AE79A3BBCCCFFD1D4D9 /* PAYFormHeader_protected.h */,
+				B1410F66DAAEF5D7DAC1A0A9 /* PAYFormMultiLineTextField.h */,
+				4978AA0CF506715FAAB0B8F3 /* PAYFormMultiLineTextField.m */,
+				CF4E1177BF37867332E53C87 /* PAYFormMultiLineTextField_protected.h */,
+				ECD46ADE90389F65B66B4403 /* PAYFormRow.h */,
+				55DEBFCB304FD54CF0805F44 /* PAYFormSection.h */,
+				D21853A519B543F53055F8E0 /* PAYFormSection.m */,
+				37AD3B7B9C28A3799D8FCE13 /* PAYFormSectionBuilder.h */,
+				9279E5EB726443D0D1ADC2DC /* PAYFormSectionBuilder.m */,
+				244B236F444F032EC40D0315 /* PAYFormSectionBuilder_protected.h */,
+				81510EB9A040FB3BA5938B47 /* PAYFormSingleLineTextField.h */,
+				BC7E0736448A0D1AE55501CE /* PAYFormSingleLineTextField.m */,
+				E2403A5380611BC54E94A927 /* PAYFormSingleLineTextField_protected.h */,
+				D1DB6D5655AD75C8E34C1D1B /* PAYFormSwitch.h */,
+				46A8288D792F5A8B2DF53654 /* PAYFormSwitch.m */,
+				7D54CEDDFD6B76EA341F8D12 /* PAYFormSwitch_protected.h */,
+				3786220225395CC11791246E /* PAYFormTable.h */,
+				A3653E0E0DB8D776126E7B04 /* PAYFormTable.m */,
+				FA742734A936513BB5EA5922 /* PAYFormTableBuilder.h */,
+				60B45DB9A6B5F810AF7BDDED /* PAYFormTableBuilder.m */,
+				08CADA6CF9641A8763EC74C2 /* PAYFormTableBuilder_protected.h */,
+				E0434264E6A528198745159C /* PAYFormTableView.h */,
+				D84BF74A0F04357BFE75FF9F /* PAYFormTableView.m */,
+				14AF4E1FDD6BC32EA82C66C0 /* PAYFormTableViewController.h */,
+				C73573409A8D6786CF4C85DD /* PAYFormTableViewController.m */,
+				E39A039C76B786F800A4E575 /* PAYFormTextField.h */,
+				085E518D44A71EF2933B34BC /* PAYFormTextField.m */,
+				4F38CFB16FA39692603147C8 /* PAYFormView.h */,
+				378B8C9C8AE67720D3DE6237 /* PAYFormView.m */,
+				4A609A9118507C55766AE86E /* PAYFormView+PAYFormDefaultErrorHandler.h */,
+				0EBA5D671DC90B150FD38FBA /* PAYFormView+PAYFormDefaultErrorHandler.m */,
+				4B122CB2BFBEC3EA01D059D1 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.h */,
+				5D30DD1C6F3A9355015CDB25 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.m */,
+				0B851B755C0242E5654516B6 /* PAYFormView_protected.h */,
+				F0DBC6A305F0001C6EA6BF59 /* PAYHeaderView.h */,
+				1D5A3765EF43227EE61FD648 /* PAYHeaderView.m */,
+				D9C2A410ABA0135A61CE7BC7 /* PAYMessageInterceptor.m */,
+				2A1407711646FD9D61EC54F6 /* PAYMessageInterceptor_protected.h */,
+				38549E073372D9EC6F6B67ED /* PAYNotifications.h */,
+				3832F68AC57A819734ED21A4 /* PAYNotifications.m */,
+				ABC2A9F50131F69C914E211A /* PAYStyle.h */,
+				FC13405A5E00D2A67D8A5DDD /* PAYStyle.m */,
+				410A59174EBED877CB50C06E /* PAYTextLabel.h */,
+				1C57AD942E721F872ADA7193 /* PAYTextLabel.m */,
+				DC550112D9C68CD5E9554E20 /* PAYTheme.h */,
+				CE6A808EB9D069C10D73223A /* PAYValidatableFormCell.h */,
+				CD0578C0B899BF79F17D9BB0 /* PAYValidation.h */,
+				81756E4EF8443B61F46879B4 /* PAYValidation.m */,
+				28D736BC9A59E0101EBF076E /* UIColor+PAYHex.h */,
+				B5CF6D621E1C286D2E0046F1 /* UIColor+PAYHex.m */,
+				BD40E555A016E5DF7FB4055B /* UIView+PAYKeyboardHandling.m */,
+				8A2476A7014E3153CE03B626 /* UIView+PAYKeyboardHandling_protected.h */,
+				F5FA8AD13BBC061F73BEC240 /* Support Files */,
+			);
+			path = PAYFormBuilder;
+			sourceTree = "<group>";
+		};
+		CB900C9CC896C0172B40875C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188D88BFF3FCE10E5CDCC85D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA619E51722A0FEC732FBB21 /* EXTSelectorChecking */ = {
+			isa = PBXGroup;
+			children = (
+				6CDB30DFF07F136C0A4DB1A3 /* EXTSelectorChecking.h */,
+				9FD75F0FD9BBAA487BE7E26B /* EXTSelectorChecking.m */,
+			);
+			name = EXTSelectorChecking;
+			sourceTree = "<group>";
+		};
+		EC09E4234BC4B02E7650E2D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E33AD3B8815FBA9CF4FC0C41 /* BKMacros.h */,
+				F37A3316CA3FFF101AB2D964 /* BlocksKit.h */,
+				3FDA8565ACA017035FA40C77 /* NSArray+BlocksKit.h */,
+				0ADD5AEB01A56722A05C8AF6 /* NSArray+BlocksKit.m */,
+				6FD3459E66CA5F1084B65347 /* NSDictionary+BlocksKit.h */,
+				D822302C9FED939055076B28 /* NSDictionary+BlocksKit.m */,
+				C2B7FB4191824D52EAF07686 /* NSIndexSet+BlocksKit.h */,
+				10488D767C1FD61A19E91C76 /* NSIndexSet+BlocksKit.m */,
+				7F7F2FE559B09D7EDE0E9417 /* NSInvocation+BlocksKit.h */,
+				2D5CC1B366241F7BD089301F /* NSInvocation+BlocksKit.m */,
+				772F0F78BEF237C3DD62A876 /* NSMutableArray+BlocksKit.h */,
+				F10313A840988F929146661F /* NSMutableArray+BlocksKit.m */,
+				ABBF2840535F0AD1CA217C32 /* NSMutableDictionary+BlocksKit.h */,
+				FB9A5EF25095965CDC6AEDD8 /* NSMutableDictionary+BlocksKit.m */,
+				2842F271AC1E958298322B53 /* NSMutableIndexSet+BlocksKit.h */,
+				401CED069954D62CDDCCEDD9 /* NSMutableIndexSet+BlocksKit.m */,
+				C2FA6158877F1BB257FD62A9 /* NSMutableOrderedSet+BlocksKit.h */,
+				4F1A2567026857DDEB345D41 /* NSMutableOrderedSet+BlocksKit.m */,
+				24B140A6316E916A62020078 /* NSMutableSet+BlocksKit.h */,
+				6C01CC286271EE5D7A84A12B /* NSMutableSet+BlocksKit.m */,
+				A329E4B43E64F88FD30001E9 /* NSObject+BKAssociatedObjects.h */,
+				6433237CC180BF179BCCC352 /* NSObject+BKAssociatedObjects.m */,
+				C4CAEF710B298857FCDBE1D4 /* NSObject+BKBlockExecution.h */,
+				B92F0CB952AD80131A76DF85 /* NSObject+BKBlockExecution.m */,
+				1030F998B50E3A6F1ED27E83 /* NSObject+BKBlockObservation.h */,
+				10B75B98A00581091811E14E /* NSObject+BKBlockObservation.m */,
+				BAF0D0C71A22107120317A5D /* NSOrderedSet+BlocksKit.h */,
+				DCB223339D2F2A184ECBC9AF /* NSOrderedSet+BlocksKit.m */,
+				3A04AD23D28E1202F989BD91 /* NSSet+BlocksKit.h */,
+				F72A2AE1E6A03FD94CF43389 /* NSSet+BlocksKit.m */,
+				B3AEBBBB9D77D0BFFBE006DD /* NSTimer+BlocksKit.h */,
+				44874BBC109BBFF2450B5C55 /* NSTimer+BlocksKit.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		ECD6A7FA13D703944A7496CD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				09D9B5C4679E51E20BAE3080 /* BlocksKit+UIKit.h */,
+				F70D8B259A6FCF8D94B1ABB3 /* UIActionSheet+BlocksKit.h */,
+				0A988B4D7A198D9C862C5D94 /* UIActionSheet+BlocksKit.m */,
+				3944FE288B0A309E8C4CB445 /* UIAlertView+BlocksKit.h */,
+				42EFA9CE59252D1DAACBA0EB /* UIAlertView+BlocksKit.m */,
+				0D7FE5A039A000FD870E480C /* UIBarButtonItem+BlocksKit.h */,
+				5A0E27D38F3ED5734C353AA7 /* UIBarButtonItem+BlocksKit.m */,
+				D3C3B7337E11A1EAF79E1793 /* UIControl+BlocksKit.h */,
+				87900A942C6315C85649CADE /* UIControl+BlocksKit.m */,
+				464373DC27A35FDF96A1D0BD /* UIGestureRecognizer+BlocksKit.h */,
+				73F3AB1A44F3DAD327F781D9 /* UIGestureRecognizer+BlocksKit.m */,
+				663E50C58BD3506AC3508F6B /* UIImagePickerController+BlocksKit.h */,
+				7B1E8A83D11844498D5E91F5 /* UIImagePickerController+BlocksKit.m */,
+				002AF8A0CC2E0A47F1A748F2 /* UIPopoverController+BlocksKit.h */,
+				1355C2E003D5156CE4FD0417 /* UIPopoverController+BlocksKit.m */,
+				26B72963222700E91E1977E2 /* UITextField+BlocksKit.h */,
+				AF2CA594C49B26D794A329F8 /* UITextField+BlocksKit.m */,
+				FA17CBB9850D49420CF3D106 /* UIView+BlocksKit.h */,
+				889850F82B7A5A8EABF0A5C6 /* UIView+BlocksKit.m */,
+				A8D4689CE1C84A5C5A04F29B /* UIWebView+BlocksKit.h */,
+				3D211F2FE10BB2E7C9E55DDA /* UIWebView+BlocksKit.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		EEE515D7CA3D4D5D985525F0 /* SGNavigationProgress */ = {
+			isa = PBXGroup;
+			children = (
+				F420B5173804D3171FE8F696 /* SGProgressView.h */,
+				7C19DB1ED4E83578938F6270 /* SGProgressView.m */,
+				DAEE46D4EC34858AF27CB91F /* UINavigationController+SGProgress.h */,
+				B48756FC8B54BDF04C8C9493 /* UINavigationController+SGProgress.m */,
+				17AC9A762ACBE08B559B4E21 /* Support Files */,
+			);
+			path = SGNavigationProgress;
+			sourceTree = "<group>";
+		};
+		F5FA8AD13BBC061F73BEC240 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F830C99E0061351438A465FB /* Pods-PAYFormBuilder.xcconfig */,
+				4FDC365E5B7A9FB4E4F1980F /* Pods-PAYFormBuilder-Private.xcconfig */,
+				719CED401067199FE89325BB /* Pods-PAYFormBuilder-dummy.m */,
+				398D1B6D4DFC17231C884D7D /* Pods-PAYFormBuilder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PAYFormBuilder";
+			sourceTree = "<group>";
+		};
+		F72E770CB00E029BC5D09636 /* RuntimeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BD1E1B9CC821334D4524B62 /* EXTRuntimeExtensions.h */,
+				042EE95267DDCF332DB4F892 /* EXTRuntimeExtensions.m */,
+				7DC807581F3CD2D6F0661344 /* metamacros.h */,
+			);
+			name = RuntimeExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0512857A8642A1BCA0EB77BE /* Headers */ = {
+		0C5FD9020E69883A2E9A6CB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF31E72AD2057E701C1E4CBA /* SGProgressView.h in Headers */,
-				8F902AE7D2E6593B5B6242CE /* UINavigationController+SGProgress.h in Headers */,
+				07AFBE26DDF485E6BE90C53D /* SGProgressView.h in Headers */,
+				AC60B3B5E7AFD7BB16D3D630 /* UINavigationController+SGProgress.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EF437046E1438AB550D0E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3176E12F7F7AD8B94DB2AEC /* NSError+PAYComfort.h in Headers */,
+				E8438E2523ED13DFEF3EDEE8 /* PAYDefaultTheme.h in Headers */,
+				13F53249795ACD6C12F73257 /* PAYErrorCodes.h in Headers */,
+				E74023F1428BD034B8286D97 /* PAYFormBuilder.h in Headers */,
+				791108FB098350CB6E203902 /* PAYFormButton.h in Headers */,
+				5B652080EF44CBBB630DDCA0 /* PAYFormButtonGroup.h in Headers */,
+				60BE0D4C5796E320A8420201 /* PAYFormButtonGroupBuilder.h in Headers */,
+				34BE8219D9F298EB02656F12 /* PAYFormButtonGroupBuilder_protected.h in Headers */,
+				D6110DA8D2B90D40596B3A01 /* PAYFormButtonGroup_protected.h in Headers */,
+				72159C6449104886D03502D1 /* PAYFormButton_protected.h in Headers */,
+				8E02CC64AA8FD708EB4C7C24 /* PAYFormDefaultErrorHandler.h in Headers */,
+				B56FACDD7F93B004438858DB /* PAYFormDefaultErrorHandler_protected.h in Headers */,
+				87F894C5CF6C4879059C1257 /* PAYFormErrorMessage.h in Headers */,
+				C6BA5F24AAD184F5DF4248A6 /* PAYFormErrorMessage_protected.h in Headers */,
+				D13DDD84B3831A1E2E48864F /* PAYFormField.h in Headers */,
+				6EC7ECD69B4760846E6BE521 /* PAYFormField_protected.h in Headers */,
+				9666D876C7D5F01B2F85E40C /* PAYFormHeader.h in Headers */,
+				0863FC89401F64D7F4E64505 /* PAYFormHeader_protected.h in Headers */,
+				0F3E9786C2489698BC4ECE60 /* PAYFormMultiLineTextField.h in Headers */,
+				A71307A9854DBA992B1C8CDA /* PAYFormMultiLineTextField_protected.h in Headers */,
+				0B98644CA2FAB05B4772F3F5 /* PAYFormRow.h in Headers */,
+				49F921C987DA9DDF77930901 /* PAYFormSection.h in Headers */,
+				69F19EDE8A4F723078693798 /* PAYFormSectionBuilder.h in Headers */,
+				3B984BB3314EFA844E7B0198 /* PAYFormSectionBuilder_protected.h in Headers */,
+				2D60F4A30791071BC5A6AE06 /* PAYFormSingleLineTextField.h in Headers */,
+				90D55D86384104195AC279D0 /* PAYFormSingleLineTextField_protected.h in Headers */,
+				9BB5DBC45BE7705AF9CB1DCD /* PAYFormSwitch.h in Headers */,
+				A8D2590C6E2E00AF3FDE2937 /* PAYFormSwitch_protected.h in Headers */,
+				8BE8381BB1612479EF679C12 /* PAYFormTable.h in Headers */,
+				543805951F90B4F3C3DC937D /* PAYFormTableBuilder.h in Headers */,
+				11D8D422A540A4B71AC6DD62 /* PAYFormTableBuilder_protected.h in Headers */,
+				3681B0E27967E2BF1E3ED9D6 /* PAYFormTableView.h in Headers */,
+				280EEBDD2111007F27F6D4FF /* PAYFormTableViewController.h in Headers */,
+				857C0396FDEA1AD9792C089F /* PAYFormTextField.h in Headers */,
+				92ECF5CFC84F0A449E3416A4 /* PAYFormView+PAYFormDefaultErrorHandler.h in Headers */,
+				A6B6CCC2F9DF53B87561C6C9 /* PAYFormView+PAYFormDefaultErrorHandlerProtected.h in Headers */,
+				7F031ECD2B8C6E1B72551C43 /* PAYFormView.h in Headers */,
+				17ACB4D7648C50BB5A9A4BEC /* PAYFormView_protected.h in Headers */,
+				568C6C9CAD8BD317819A5AB9 /* PAYHeaderView.h in Headers */,
+				31E34A83A226837CBEE0C024 /* PAYMessageInterceptor_protected.h in Headers */,
+				ED5C06FED05AB1EF002F9E5F /* PAYNotifications.h in Headers */,
+				11B5C36D2610DD440E65605A /* PAYStyle.h in Headers */,
+				579E8FEE2CCD6982F1D48366 /* PAYTextLabel.h in Headers */,
+				289BF80A871ABAEDE95EDF77 /* PAYTheme.h in Headers */,
+				B386C7C9EE4CAA20189E3249 /* PAYValidatableFormCell.h in Headers */,
+				0C8D1AA2C2EA32959C476733 /* PAYValidation.h in Headers */,
+				0E56EC73DDBAC35876E552FC /* UIColor+PAYHex.h in Headers */,
+				BD37DECC8982CA517660BAD2 /* UIView+PAYKeyboardHandling_protected.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C816FDA7CF672D26F88873FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3A55D51BCEBA5B2DE6A127 /* EXTADT.h in Headers */,
+				6F60515017F6B725541E5759 /* EXTConcreteProtocol.h in Headers */,
+				0EE968694CB97AC46AE06837 /* EXTKeyPathCoding.h in Headers */,
+				23053A2ACCB1B7F532B11DC7 /* EXTNil.h in Headers */,
+				F47595B888BC2EBAEE6BDDAE /* EXTRuntimeExtensions.h in Headers */,
+				7C78BE264D6D27A6846AE95F /* EXTSafeCategory.h in Headers */,
+				00E51CE5EF573A8221877B17 /* EXTScope.h in Headers */,
+				2C01294DD192C929CFEB3DBE /* EXTSelectorChecking.h in Headers */,
+				A4C3AE85C6E5E65772122DE5 /* EXTSynthesize.h in Headers */,
+				5794D8D057E14F9D4732DA6A /* NSInvocation+EXT.h in Headers */,
+				A0684AAD662877F9ECDAE2E7 /* NSMethodSignature+EXT.h in Headers */,
+				13467A76986241F665E3BC5B /* extobjc.h in Headers */,
+				3BDC44E2120A5A51B363EA90 /* metamacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85C598A191BCB2BC7ABD749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF220BF6C6B0C424BB99DA1 /* SZTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E9B2E71D1C0CB9843BC89A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882D926799F6B3CD47E9997C /* A2BlockInvocation.h in Headers */,
+				B7B954A611C97E974C273552 /* A2DynamicDelegate.h in Headers */,
+				BAA5D0C744141CD8FE36E63E /* BKMacros.h in Headers */,
+				5E39B54D7F8F0361E8BCB083 /* BlocksKit+MessageUI.h in Headers */,
+				BB2E200E2891A31CE3645165 /* BlocksKit+UIKit.h in Headers */,
+				808E4D50CD4C3DD6B226F24C /* BlocksKit.h in Headers */,
+				E9A3EAE4256B0A15A35528A4 /* MFMailComposeViewController+BlocksKit.h in Headers */,
+				C5B2E2E5A1F227FC111B14CD /* MFMessageComposeViewController+BlocksKit.h in Headers */,
+				DB53906BBB4D80049E2DB8BF /* NSArray+BlocksKit.h in Headers */,
+				33D2EAB81B22EF2DD934801A /* NSCache+BlocksKit.h in Headers */,
+				4AD913CA8D00B1D87ED1E9FD /* NSDictionary+BlocksKit.h in Headers */,
+				7F19A9B5AE92F19DC601E620 /* NSIndexSet+BlocksKit.h in Headers */,
+				275AC15ED9397B7C0765EB5D /* NSInvocation+BlocksKit.h in Headers */,
+				225E47F07C9D1C85DDAC0143 /* NSMutableArray+BlocksKit.h in Headers */,
+				CF5048F89416E6496092F0D6 /* NSMutableDictionary+BlocksKit.h in Headers */,
+				F75B77C19154EB3CA7162C00 /* NSMutableIndexSet+BlocksKit.h in Headers */,
+				2A9C467FC0E1E842E2094468 /* NSMutableOrderedSet+BlocksKit.h in Headers */,
+				6F12893C017E6EDA7F87AB38 /* NSMutableSet+BlocksKit.h in Headers */,
+				4697DC48AF7015081FA2459A /* NSObject+A2BlockDelegate.h in Headers */,
+				414252A9AED732D5E10B430B /* NSObject+A2DynamicDelegate.h in Headers */,
+				C039C152359C5CADD47988B9 /* NSObject+BKAssociatedObjects.h in Headers */,
+				1B9EE00B5E0852707D1A16F0 /* NSObject+BKBlockExecution.h in Headers */,
+				C96E2B4F2C38EB6A3480D9B1 /* NSObject+BKBlockObservation.h in Headers */,
+				79B2FB03108F2753A967DE7F /* NSOrderedSet+BlocksKit.h in Headers */,
+				FB6F488B0AF41E7BC34FB049 /* NSSet+BlocksKit.h in Headers */,
+				7CEE099AED6042F35238A5C7 /* NSTimer+BlocksKit.h in Headers */,
+				037A27B2F750E71B1A8C4A47 /* NSURLConnection+BlocksKit.h in Headers */,
+				6F688353C3CBBDE0D18500A3 /* UIActionSheet+BlocksKit.h in Headers */,
+				0DDD0D58F7FA351D97F21855 /* UIAlertView+BlocksKit.h in Headers */,
+				49CC3502374022ABE5E9A601 /* UIBarButtonItem+BlocksKit.h in Headers */,
+				BEE90794E040A84AA2C3BFDA /* UIControl+BlocksKit.h in Headers */,
+				271B4948C07E28974F8D744B /* UIGestureRecognizer+BlocksKit.h in Headers */,
+				BA459C09BDB6654E0D8D402C /* UIImagePickerController+BlocksKit.h in Headers */,
+				686C5F6D050B80886F9C630F /* UIPopoverController+BlocksKit.h in Headers */,
+				67CCD37A22D5C9E5A90979FB /* UITextField+BlocksKit.h in Headers */,
+				43E3D597CBF150F9E9EFA521 /* UIView+BlocksKit.h in Headers */,
+				2AF6D483AFA1496FBB0ED635 /* UIWebView+BlocksKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2824F7AE4CB2B4E7E2B0AA88 /* Pods */ = {
+		22121621B977E385AD16BCEF /* Pods-BlocksKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94537678F23E5CF86C26E991 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 89E980B303205709FD7ECF0C /* Build configuration list for PBXNativeTarget "Pods-BlocksKit" */;
 			buildPhases = (
-				F276B4A1AA62F04026B9E16F /* Sources */,
-				69160BBED2CD1C39ED4ECBA9 /* Frameworks */,
+				1D15F3837CB432D932F00920 /* Sources */,
+				713E583F34A59E8CE6C1A096 /* Frameworks */,
+				F2E9B2E71D1C0CB9843BC89A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E49649D7FDF2DC084C05468 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlocksKit";
+			productName = "Pods-BlocksKit";
+			productReference = A5760E6C200CEBD77E6847CC /* libPods-BlocksKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2DBD20E1730AC8BE48901DA0 /* Pods-libextobjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78FEEDFE9B4F97617BAD4D1E /* Build configuration list for PBXNativeTarget "Pods-libextobjc" */;
+			buildPhases = (
+				4326B37735F12C9B63834B0C /* Sources */,
+				83F58C97163CA23EFB7A7043 /* Frameworks */,
+				C816FDA7CF672D26F88873FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-libextobjc";
+			productName = "Pods-libextobjc";
+			productReference = EB0392CCF9088D1B2993890F /* libPods-libextobjc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4807FAE5A742909E1173B7A9 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508D454610C2F7991CA24C89 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				017D333C0882986069CD3453 /* Sources */,
+				84A3D4927EFDDE0DFFC2948B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1527C27792760CDF28CDAF0 /* PBXTargetDependency */,
+				3DEEABB2256CF82099E05244 /* PBXTargetDependency */,
+				40ABCB9F281BB16BE304F64B /* PBXTargetDependency */,
+				5C8D9F187BFDC67296718FFD /* PBXTargetDependency */,
+				E39AFE29BD27CB4070866DA8 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = AA207C2E994501AFAF88966E /* libPods.a */;
+			productReference = 6BEE50B99C17C1B7D45B5A72 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */ = {
+		E998FB0F9005F68FFA8F8979 /* Pods-SZTextView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95489EF88DFF55CE9388C122 /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */;
+			buildConfigurationList = 8E402B447A59EB0959A7BDF3 /* Build configuration list for PBXNativeTarget "Pods-SZTextView" */;
 			buildPhases = (
-				46157B075CCFC4048C33C22A /* Sources */,
-				0CBEB21DC3D56B5ADA504B14 /* Frameworks */,
-				0512857A8642A1BCA0EB77BE /* Headers */,
+				C215B6504F48E42BDD58791A /* Sources */,
+				476B5E5C4A014FD8C7A2226C /* Frameworks */,
+				D85C598A191BCB2BC7ABD749 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SZTextView";
+			productName = "Pods-SZTextView";
+			productReference = 2AF5F1D079FBCD490DF68D61 /* libPods-SZTextView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8BFDB54A5F7116C7C02A247 /* Pods-PAYFormBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3A441E5D8A4B1320043739 /* Build configuration list for PBXNativeTarget "Pods-PAYFormBuilder" */;
+			buildPhases = (
+				F34EE7D2E8FD9CC4085C5D04 /* Sources */,
+				F825E9B466FD9FE4FF54E20F /* Frameworks */,
+				42EF437046E1438AB550D0E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29202840EED122F7CCC5D168 /* PBXTargetDependency */,
+				0724F13ABE30C0359F24F179 /* PBXTargetDependency */,
+				9A1DB72876D96CBEB12B2A8D /* PBXTargetDependency */,
+			);
+			name = "Pods-PAYFormBuilder";
+			productName = "Pods-PAYFormBuilder";
+			productReference = CE1FA2F33B34794DC2894C17 /* libPods-PAYFormBuilder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF3873F69B111BBA5EAB2AEA /* Pods-SGNavigationProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F75DA4EB37F9EC3DC367CBD /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */;
+			buildPhases = (
+				5189D60F535C31F2DB1BADF8 /* Sources */,
+				7D09778C720B8B566691BD74 /* Frameworks */,
+				0C5FD9020E69883A2E9A6CB3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -206,72 +1260,224 @@
 			);
 			name = "Pods-SGNavigationProgress";
 			productName = "Pods-SGNavigationProgress";
-			productReference = 73CC7ACEE92AEE4637B31921 /* libPods-SGNavigationProgress.a */;
+			productReference = 8A2638F0D48BD2B58022FB29 /* libPods-SGNavigationProgress.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8B8A2A17D246984EAA99F7A3 /* Project object */ = {
+		DAD0CA2D0966D57485BB2857 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 736F7B9EA68A9408C6871996 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 686EBA83B3F6E8F90E95FCCB /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E588D1562691526B8670804E;
-			productRefGroup = 9D38FF9342B72FB9D7DA4BA2 /* Products */;
+			mainGroup = 73629AA2FEC32B8A74D62FC5;
+			productRefGroup = 79D153C1C849833181DDEFF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2824F7AE4CB2B4E7E2B0AA88 /* Pods */,
-				CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */,
+				4807FAE5A742909E1173B7A9 /* Pods */,
+				22121621B977E385AD16BCEF /* Pods-BlocksKit */,
+				F8BFDB54A5F7116C7C02A247 /* Pods-PAYFormBuilder */,
+				FF3873F69B111BBA5EAB2AEA /* Pods-SGNavigationProgress */,
+				E998FB0F9005F68FFA8F8979 /* Pods-SZTextView */,
+				2DBD20E1730AC8BE48901DA0 /* Pods-libextobjc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46157B075CCFC4048C33C22A /* Sources */ = {
+		017D333C0882986069CD3453 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D692C434F5A357AA5B3A01E2 /* Pods-SGNavigationProgress-dummy.m in Sources */,
-				0CA194D63CE1AF28190B95AF /* SGProgressView.m in Sources */,
-				1825E6FE69DF343305F0924A /* UINavigationController+SGProgress.m in Sources */,
+				D8563A8BEAC6814F17AA936D /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F276B4A1AA62F04026B9E16F /* Sources */ = {
+		1D15F3837CB432D932F00920 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1232658F16D9A3995F7E601F /* Pods-dummy.m in Sources */,
+				F1EA85F84E6A55BBA5C711CA /* A2BlockInvocation.m in Sources */,
+				34619EEDE087DFDBAF235085 /* A2DynamicDelegate.m in Sources */,
+				40AE9DE8FA2B5C55D5ED440C /* MFMailComposeViewController+BlocksKit.m in Sources */,
+				2DA5D5E408FCD6446472D3C9 /* MFMessageComposeViewController+BlocksKit.m in Sources */,
+				F5C51ABD815C8E2E2F190CC2 /* NSArray+BlocksKit.m in Sources */,
+				F692C762324108526227186A /* NSCache+BlocksKit.m in Sources */,
+				9168BCE056CCBDB5C8A905EE /* NSDictionary+BlocksKit.m in Sources */,
+				F89B6FBB7FB2DD13272BFA3F /* NSIndexSet+BlocksKit.m in Sources */,
+				321A73F6EDB8CF73626B65C1 /* NSInvocation+BlocksKit.m in Sources */,
+				DB5DCF9CC57F0AEF248B51D6 /* NSMutableArray+BlocksKit.m in Sources */,
+				7087653DF7E8767EDEB69AA7 /* NSMutableDictionary+BlocksKit.m in Sources */,
+				DE851A4137EBEBBD066D0024 /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				A300175DAB9C969B1FA4F79D /* NSMutableOrderedSet+BlocksKit.m in Sources */,
+				47D32032398A44CAA2742FBF /* NSMutableSet+BlocksKit.m in Sources */,
+				93DDCF42B4D3F8767F7B5264 /* NSObject+A2BlockDelegate.m in Sources */,
+				CE33929E3958FB4BDEFC6A8A /* NSObject+A2DynamicDelegate.m in Sources */,
+				FCD450C627D1FD9D20A280B0 /* NSObject+BKAssociatedObjects.m in Sources */,
+				565455449AF2C3F5E68E6266 /* NSObject+BKBlockExecution.m in Sources */,
+				A8380EBDD47308C6E709C9FF /* NSObject+BKBlockObservation.m in Sources */,
+				F8C27090F4E4682477E9F339 /* NSOrderedSet+BlocksKit.m in Sources */,
+				D6E358BD8EE807C8BDB51DAC /* NSSet+BlocksKit.m in Sources */,
+				7CCD997A3F0293F533678EC5 /* NSTimer+BlocksKit.m in Sources */,
+				25F88A2E44AC505E10E63FB9 /* NSURLConnection+BlocksKit.m in Sources */,
+				609AE72E5FB4B8FDD0296711 /* Pods-BlocksKit-dummy.m in Sources */,
+				93977141AAD65952385CD590 /* UIActionSheet+BlocksKit.m in Sources */,
+				28AF2BF5613FABB788B38626 /* UIAlertView+BlocksKit.m in Sources */,
+				BD453F551BF81D8118BC5737 /* UIBarButtonItem+BlocksKit.m in Sources */,
+				F7E49AC5915A56E3AEDBC2F3 /* UIControl+BlocksKit.m in Sources */,
+				6C6F276212AC257F5F10CCFE /* UIGestureRecognizer+BlocksKit.m in Sources */,
+				B26835FE98E1E8A1EF02B43C /* UIImagePickerController+BlocksKit.m in Sources */,
+				5C8B8EE2A5EA5B988ABB5CE5 /* UIPopoverController+BlocksKit.m in Sources */,
+				06B7DEAAF33497BC808EE80F /* UITextField+BlocksKit.m in Sources */,
+				496AF29658BDFA7B46DA7B1A /* UIView+BlocksKit.m in Sources */,
+				AA3B31231626D5EDA44A10E3 /* UIWebView+BlocksKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4326B37735F12C9B63834B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB70DFE57A76C52AF25CCE4 /* EXTADT.m in Sources */,
+				4BABC964FDA27CAE3A5F81B9 /* EXTConcreteProtocol.m in Sources */,
+				82101ECDE19CFC66FF4D4A2E /* EXTNil.m in Sources */,
+				80798EFDD89515092C5E5DA9 /* EXTRuntimeExtensions.m in Sources */,
+				749A035F61C3D694E8D5C09E /* EXTSafeCategory.m in Sources */,
+				41477C50EEFCAF4D69B913D0 /* EXTScope.m in Sources */,
+				2CE7A75BE43B4DD997B23F68 /* EXTSelectorChecking.m in Sources */,
+				138B6F09633C302F50D913B7 /* NSInvocation+EXT.m in Sources */,
+				785421AC9F69DB1CF50A218A /* NSMethodSignature+EXT.m in Sources */,
+				AB1D46D3AB8C2C001484546B /* Pods-libextobjc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5189D60F535C31F2DB1BADF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC21CCEE1A28CAADAC62F06 /* Pods-SGNavigationProgress-dummy.m in Sources */,
+				DB526BE11ABDA2F4C1663876 /* SGProgressView.m in Sources */,
+				EEFD771165F315624DE5D077 /* UINavigationController+SGProgress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C215B6504F48E42BDD58791A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E1F833F0EA16F0D102B2A9A /* Pods-SZTextView-dummy.m in Sources */,
+				701F666612114704F8F89D00 /* SZTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34EE7D2E8FD9CC4085C5D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0C09378FFA8EB88BF23AAC /* NSError+PAYComfort.m in Sources */,
+				2A4291D1711D85C95ED27E0F /* PAYDefaultTheme.m in Sources */,
+				8DE8E33192C21555EECD766C /* PAYErrorCodes.m in Sources */,
+				AA84CE6A5CF672A3C91DD7B5 /* PAYFormButton.m in Sources */,
+				0B95FA24E9AC8491C7B7DE7D /* PAYFormButtonGroup.m in Sources */,
+				3300CC3B5352D4EE0BCF7DBA /* PAYFormButtonGroupBuilder.m in Sources */,
+				F0F6524AE58481C689536F88 /* PAYFormDefaultErrorHandler.m in Sources */,
+				A0417EB8E6CBF65017846236 /* PAYFormErrorMessage.m in Sources */,
+				1A365EFBA0A808AAB4ED55DC /* PAYFormField.m in Sources */,
+				83B64EB9D2B25CA5E774D9EA /* PAYFormHeader.m in Sources */,
+				7CA80BFE44494A9C860A608A /* PAYFormMultiLineTextField.m in Sources */,
+				6D8E757D5707B8292BC797F6 /* PAYFormSection.m in Sources */,
+				14E1CE1EBB72449336562DD1 /* PAYFormSectionBuilder.m in Sources */,
+				B340DE1DD3583FD6C1BE69DE /* PAYFormSingleLineTextField.m in Sources */,
+				51A1B184D8FF8F094171D644 /* PAYFormSwitch.m in Sources */,
+				DE6DB74D1DD3CAC7B35B92B0 /* PAYFormTable.m in Sources */,
+				D9DE355825F4719DB8886B0C /* PAYFormTableBuilder.m in Sources */,
+				2815AEFDC556050329D3BFDC /* PAYFormTableView.m in Sources */,
+				EC453CEEE21AA4E14AA3D26A /* PAYFormTableViewController.m in Sources */,
+				3A25CD7222C45F1BE9D0997D /* PAYFormTextField.m in Sources */,
+				78275F256295A6070CBF7EED /* PAYFormView+PAYFormDefaultErrorHandler.m in Sources */,
+				8E60C6DE9F4276E84FA3E08D /* PAYFormView+PAYFormDefaultErrorHandlerProtected.m in Sources */,
+				50160490A612537298B726F0 /* PAYFormView.m in Sources */,
+				AE1C19C83BEB1713EBFC1B6A /* PAYHeaderView.m in Sources */,
+				78FEABFBA64ED148E4DBE875 /* PAYMessageInterceptor.m in Sources */,
+				0CF5FB4246F8C59A0FA081F9 /* PAYNotifications.m in Sources */,
+				CEDA47D75BD6AB8FA6DB540E /* PAYStyle.m in Sources */,
+				E90C4338110505DEE5200513 /* PAYTextLabel.m in Sources */,
+				377C8B66C0EA806F30775617 /* PAYValidation.m in Sources */,
+				8EAC8BC2AE5935BD3F614828 /* Pods-PAYFormBuilder-dummy.m in Sources */,
+				5C63FD6021159237F7427437 /* UIColor+PAYHex.m in Sources */,
+				7DCF3048A21B4A1B0725D5CA /* UIView+PAYKeyboardHandling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E49649D7FDF2DC084C05468 /* PBXTargetDependency */ = {
+		0724F13ABE30C0359F24F179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SZTextView";
+			target = E998FB0F9005F68FFA8F8979 /* Pods-SZTextView */;
+			targetProxy = 83093458BDCE7489070D38BB /* PBXContainerItemProxy */;
+		};
+		29202840EED122F7CCC5D168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BlocksKit";
+			target = 22121621B977E385AD16BCEF /* Pods-BlocksKit */;
+			targetProxy = 3896510EB91219C3569BAEF2 /* PBXContainerItemProxy */;
+		};
+		3DEEABB2256CF82099E05244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PAYFormBuilder";
+			target = F8BFDB54A5F7116C7C02A247 /* Pods-PAYFormBuilder */;
+			targetProxy = 8B2782BE5ACC83AB7A13BABF /* PBXContainerItemProxy */;
+		};
+		40ABCB9F281BB16BE304F64B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SGNavigationProgress";
-			target = CF23EFBC621F912A3F433822 /* Pods-SGNavigationProgress */;
-			targetProxy = 821C37C1AF103E09D702D9D7 /* PBXContainerItemProxy */;
+			target = FF3873F69B111BBA5EAB2AEA /* Pods-SGNavigationProgress */;
+			targetProxy = D7342DA217C0DDBFBC98F1ED /* PBXContainerItemProxy */;
+		};
+		5C8D9F187BFDC67296718FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SZTextView";
+			target = E998FB0F9005F68FFA8F8979 /* Pods-SZTextView */;
+			targetProxy = 540ED615967B6C7FD64D34AC /* PBXContainerItemProxy */;
+		};
+		9A1DB72876D96CBEB12B2A8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-libextobjc";
+			target = 2DBD20E1730AC8BE48901DA0 /* Pods-libextobjc */;
+			targetProxy = D1BB578928768FE2D1AFDDCC /* PBXContainerItemProxy */;
+		};
+		A1527C27792760CDF28CDAF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BlocksKit";
+			target = 22121621B977E385AD16BCEF /* Pods-BlocksKit */;
+			targetProxy = 306AE6983998141BB74183F2 /* PBXContainerItemProxy */;
+		};
+		E39AFE29BD27CB4070866DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-libextobjc";
+			target = 2DBD20E1730AC8BE48901DA0 /* Pods-libextobjc */;
+			targetProxy = F6A783D4A251D7ED3FFE3EFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		431671FFD9B62FA792E251ED /* Release */ = {
+		0F88F198B2A06482F8674D04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */;
+			baseConfigurationReference = 39EA96E8495D98BDBBEFB7F9 /* Pods-BlocksKit-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SGNavigationProgress/Pods-SGNavigationProgress-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BlocksKit/Pods-BlocksKit-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -282,9 +1488,25 @@
 			};
 			name = Release;
 		};
-		7582542D43C260AF9FB61B53 /* Release */ = {
+		10DD1BA3D810088B708076FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DA6A1C56F55C0409FDEC2C0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 13198B9D0903E493E4ABAF18 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		17EBDD6FC21BC9929C62D80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD64475458CA9A9955B5612 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -298,7 +1520,57 @@
 			};
 			name = Release;
 		};
-		8A783326A51E1E3E59BDBF8B /* Debug */ = {
+		37E0208EB5A5AFD93B61149E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF67D7507556EF77D2EBA35 /* Pods-SZTextView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZTextView/Pods-SZTextView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B2AF544E1F79C7539F29302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71EA16A4943F6DC959C8A9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,9 +1609,57 @@
 			};
 			name = Debug;
 		};
-		B511CC3FEB54A70BCBF85B97 /* Debug */ = {
+		7B555FE81A837613226D17AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5EE0022C9A1A8F450D33999 /* Pods-SGNavigationProgress-Private.xcconfig */;
+			baseConfigurationReference = 4FDC365E5B7A9FB4E4F1980F /* Pods-PAYFormBuilder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PAYFormBuilder/Pods-PAYFormBuilder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		821C58C42892B55161CF3901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8468999C1C0C52169B01FB39 /* Pods-libextobjc-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-libextobjc/Pods-libextobjc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8CB3345A83EF06EEFEB9F4B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EA96E8495D98BDBBEFB7F9 /* Pods-BlocksKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BlocksKit/Pods-BlocksKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BF1CED1D1EA933A15D389BE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA39D1BD9AB238E9FC95A6B /* Pods-SGNavigationProgress-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-SGNavigationProgress/Pods-SGNavigationProgress-prefix.pch";
@@ -353,87 +1673,137 @@
 			};
 			name = Debug;
 		};
-		CD41B70D07F1BC35D5ACBC32 /* Debug */ = {
+		BF891E4C9B30EBC0F192E0D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB9A025B2318169F3B9E73E4 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = FAF67D7507556EF77D2EBA35 /* Pods-SZTextView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZTextView/Pods-SZTextView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		E8B462B03B8AD7F7FEBA1D17 /* Release */ = {
+		D25EA6A7A7104BD0438E7552 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8468999C1C0C52169B01FB39 /* Pods-libextobjc-Private.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-libextobjc/Pods-libextobjc-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E74EB45DA8B0E56BD43FCB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA39D1BD9AB238E9FC95A6B /* Pods-SGNavigationProgress-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SGNavigationProgress/Pods-SGNavigationProgress-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		EB535C9F53B4D4F138B1B751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDC365E5B7A9FB4E4F1980F /* Pods-PAYFormBuilder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PAYFormBuilder/Pods-PAYFormBuilder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		736F7B9EA68A9408C6871996 /* Build configuration list for PBXProject "Pods" */ = {
+		3F75DA4EB37F9EC3DC367CBD /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A783326A51E1E3E59BDBF8B /* Debug */,
-				E8B462B03B8AD7F7FEBA1D17 /* Release */,
+				BF1CED1D1EA933A15D389BE8 /* Debug */,
+				E74EB45DA8B0E56BD43FCB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94537678F23E5CF86C26E991 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		508D454610C2F7991CA24C89 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD41B70D07F1BC35D5ACBC32 /* Debug */,
-				7582542D43C260AF9FB61B53 /* Release */,
+				10DD1BA3D810088B708076FC /* Debug */,
+				17EBDD6FC21BC9929C62D80B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95489EF88DFF55CE9388C122 /* Build configuration list for PBXNativeTarget "Pods-SGNavigationProgress" */ = {
+		686EBA83B3F6E8F90E95FCCB /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B511CC3FEB54A70BCBF85B97 /* Debug */,
-				431671FFD9B62FA792E251ED /* Release */,
+				71EA16A4943F6DC959C8A9EE /* Debug */,
+				4B2AF544E1F79C7539F29302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78FEEDFE9B4F97617BAD4D1E /* Build configuration list for PBXNativeTarget "Pods-libextobjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25EA6A7A7104BD0438E7552 /* Debug */,
+				821C58C42892B55161CF3901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E980B303205709FD7ECF0C /* Build configuration list for PBXNativeTarget "Pods-BlocksKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB3345A83EF06EEFEB9F4B4 /* Debug */,
+				0F88F198B2A06482F8674D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E402B447A59EB0959A7BDF3 /* Build configuration list for PBXNativeTarget "Pods-SZTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF891E4C9B30EBC0F192E0D8 /* Debug */,
+				37E0208EB5A5AFD93B61149E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3A441E5D8A4B1320043739 /* Build configuration list for PBXNativeTarget "Pods-PAYFormBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB535C9F53B4D4F138B1B751 /* Debug */,
+				7B555FE81A837613226D17AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8B8A2A17D246984EAA99F7A3 /* Project object */;
+	rootObject = DAD0CA2D0966D57485BB2857 /* Project object */;
 }
