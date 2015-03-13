@@ -1,6 +1,10 @@
 #import "RPAddToDoViewController.h"
+#import "PAYFormBuilder.h"
 
 @interface RPAddToDoViewController ()
+
+@property (retain, nonatomic) PAYFormSingleLineTextField *textField;
+@property (retain, nonatomic) PAYFormSingleLineTextField *textFieldTrans;
 
 @end
 
@@ -15,9 +19,10 @@
 
 - (IBAction)save:(id)sender {
     // Helpers
-    NSString *name = self.textField.text;
-    
-    if (name && name.length) {
+    NSString *word = self.textField.textField.text;
+    NSString *trans = self.textFieldTrans.textField.text;
+
+    if (word && word.length) {
         // Create Entity
         NSEntityDescription *entity = [NSEntityDescription entityForName:@"TSPItem" inManagedObjectContext:self.managedObjectContext];
         
@@ -25,8 +30,9 @@
         NSManagedObject *record = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
         
         // Populate Record
-        [record setValue:name forKey:@"name"];
-        [record setValue:[NSDate date] forKey:@"createdAt"];
+        [record setValue:word           forKey:@"name"];
+        [record setValue:trans          forKey:@"trans"];
+        [record setValue:[NSDate date]  forKey:@"createdAt"];
         
         // Save Record
         NSError *error = nil;
@@ -50,5 +56,35 @@
         [[[UIAlertView alloc] initWithTitle:@"Warning" message:@"Your to-do needs a name." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }
 }
+
+- (void)loadStructure:(PAYFormTableBuilder *)tableBuilder {
+    [tableBuilder addSectionWithName:@"Translations"
+                        contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
+                            self.textField = [sectionBuilder addFieldWithName:@"English" placeholder:@"compulsory"];
+                            self.textFieldTrans = [sectionBuilder addFieldWithName:@"French" placeholder:@"can be filled later"];
+                        }];
+    
+    NSArray *countries = @[@[@"United States", @"usa"], @[@"Germany", @"de"], @[@"Spain", @"es"]];
+    
+    [tableBuilder addSectionWithName:@"Suggestions by Wordreference.com"
+                        contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
+                            [sectionBuilder addButtonGroupWithMultiSelection:NO
+                                                                contentBlock:^(PAYFormButtonGroupBuilder *buttonGroupBuilder) {
+                                                                    for (NSArray *country in countries) {
+                                                                        [buttonGroupBuilder addOption:country[1]
+                                                                                             withText:country[0]
+                                                                                                 icon:[UIImage imageNamed:country[1]]];
+                                                                    }
+                                                                    [buttonGroupBuilder select:@"usa"];
+                                                                }];
+                        }];
+    
+    tableBuilder.formSuccessBlock = ^{
+        // NSLog(@"%@", self.countryButtonGroup.values);
+        // NSLog(@"%@", self.formSwitch.value ? @"YES" : @"NO");
+        // [self performSegueWithIdentifier:@"next" sender:self];
+    };
+}
+
 
 @end

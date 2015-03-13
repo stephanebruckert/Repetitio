@@ -11,6 +11,13 @@
 		CC4DD90C1972934F00FDBD03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90B1972934F00FDBD03 /* Foundation.framework */; };
 		CC4DD90E1972934F00FDBD03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90D1972934F00FDBD03 /* CoreGraphics.framework */; };
 		CC4DD9101972934F00FDBD03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4DD90F1972934F00FDBD03 /* UIKit.framework */; };
+		F45221951AB2549400AA40A4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F452218D1AB2549400AA40A4 /* Contents.json */; };
+		F45221961AB2549400AA40A4 /* de.png in Resources */ = {isa = PBXBuildFile; fileRef = F452218E1AB2549400AA40A4 /* de.png */; };
+		F45221971AB2549400AA40A4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F45221901AB2549400AA40A4 /* Contents.json */; };
+		F45221981AB2549400AA40A4 /* es.png in Resources */ = {isa = PBXBuildFile; fileRef = F45221911AB2549400AA40A4 /* es.png */; };
+		F45221991AB2549400AA40A4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F45221931AB2549400AA40A4 /* Contents.json */; };
+		F452219A1AB2549400AA40A4 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = F45221941AB2549400AA40A4 /* usa.png */; };
+		F47078751AB3018200CB9722 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F47078731AB3018200CB9722 /* Model.xcdatamodeld */; };
 		F492CC231AB22770008629C5 /* RPAddToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC181AB22770008629C5 /* RPAddToDoViewController.m */; };
 		F492CC241AB22770008629C5 /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC1A1AB22770008629C5 /* RPAppDelegate.m */; };
 		F492CC251AB22770008629C5 /* RPGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC1C1AB22770008629C5 /* RPGameViewController.m */; };
@@ -28,7 +35,6 @@
 		F492CC431AB22820008629C5 /* button-done-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */; };
 		F492CC441AB22820008629C5 /* button-done-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC401AB22820008629C5 /* button-done-selected.png */; };
 		F492CC451AB22820008629C5 /* button-done-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F492CC411AB22820008629C5 /* button-done-selected@2x.png */; };
-		F492CC491AB22840008629C5 /* Done.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F492CC461AB22840008629C5 /* Done.xcdatamodeld */; };
 		F492CC4B1AB22859008629C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F492CC4A1AB22859008629C5 /* Images.xcassets */; };
 		F492CC501AB22883008629C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC4D1AB22883008629C5 /* main.m */; };
 		F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F492CC521AB2289D008629C5 /* InfoPlist.strings */; };
@@ -57,6 +63,13 @@
 		CC4DD90D1972934F00FDBD03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CC4DD90F1972934F00FDBD03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC4DD92A1972934F00FDBD03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F452218D1AB2549400AA40A4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F452218E1AB2549400AA40A4 /* de.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = de.png; sourceTree = "<group>"; };
+		F45221901AB2549400AA40A4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F45221911AB2549400AA40A4 /* es.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = es.png; sourceTree = "<group>"; };
+		F45221931AB2549400AA40A4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F45221941AB2549400AA40A4 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
+		F47078741AB3018200CB9722 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Model.xcdatamodel; path = Repetitio/Model.xcdatamodeld/Model.xcdatamodel; sourceTree = SOURCE_ROOT; };
 		F492CC171AB22768008629C5 /* RPAddToDoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPAddToDoViewController.h; path = Repetitio/RPAddToDoViewController.h; sourceTree = SOURCE_ROOT; };
 		F492CC181AB22770008629C5 /* RPAddToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPAddToDoViewController.m; path = Repetitio/RPAddToDoViewController.m; sourceTree = SOURCE_ROOT; };
 		F492CC191AB22770008629C5 /* RPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPAppDelegate.h; path = Repetitio/RPAppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -82,8 +95,6 @@
 		F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-normal@2x.png"; path = "Repetitio/button-done-normal@2x.png"; sourceTree = SOURCE_ROOT; };
 		F492CC401AB22820008629C5 /* button-done-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-selected.png"; path = "Repetitio/button-done-selected.png"; sourceTree = SOURCE_ROOT; };
 		F492CC411AB22820008629C5 /* button-done-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-done-selected@2x.png"; path = "Repetitio/button-done-selected@2x.png"; sourceTree = SOURCE_ROOT; };
-		F492CC471AB22840008629C5 /* Done 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Done 2.xcdatamodel"; sourceTree = "<group>"; };
-		F492CC481AB22840008629C5 /* Done.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Done.xcdatamodel; sourceTree = "<group>"; };
 		F492CC4A1AB22859008629C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Repetitio/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		F492CC4D1AB22883008629C5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Repetitio/main.m; sourceTree = SOURCE_ROOT; };
 		F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Repetitio-Info.plist"; path = "Repetitio/Repetitio-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -118,6 +129,7 @@
 		CC4DD8FF1972934F00FDBD03 = {
 			isa = PBXGroup;
 			children = (
+				F47078731AB3018200CB9722 /* Model.xcdatamodeld */,
 				CC4DD9111972934F00FDBD03 /* Repetitio */,
 				CC4DD90A1972934F00FDBD03 /* Frameworks */,
 				CC4DD9091972934F00FDBD03 /* Products */,
@@ -162,7 +174,6 @@
 				F492CC221AB22770008629C5 /* RPViewController.m */,
 				F492CC391AB22805008629C5 /* Base.lproj */,
 				F4AD28CB1AB20A9000EBEF67 /* Misc */,
-				F492CC461AB22840008629C5 /* Done.xcdatamodeld */,
 				F492CC4A1AB22859008629C5 /* Images.xcassets */,
 				CC4DD9121972934F00FDBD03 /* Supporting Files */,
 			);
@@ -180,6 +191,33 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		F452218C1AB2549400AA40A4 /* de.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F452218D1AB2549400AA40A4 /* Contents.json */,
+				F452218E1AB2549400AA40A4 /* de.png */,
+			);
+			path = de.imageset;
+			sourceTree = SOURCE_ROOT;
+		};
+		F452218F1AB2549400AA40A4 /* es.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F45221901AB2549400AA40A4 /* Contents.json */,
+				F45221911AB2549400AA40A4 /* es.png */,
+			);
+			path = es.imageset;
+			sourceTree = SOURCE_ROOT;
+		};
+		F45221921AB2549400AA40A4 /* usa.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F45221931AB2549400AA40A4 /* Contents.json */,
+				F45221941AB2549400AA40A4 /* usa.png */,
+			);
+			path = usa.imageset;
+			sourceTree = SOURCE_ROOT;
 		};
 		F492CC291AB2278B008629C5 /* MWKProgressIndicator */ = {
 			isa = PBXGroup;
@@ -209,6 +247,9 @@
 		F492CC3D1AB22816008629C5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F452218C1AB2549400AA40A4 /* de.imageset */,
+				F452218F1AB2549400AA40A4 /* es.imageset */,
+				F45221921AB2549400AA40A4 /* usa.imageset */,
 				F492CC3E1AB22820008629C5 /* button-done-normal.png */,
 				F492CC3F1AB22820008629C5 /* button-done-normal@2x.png */,
 				F492CC401AB22820008629C5 /* button-done-selected.png */,
@@ -282,19 +323,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45221961AB2549400AA40A4 /* de.png in Resources */,
 				F492CC571AB23053008629C5 /* Main.storyboard in Resources */,
 				F492CC561AB2304B008629C5 /* Repetitio-Info.plist in Resources */,
+				F45221971AB2549400AA40A4 /* Contents.json in Resources */,
 				F492CC431AB22820008629C5 /* button-done-normal@2x.png in Resources */,
 				F492CC421AB22820008629C5 /* button-done-normal.png in Resources */,
 				F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */,
+				F45221981AB2549400AA40A4 /* es.png in Resources */,
 				F492CC441AB22820008629C5 /* button-done-selected.png in Resources */,
 				F492CC381AB2278B008629C5 /* success.png in Resources */,
+				F452219A1AB2549400AA40A4 /* usa.png in Resources */,
 				F492CC331AB2278B008629C5 /* error.png in Resources */,
+				F45221991AB2549400AA40A4 /* Contents.json in Resources */,
 				F492CC341AB2278B008629C5 /* LICENSE in Resources */,
 				F492CC351AB2278B008629C5 /* loading.png in Resources */,
 				F492CC4B1AB22859008629C5 /* Images.xcassets in Resources */,
 				F492CC451AB22820008629C5 /* button-done-selected@2x.png in Resources */,
 				F492CC321AB2278B008629C5 /* .gitignore in Resources */,
+				F45221951AB2549400AA40A4 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +385,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F492CC491AB22840008629C5 /* Done.xcdatamodeld in Sources */,
 				F492CC271AB22770008629C5 /* RPUpdateToDoViewController.m in Sources */,
 				F492CC281AB22770008629C5 /* RPViewController.m in Sources */,
 				F492CC231AB22770008629C5 /* RPAddToDoViewController.m in Sources */,
@@ -346,6 +392,7 @@
 				F492CC241AB22770008629C5 /* RPAppDelegate.m in Sources */,
 				F492CC261AB22770008629C5 /* RPToDoCell.m in Sources */,
 				F492CC361AB2278B008629C5 /* MWKProgressIndicator.m in Sources */,
+				F47078751AB3018200CB9722 /* Model.xcdatamodeld in Sources */,
 				F492CC501AB22883008629C5 /* main.m in Sources */,
 				F492CC251AB22770008629C5 /* RPGameViewController.m in Sources */,
 			);
@@ -497,15 +544,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F492CC461AB22840008629C5 /* Done.xcdatamodeld */ = {
+		F47078731AB3018200CB9722 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F492CC471AB22840008629C5 /* Done 2.xcdatamodel */,
-				F492CC481AB22840008629C5 /* Done.xcdatamodel */,
+				F47078741AB3018200CB9722 /* Model.xcdatamodel */,
 			);
-			currentVersion = F492CC471AB22840008629C5 /* Done 2.xcdatamodel */;
-			name = Done.xcdatamodeld;
-			path = ../Repetitio/Done.xcdatamodeld;
+			currentVersion = F47078741AB3018200CB9722 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Repetitio/Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

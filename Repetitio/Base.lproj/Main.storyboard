@@ -138,30 +138,7 @@
                     <view key="view" contentMode="scaleToFill" id="bn4-tu-5Xd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKS-an-d8y">
-                                <rect key="frame" x="20" y="84" width="229" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="c9b-a8-iG2" id="EGp-JI-IlL"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCQ-Xg-IuY">
-                                <rect key="frame" x="20" y="152" width="273" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQE-FB-g3s">
-                                <rect key="frame" x="282" y="84" width="22" height="22"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="PKS-an-d8y" firstAttribute="leading" secondItem="bn4-tu-5Xd" secondAttribute="leading" constant="20" id="K6F-7O-LRT"/>
-                            <constraint firstItem="PKS-an-d8y" firstAttribute="top" secondItem="rzl-cB-Uv9" secondAttribute="bottom" constant="20" id="RCq-6S-N4a"/>
-                            <constraint firstAttribute="trailing" secondItem="PKS-an-d8y" secondAttribute="trailing" constant="20" id="fIk-2N-DoN"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New word" id="cYZ-v2-vbQ">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="gKM-4e-ut6">
@@ -175,9 +152,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="textField" destination="PKS-an-d8y" id="azu-Ao-LBh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xP5-zV-ZnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

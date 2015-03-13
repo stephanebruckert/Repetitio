@@ -34,6 +34,18 @@ static const NSUInteger RPFormSingleLineTextFieldPasswordMaxTextLength = 128;
         _messageInterceptor = [[PAYMessageInterceptor alloc] initWithMiddleMan:self];
         self.maxTextLength = RPFormSingleLineTextFieldDefaultMaxTextLength;
     }
+    UIView *vwContainer = [[UIView alloc] init];
+    [vwContainer setFrame:CGRectMake(0.0f, 0.0f, 50.0f, 45.0f)];
+    [vwContainer setBackgroundColor:[UIColor clearColor]];
+    
+    UIImageView *icon = [[UIImageView alloc] init];
+    [icon setImage:[UIImage imageNamed:@"usa"]];
+    [icon setFrame:CGRectMake(0.0f, 0.0f, 45.0f, 45.0f)];
+    [icon setBackgroundColor:[UIColor lightGrayColor]];
+    
+    [vwContainer addSubview:icon];
+    [self.textField setLeftView:vwContainer];
+    [self.textField setLeftViewMode:UITextFieldViewModeAlways];
     return self;
 }
 

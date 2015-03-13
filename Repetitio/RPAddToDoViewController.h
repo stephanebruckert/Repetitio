@@ -1,10 +1,8 @@
 #import <UIKit/UIKit.h>
-
 #import <CoreData/CoreData.h>
+#import "PAYFormBuilder.h"
 
-@interface RPAddToDoViewController : UIViewController <UITextFieldDelegate>
-
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+@interface RPAddToDoViewController : PAYFormTableViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
