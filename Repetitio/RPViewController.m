@@ -23,7 +23,7 @@
 
     self.navigationController.toolbarHidden=NO;
     // Initialize Fetch Request
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"TSPItem"];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
     
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:YES]]];

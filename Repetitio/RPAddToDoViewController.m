@@ -24,13 +24,13 @@
 
     if (word && word.length) {
         // Create Entity
-        NSEntityDescription *entity = [NSEntityDescription entityForName:@"TSPItem" inManagedObjectContext:self.managedObjectContext];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"RPItem" inManagedObjectContext:self.managedObjectContext];
         
         // Initialize Record
         NSManagedObject *record = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
         
         // Populate Record
-        [record setValue:word           forKey:@"name"];
+        [record setValue:word           forKey:@"word"];
         [record setValue:trans          forKey:@"trans"];
         [record setValue:[NSDate date]  forKey:@"createdAt"];
         
