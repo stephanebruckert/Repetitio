@@ -205,24 +205,7 @@
                     <view key="view" contentMode="scaleToFill" id="BUs-MJ-Xxz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJd-US-Qk6">
-                                <rect key="frame" x="20" y="84" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfb-Cu-Ogm">
-                                <rect key="frame" x="20" y="137" width="273" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NJd-US-Qk6" firstAttribute="top" secondItem="Ana-2A-JuP" secondAttribute="bottom" constant="20" id="Ec6-O0-aYR"/>
-                            <constraint firstAttribute="trailing" secondItem="NJd-US-Qk6" secondAttribute="trailing" constant="20" id="Tuz-2g-H0F"/>
-                            <constraint firstItem="NJd-US-Qk6" firstAttribute="leading" secondItem="BUs-MJ-Xxz" secondAttribute="leading" constant="20" id="agV-Bd-GQT"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Update a word" id="tcx-JB-2zC">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c1k-Mn-jdh">
@@ -236,9 +219,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="textField" destination="NJd-US-Qk6" id="8zp-1e-tKg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAJ-8s-Zzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

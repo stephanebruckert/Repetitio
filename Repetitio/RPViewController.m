@@ -133,7 +133,7 @@
     NSManagedObject *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Update Cell
-    [cell.nameLabel setText:[record valueForKey:@"name"]];
+    [cell.nameLabel setText:[record valueForKey:@"word"]];
     [cell.doneButton setSelected:[[record valueForKey:@"done"] boolValue]];
     
     [cell setDidTapButtonBlock:^{
