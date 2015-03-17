@@ -42,14 +42,7 @@
 
         if ([fetchedResultsController.fetchedObjects count] < 10) {
             self.words = fetchedResultsController.fetchedObjects;
-            for (RPWord *item in self.words)
-            {
-                NSLog(@"%@", item);
-            }
             self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
-
-            //RPWord *randomWord = [self.words randomObject];
-            //NSLog(@"%@", randomWord);
         } else {
           // more than 10
         }
