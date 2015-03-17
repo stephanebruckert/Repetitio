@@ -3,8 +3,6 @@
 
 @interface RPGameViewController : PAYFormTableViewController
 
-//<UIPickerViewDataSource, UIPickerViewDelegate>
-
-//@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end

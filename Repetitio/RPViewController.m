@@ -5,6 +5,7 @@
 #import "RPToDoCell.h"
 #import "RPAddToDoViewController.h"
 #import "RPUpdateToDoViewController.h"
+#import "RPGameViewController.h"
 
 @interface RPViewController () <NSFetchedResultsControllerDelegate>
 
@@ -30,7 +31,7 @@
     
     // Initialize Fetched Results Controller
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    
+  
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
     
@@ -42,6 +43,7 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -71,6 +73,11 @@
             // Reset Selection
             [self setSelection:nil];
         }
+    } else if ([segue.identifier isEqualToString:@"gameViewController"]) {
+        RPGameViewController *vc = (RPGameViewController *)[segue destinationViewController];
+        
+        // Configure View Controller
+        [vc setManagedObjectContext:self.managedObjectContext];
     }
 }
 

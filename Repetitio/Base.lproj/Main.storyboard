@@ -71,7 +71,7 @@
                     <toolbarItems>
                         <barButtonItem systemItem="play" id="rWu-fR-qMJ">
                             <connections>
-                                <segue destination="GS2-tE-6SK" kind="push" id="4B7-sT-5eK"/>
+                                <segue destination="GS2-tE-6SK" kind="push" identifier="gameViewController" id="4B7-sT-5eK"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="3Yd-re-q6k"/>
@@ -103,13 +103,6 @@
                     <view key="view" contentMode="scaleToFill" id="FKu-ZE-zo3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hedgehog" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muh-PX-d3p">
-                                <rect key="frame" x="56" y="95" width="209" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
@@ -119,13 +112,17 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="zEG-wf-ovE"/>
-                        <barButtonItem systemItem="fastForward" id="iqN-nj-LBe"/>
+                        <barButtonItem systemItem="fastForward" id="iqN-nj-LBe">
+                            <connections>
+                                <action selector="forward:" destination="GS2-tE-6SK" id="i8D-7G-Med"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="D3P-jJ-l05"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS4-ce-XAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="873"/>
+            <point key="canvasLocation" x="820" y="889"/>
         </scene>
         <!--New word-->
         <scene sceneID="ZMw-pm-qY0">
