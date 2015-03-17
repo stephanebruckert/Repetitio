@@ -17,7 +17,7 @@
 
 @implementation RPGameViewController
 
-float progress = 0.0f;
+float progress = 0.1f;
 int step = 0;
 
 #pragma mark -
@@ -43,14 +43,14 @@ int step = 0;
 - (IBAction)forward:(id)sender {
     progress += 0.1f;
     [MWKProgressIndicator updateProgress:progress];
-    [MWKProgressIndicator updateMessage:@"Test 2/10"];
+    [self reloadStructure];
 }
 
 - (void)loadStructure:(PAYFormTableBuilder *)tableBuilder {
     _tableBuilder = tableBuilder;
     [MWKProgressIndicator show];
     [MWKProgressIndicator updateProgress:progress];
-    [MWKProgressIndicator updateMessage:@"Test 1/10"];
+    [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Test %i/10", ++step]];
     self.currentGame = [[RPGame alloc] initWithManagedObjectContext:self.managedObjectContext];
     RPWord* selectedWord = [self.currentGame getRandomQuestion];
     
