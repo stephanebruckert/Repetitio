@@ -21,6 +21,8 @@
 
 float progress = 0.1f;
 int step = 0;
+int wrong_answers = 0;
+int successful_answers = 0;
 
 #pragma mark -
 #pragma mark View Life Cycle
@@ -47,20 +49,23 @@ int step = 0;
     if (self.answerGroup.value) {
         // Check answer
         if ([_currentAnswer isEqual:self.answerGroup.value]) {
-            NSLog(@"%@", self.answerGroup.value);
-        }
-        // Next card
-        if (step == 9) {
-            [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Last Question!"]];
-            progress += 0.1f;
-        } else if (step > 9) {
-            
-        } else {
-            progress += 0.1f;
-            [self reloadStructure];
-        }
-        [MWKProgressIndicator updateProgress:progress];
+            successful_answers++;
 
+             if (step == 9) {
+                 [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Last Question!"]];
+                 progress += 0.1f;
+             } else if (step > 9) {
+
+             } else {
+                 progress += 0.1f;
+                 [self reloadStructure];
+             }
+             [MWKProgressIndicator updateProgress:progress];
+        } else {
+            wrong_answers++;
+        }
+        float success = 100 * successful_answers/(step+wrong_answers);
+        [_success setTitle:[NSString stringWithFormat:@"Success: %f %%", success]];
     } else {
         // Do nothing but alert
         [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Choose an answer!"]];
