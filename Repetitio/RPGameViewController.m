@@ -12,6 +12,7 @@
 @property (strong, nonatomic) RPGame *currentGame;
 @property (strong, nonatomic) RPWord *currentAnswer;
 @property (strong, nonatomic) NSArray *last_answers;
+@property (strong, nonatomic) NSMutableArray *wrongArray;
 
 @property (nonatomic, retain) PAYFormTableBuilder *tableBuilder;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -52,6 +53,7 @@ BOOL last_was_success = YES;
     if (self.answerGroup.value) {
         // Check answer
         if ([_currentAnswer isEqual:self.answerGroup.value]) {
+            _wrongArray = nil;
             successful_answers++;
             step++;
             last_was_success = YES;
@@ -66,6 +68,8 @@ BOOL last_was_success = YES;
              }
         } else {
             wrong_answers++;
+            if (_wrongArray == nil) _wrongArray = [NSMutableArray array];
+            [_wrongArray addObject:self.answerGroup.value];
             last_was_success = NO;
             [self reloadStructure];
         }
@@ -99,10 +103,16 @@ BOOL last_was_success = YES;
 
     [tableBuilder addSectionWithName:@"Your choice" contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
         self.answerGroup = [sectionBuilder addButtonGroupWithMultiSelection:NO contentBlock:^(PAYFormButtonGroupBuilder *groupBuilder){
-            int i = 0;
+            BOOL selectable;
             for (id w in _last_answers) {
-                [groupBuilder addOption:w withText:[w valueForKey:@"trans"] icon:[UIImage imageNamed:@"usa"] selectionBlock:nil selectable:(i % 2) ? NO:YES];
-                i++;
+                if (_wrongArray == nil) {
+                    selectable = YES;
+                } else if ([_wrongArray containsObject:w]) {
+                    selectable = NO;
+                } else {
+                    selectable = YES;
+                }
+                [groupBuilder addOption:w withText:[w valueForKey:@"trans"] icon:[UIImage imageNamed:@"usa"] selectionBlock:nil selectable:selectable];
             }
             groupBuilder.required = YES;
         }];
