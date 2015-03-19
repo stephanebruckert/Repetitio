@@ -97,8 +97,10 @@
         [self selectButton:NO withValue:self.value];
         [_selectedOptions removeObject:self.value];
         
-        [self selectButton:YES withValue:value];
-        [_selectedOptions addObject:value];
+        if (formButton.selectable) {
+            [self selectButton:YES withValue:value];
+            [_selectedOptions addObject:value];
+        }
     }
 }
 

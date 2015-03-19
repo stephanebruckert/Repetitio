@@ -73,7 +73,7 @@ BOOL last_was_success = YES;
             last_was_success = NO;
             [self reloadStructure];
         }
-        float success = 100 * successful_answers/(step+wrong_answers);
+        float success = 100 * successful_answers/(step-1+wrong_answers);
         [_success setTitle:[NSString stringWithFormat:@"Success: %.0f %%", success]];
     } else {
         // Do nothing but alert
