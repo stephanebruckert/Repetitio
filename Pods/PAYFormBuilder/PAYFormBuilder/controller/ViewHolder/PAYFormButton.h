@@ -52,4 +52,9 @@ typedef enum {
  */
 @property (nonatomic, assign) BOOL selected;
 
+/**
+ *  True, if the button can be selected, false otherwise
+ */
+@property (nonatomic, assign) BOOL selectable;
+
 @end

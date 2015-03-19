@@ -24,11 +24,13 @@
 }
 
 - (void)setSelected:(BOOL)selected {
-    _selected = selected;
-    if (selected) {
-        self.view.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
-        self.view.accessoryType = UITableViewCellAccessoryNone;
+    if (_selectable) {
+        _selected = selected;
+        if (selected) {
+            self.view.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+            self.view.accessoryType = UITableViewCellAccessoryNone;
+        }
     }
 }
 

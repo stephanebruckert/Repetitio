@@ -297,6 +297,10 @@
         configureBlock(formButton);
     }
     
+    if (!formButton.selectable) {
+        formButton.titleLabel.textColor = self.defaultButtonDisabledTextColor;
+    }
+    
     [self.section.views addObject:formButton];
     
     return formButton;

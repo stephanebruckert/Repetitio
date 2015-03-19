@@ -65,4 +65,19 @@
  */
 - (PAYFormButton *)addOption:(id)value withText:(NSString *)text icon:(UIImage *)icon selectionBlock:(PAYFormButtonSelectionBlock)selectionBlock;
 
+/**
+ *  Add an option with a value, a label, an icon and a selection block.
+ *  For each option a button is created and added to the group. The value
+ *  could be accessed, when the user choosed this option.
+ *
+ *  @param value          a value that should be available, when the user choosed this option
+ *  @param text           a text that is display on the button
+ *  @param icon           an icon that is shown in the button
+ *  @param selectionBlock the block is called when the user selected this option.
+ *  @param selectable     true whether the button is selectable, false otherwise
+ *
+ *  @return the button, that was added to the group
+ */
+- (PAYFormButton *)addOption:(id)value withText:(NSString *)text icon:(UIImage *)icon selectionBlock:(PAYFormButtonSelectionBlock)selectionBlock selectable:(BOOL)selectable;
+
 @end

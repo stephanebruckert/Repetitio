@@ -9,9 +9,11 @@
 
 @property(nonatomic, getter = isCanceled) BOOL canceled;
 
-@property (nonatomic, retain) PAYFormTableBuilder *tableBuilder;
 @property (strong, nonatomic) RPGame *currentGame;
 @property (strong, nonatomic) RPWord *currentAnswer;
+@property (strong, nonatomic) NSArray *last_answers;
+
+@property (nonatomic, retain) PAYFormTableBuilder *tableBuilder;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) PAYFormButtonGroup *answerGroup;
 
@@ -20,9 +22,10 @@
 @implementation RPGameViewController
 
 float progress = 0.1f;
-int step = 0;
+int step = 1;
 int wrong_answers = 0;
 int successful_answers = 0;
+BOOL last_was_success = YES;
 
 #pragma mark -
 #pragma mark View Life Cycle
@@ -50,7 +53,8 @@ int successful_answers = 0;
         // Check answer
         if ([_currentAnswer isEqual:self.answerGroup.value]) {
             successful_answers++;
-
+            step++;
+            last_was_success = YES;
              if (step == 9) {
                  [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Last Question!"]];
                  progress += 0.1f;
@@ -60,12 +64,13 @@ int successful_answers = 0;
                  progress += 0.1f;
                  [self reloadStructure];
              }
-             [MWKProgressIndicator updateProgress:progress];
         } else {
             wrong_answers++;
+            last_was_success = NO;
+            [self reloadStructure];
         }
         float success = 100 * successful_answers/(step+wrong_answers);
-        [_success setTitle:[NSString stringWithFormat:@"Success: %f %%", success]];
+        [_success setTitle:[NSString stringWithFormat:@"Success: %.0f %%", success]];
     } else {
         // Do nothing but alert
         [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Choose an answer!"]];
@@ -74,13 +79,16 @@ int successful_answers = 0;
 
 - (void)loadStructure:(PAYFormTableBuilder *)tableBuilder {
     // Next card
-    step++;
     _tableBuilder = tableBuilder;
     [MWKProgressIndicator show];
     [MWKProgressIndicator updateProgress:progress];
     [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Test %i/10", step]];
     self.currentGame = [[RPGame alloc] initWithManagedObjectContext:self.managedObjectContext];
-    _currentAnswer = [self.currentGame getRandomQuestion];
+    
+    if (last_was_success) {
+        _currentAnswer = [self.currentGame getRandomQuestion];
+        _last_answers = [self.currentGame getUpTo4RandomAnswers:_currentAnswer];
+    }
     
     PAYHeaderView* header = [[PAYHeaderView alloc]initWithFrame:self.view.frame];
     header.iconImage = [UIImage imageNamed:@"header"];
@@ -91,8 +99,10 @@ int successful_answers = 0;
 
     [tableBuilder addSectionWithName:@"Your choice" contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
         self.answerGroup = [sectionBuilder addButtonGroupWithMultiSelection:NO contentBlock:^(PAYFormButtonGroupBuilder *groupBuilder){
-            for (id w in [self.currentGame getUpTo4RandomAnswers:_currentAnswer]) {
-                [groupBuilder addOption:w withText:[w valueForKey:@"trans"]];
+            int i = 0;
+            for (id w in _last_answers) {
+                [groupBuilder addOption:w withText:[w valueForKey:@"trans"] icon:[UIImage imageNamed:@"usa"] selectionBlock:nil selectable:(i % 2) ? NO:YES];
+                i++;
             }
             groupBuilder.required = YES;
         }];

@@ -53,6 +53,33 @@
     return button;
 }
 
+- (PAYFormButton *)addOption:(id)value
+                    withText:(NSString *)text
+                        icon:(UIImage *)icon
+              selectionBlock:(PAYFormButtonSelectionBlock)selectionBlock
+                  selectable:(BOOL)selectable {
+    __block PAYFormButtonSelectionBlock selectionBlockForBlock = selectionBlock;
+    __weak PAYFormButtonGroup *blockButtonGroup = self.buttonGroup;
+    PAYFormButtonStyle style = icon ? PAYFormButtonStyleIconSelection : PAYFormButtonStyleSelection;
+    PAYFormButton *button = [self.sectionBuilder addButtonWithText:text
+                                                             style:style
+                                                    selectionBlock:^(PAYFormButton *formButton) {
+                                                        __strong PAYFormButtonGroup *buttonGroup = blockButtonGroup;
+                                                        [buttonGroup optionStateChanged:value];
+                                                        if (selectionBlockForBlock) {
+                                                            selectionBlockForBlock(formButton);
+                                                        }
+                                                    }
+                                                    configureBlock:^(PAYFormButton *formButton) {
+                                                        if (icon) {
+                                                            formButton.iconView.image = icon;
+                                                            formButton.selectable = selectable;
+                                                        }
+                                                    }];
+    [self.buttonGroup addButton:button forValue:value];
+    return button;
+}
+
 - (void)select:(id)value {
     [self.buttonGroup select:value];
 }
