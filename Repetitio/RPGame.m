@@ -56,7 +56,9 @@
 
 - (NSArray*)getUpTo4RandomAnswers:(RPWord*)word {
     [self.largeArray shuffle];
-    NSMutableArray* fourAnswers = [[NSMutableArray alloc] initWithArray:[self.largeArray subarrayWithRange:NSMakeRange(0, MIN(3, self.largeArray.count))]];
+    NSMutableArray* allAnswersWithoutTheAnswer = [NSMutableArray arrayWithArray:self.largeArray];
+    [allAnswersWithoutTheAnswer removeObject:word];
+    NSMutableArray* fourAnswers = [[NSMutableArray alloc] initWithArray:[allAnswersWithoutTheAnswer subarrayWithRange:NSMakeRange(0, MIN(3, allAnswersWithoutTheAnswer.count))]];
     [fourAnswers addObject:word];
     [fourAnswers shuffle];
     return fourAnswers;
