@@ -27,6 +27,7 @@ int step = 1;
 int wrong_answers = 0;
 int successful_answers = 0;
 BOOL last_was_success = YES;
+int MAX_STEPS = 10;
 
 #pragma mark -
 #pragma mark View Life Cycle
@@ -46,6 +47,7 @@ BOOL last_was_success = YES;
     // Pop View Controller
     [MWKProgressIndicator dismiss];
     [self.navigationController popViewControllerAnimated:NO];
+    [self endGame];
 }
 
 - (IBAction)forward:(id)sender {
@@ -57,14 +59,14 @@ BOOL last_was_success = YES;
             successful_answers++;
             step++;
             last_was_success = YES;
-             if (step == 9) {
-                 [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Last Question!"]];
-                 progress += 0.1f;
-             } else if (step > 9) {
-
-             } else {
+             if (step <= MAX_STEPS) {
                  progress += 0.1f;
                  [self reloadStructure];
+             } else {
+                 [MWKProgressIndicator showSuccessMessage:@"Congrats!"];
+                 [self.navigationController popViewControllerAnimated:NO];
+                 [self endGame];
+                 return;
              }
         } else {
             wrong_answers++;
@@ -79,6 +81,14 @@ BOOL last_was_success = YES;
         // Do nothing but alert
         [MWKProgressIndicator updateMessage:[NSString stringWithFormat:@"Choose an answer!"]];
     }
+}
+
+- (void) endGame {
+    /* reinitiliaze parameters for next game */
+    progress = 0.1f;
+    step = 1;
+    wrong_answers = 0;
+    successful_answers = 0;
 }
 
 - (void)loadStructure:(PAYFormTableBuilder *)tableBuilder {
@@ -97,11 +107,10 @@ BOOL last_was_success = YES;
     PAYHeaderView* header = [[PAYHeaderView alloc]initWithFrame:self.view.frame];
     header.iconImage = [UIImage imageNamed:@"header"];
     header.title = [_currentAnswer valueForKey:@"word"];
-    header.subTitle = @"What does it mean?";
     
     self.tableView.tableHeaderView = header;
 
-    [tableBuilder addSectionWithName:@"Your choice" contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
+    [tableBuilder addSectionWithName:@"What does it mean?" contentBlock:^(PAYFormSectionBuilder * sectionBuilder) {
         self.answerGroup = [sectionBuilder addButtonGroupWithMultiSelection:NO contentBlock:^(PAYFormButtonGroupBuilder *groupBuilder){
             BOOL selectable;
             for (id w in _last_answers) {
