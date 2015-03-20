@@ -6,12 +6,17 @@
 #import "RPAddToDoViewController.h"
 #import "RPUpdateToDoViewController.h"
 #import "RPGameViewController.h"
+#import "DOPDropDownMenu.h"
 
-@interface RPViewController () <NSFetchedResultsControllerDelegate>
+@interface RPViewController () <DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-
 @property (strong, nonatomic) NSIndexPath *selection;
+@property (nonatomic, copy) NSArray *citys;
+@property (nonatomic, copy) NSArray *ages;
+@property (nonatomic, copy) NSArray *genders;
+@property (nonatomic, copy) NSArray *originalArray;
+@property (nonatomic, copy) NSArray *results;
 
 @end
 
@@ -43,7 +48,30 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
+
+    self.navigationItem.title = NSLocalizedString(@"navbar_title", @"the navigation bar title");
+    self.citys = @[NSLocalizedString(@"city1", @"city1"),
+                   NSLocalizedString(@"city2", @"city2"),
+                   NSLocalizedString(@"city3", @"city3")];
+    self.ages = @[NSLocalizedString(@"age", @"age"), @"20", @"30"];
+    self.genders = @[NSLocalizedString(@"gender1", @"gender1"),
+                     NSLocalizedString(@"gender2", @"gender2"),
+                     NSLocalizedString(@"gender3", @"gender3")];
+    self.originalArray = @[[NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[1],self.genders[1]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[1],self.genders[2]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[2],self.genders[1]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[2],self.genders[2]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[1],self.genders[1]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[1],self.genders[2]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[2],self.genders[1]],
+                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[2],self.genders[2]]];
+    self.results = self.originalArray;
     
+    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:40];
+    menu.dataSource = self;
+    menu.delegate = self;
+    [self.view addSubview:menu];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -179,6 +207,28 @@
     
     // Perform Segue
     [self performSegueWithIdentifier:@"updateToDoViewController" sender:self];
+}
+
+- (NSString *)menu:(DOPDropDownMenu *)menu titleForRowAtIndexPath:(DOPIndexPath *)indexPath {
+    switch (indexPath.column) {
+        case 0: return self.citys[indexPath.row];
+            break;
+        case 1: return self.genders[indexPath.row];
+            break;
+        case 2: return self.ages[indexPath.row];
+            break;
+        default:
+            return nil;
+            break;
+    }
+}
+
+- (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu *)menu {
+    return 3;
+}
+
+- (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column {
+    return 3;
 }
 
 @end

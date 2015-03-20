@@ -12,6 +12,8 @@
 	<dict>
 		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
 		<string>https://github.com/mwkoelb/MWKProgressIndicator.git</string>
+		<key>A40498CF2D938C2D2537DF8D3B1EB3BB2C8F07FC</key>
+		<string>https://github.com/pchernovolenko/UICustomActionSheet.git</string>
 		<key>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</key>
 		<string>https://github.com/stephanebruckert/Repetitio.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>3346BEBF532A513A9E34E2672BE8EF11DD1E1F82</key>
 		<string>..Repetitio/MWKProgressIndicator</string>
+		<key>A40498CF2D938C2D2537DF8D3B1EB3BB2C8F07FC</key>
+		<string>../Repetitio/UICustomActionSheet</string>
 		<key>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</key>
 		<string>..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>E57DD96C7ACF1D497F6E8D710A2FC6ADEEF936CD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Repetitio</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A40498CF2D938C2D2537DF8D3B1EB3BB2C8F07FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UICustomActionSheet</string>
 		</dict>
 	</array>
 </dict>
