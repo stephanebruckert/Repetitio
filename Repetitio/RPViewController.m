@@ -49,22 +49,14 @@
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
 
+    //Sorting
     self.navigationItem.title = NSLocalizedString(@"navbar_title", @"the navigation bar title");
     self.citys = @[NSLocalizedString(@"city1", @"city1"),
                    NSLocalizedString(@"city2", @"city2"),
                    NSLocalizedString(@"city3", @"city3")];
-    self.ages = @[NSLocalizedString(@"age", @"age"), @"20", @"30"];
-    self.genders = @[NSLocalizedString(@"gender1", @"gender1"),
-                     NSLocalizedString(@"gender2", @"gender2"),
-                     NSLocalizedString(@"gender3", @"gender3")];
-    self.originalArray = @[[NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[1],self.genders[1]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[1],self.genders[2]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[2],self.genders[1]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[1],self.ages[2],self.genders[2]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[1],self.genders[1]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[1],self.genders[2]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[2],self.genders[1]],
-                           [NSString stringWithFormat:@"%@_%@_%@",self.citys[2],self.ages[2],self.genders[2]]];
+    self.originalArray = @[[NSString stringWithFormat:@"%@",self.citys[1]],
+                           [NSString stringWithFormat:@"%@",self.citys[1]],
+                           [NSString stringWithFormat:@"%@",self.citys[1]]];
     self.results = self.originalArray;
     
     DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:40];
@@ -209,13 +201,36 @@
     [self performSegueWithIdentifier:@"updateToDoViewController" sender:self];
 }
 
+- (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath {
+    
+    // Initialize Fetch Request
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
+    
+    // Add Sort Descriptors
+    [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"trans" ascending:YES]]];
+    
+    // Initialize Fetched Results Controller
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    
+    // Configure Fetched Results Controller
+    [self.fetchedResultsController setDelegate:self];
+    
+    // Perform Fetch
+    NSError *error = nil;
+    [self.fetchedResultsController performFetch:&error];
+    
+    if (error) {
+        NSLog(@"Unable to perform fetch.");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    }
+    
+    [self.tableView reloadData];
+}
+
+
 - (NSString *)menu:(DOPDropDownMenu *)menu titleForRowAtIndexPath:(DOPIndexPath *)indexPath {
     switch (indexPath.column) {
         case 0: return self.citys[indexPath.row];
-            break;
-        case 1: return self.genders[indexPath.row];
-            break;
-        case 2: return self.ages[indexPath.row];
             break;
         default:
             return nil;
@@ -224,7 +239,7 @@
 }
 
 - (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu *)menu {
-    return 3;
+    return 1;
 }
 
 - (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column {
