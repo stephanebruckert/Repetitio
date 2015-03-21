@@ -12,9 +12,9 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSIndexPath *selection;
-@property (nonatomic, copy) NSArray *citys;
-@property (nonatomic, copy) NSArray *ages;
-@property (nonatomic, copy) NSArray *genders;
+@property (nonatomic, copy) NSArray *lists;
+@property (nonatomic, copy) NSArray *languages;
+@property (nonatomic, copy) NSArray *difficulties;
 @property (nonatomic, copy) NSArray *originalArray;
 @property (nonatomic, copy) NSArray *results;
 
@@ -50,14 +50,16 @@
     }
 
     //Sorting
-    self.navigationItem.title = NSLocalizedString(@"navbar_title", @"the navigation bar title");
-    self.citys = @[NSLocalizedString(@"city1", @"city1"),
-                   NSLocalizedString(@"city2", @"city2"),
+    self.lists = @[NSLocalizedString(@"List", @"city1"),
+                   NSLocalizedString(@"c", @"c"),
                    NSLocalizedString(@"city3", @"city3")];
-    self.originalArray = @[[NSString stringWithFormat:@"%@",self.citys[1]],
-                           [NSString stringWithFormat:@"%@",self.citys[1]],
-                           [NSString stringWithFormat:@"%@",self.citys[1]]];
-    self.results = self.originalArray;
+    self.languages = @[NSLocalizedString(@"Language", @"all"),
+                   NSLocalizedString(@"English", @"english"),
+                   NSLocalizedString(@"Spanish", @"spanish")];
+    self.difficulties = @[NSLocalizedString(@"Difficulty", @"all dif"),
+                       NSLocalizedString(@"Hard", @"english"),
+                       NSLocalizedString(@"Medium", @"english"),
+                       NSLocalizedString(@"Easy", @"spanish")];
     
     DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:40];
     menu.dataSource = self;
@@ -205,10 +207,50 @@
     
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
-    
-    // Add Sort Descriptors
-    [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"trans" ascending:YES]]];
-    
+    NSString *prediStr1;
+    NSString *title = [menu titleForRowAtIndexPath:indexPath];
+
+    switch (indexPath.column) {
+        case 0: {
+            if (indexPath.row == 0) {
+                prediStr1 = @"ANY trans LIKE '*'";
+            } else {
+                prediStr1 = [NSString stringWithFormat:@"ANY trans BEGINSWITH '%@'", title];
+            }
+            // Add Sort Descriptors
+            [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"trans" ascending:YES]]];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@",prediStr1]];
+            [fetchRequest setPredicate:predicate];
+            break;
+        }
+        case 1: {
+            if (indexPath.row == 0) {
+                prediStr1 = @"ANY trans LIKE '*'";
+            } else {
+                prediStr1 = [NSString stringWithFormat:@"ANY trans BEGINSWITH '%@'", title];
+            }
+            // Add Sort Descriptors
+            [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"trans" ascending:YES]]];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@",prediStr1]];
+            [fetchRequest setPredicate:predicate];
+            break;
+        }
+        case 2: {
+            if (indexPath.row == 0) {
+                prediStr1 = @"ANY trans LIKE '*'";
+            } else {
+                prediStr1 = [NSString stringWithFormat:@"ANY trans BEGINSWITH '%@'", title];
+            }
+            // Add Sort Descriptors
+            [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"trans" ascending:YES]]];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@",prediStr1]];
+            [fetchRequest setPredicate:predicate];
+            break;
+        }
+        default:
+            break;
+    }
+
     // Initialize Fetched Results Controller
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
@@ -230,7 +272,11 @@
 
 - (NSString *)menu:(DOPDropDownMenu *)menu titleForRowAtIndexPath:(DOPIndexPath *)indexPath {
     switch (indexPath.column) {
-        case 0: return self.citys[indexPath.row];
+        case 0: return self.languages[indexPath.row];
+            break;
+        case 1: return self.lists[indexPath.row];
+            break;
+        case 2: return self.difficulties[indexPath.row];
             break;
         default:
             return nil;
@@ -239,7 +285,7 @@
 }
 
 - (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu *)menu {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column {
