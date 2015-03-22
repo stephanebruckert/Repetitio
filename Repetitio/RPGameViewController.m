@@ -101,6 +101,7 @@ int MAX_STEPS = 10;
     
     if (last_was_success) {
         _currentAnswer = [self.currentGame getRandomQuestion];
+        NSLog(@"curr %@", _currentAnswer);
         _last_answers = [self.currentGame getUpTo4RandomAnswers:_currentAnswer];
     }
     

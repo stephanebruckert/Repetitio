@@ -44,7 +44,8 @@
             self.words = fetchedResultsController.fetchedObjects;
             self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
         } else {
-          // more than 10
+            self.words = fetchedResultsController.fetchedObjects;
+            self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
         }
     }
     return self;
