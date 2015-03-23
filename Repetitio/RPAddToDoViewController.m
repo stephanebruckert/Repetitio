@@ -33,6 +33,13 @@
         [record setValue:trans          forKey:@"trans"];
         [record setValue:[NSDate date]  forKey:@"createdAt"];
         
+        // Repetition values
+        [record setValue:[NSDate date]  forKey:@"smNextDate"];
+        [record setValue:[NSDate date]  forKey:@"smPrevDate"];
+        [record setValue:[NSNumber numberWithInt:0]  forKey:@"smInterval"];
+        [record setValue:[NSNumber numberWithInt:0]  forKey:@"smReps"];
+        [record setValue:[NSNumber numberWithFloat:2.5]  forKey:@"smEF"];
+        
         // Save Record
         NSError *error = nil;
         

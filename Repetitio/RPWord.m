@@ -10,6 +10,12 @@
 
 @implementation RPWord
 
+@synthesize smEF;
+@synthesize smReps;
+@synthesize smInterval;
+@synthesize smNextDate;
+@synthesize smPrevDate;
+
 - (NSString *)description {
     return [NSString stringWithFormat: @"Word: name=%@ trans=%@", [self valueForKey:@"word"], [self valueForKey:@"trans"]];
 }

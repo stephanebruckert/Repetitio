@@ -10,6 +10,12 @@
 
 @interface RPWord : NSManagedObject
 
+@property (strong, nonatomic) NSNumber *smEF;
+@property (strong, nonatomic) NSNumber *smReps;
+@property (strong, nonatomic) NSNumber *smInterval;
+@property (strong, nonatomic) NSDate *smNextDate;
+@property (strong, nonatomic) NSDate *smPrevDate;
+
 - (NSString *)description;
 
 @end

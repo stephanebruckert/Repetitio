@@ -16,6 +16,22 @@
 
 @implementation RPGame
 
+@synthesize progress;
+@synthesize step;
+@synthesize wrong_answers;
+@synthesize successful_answers;
+@synthesize last_was_success;
+@synthesize maxSteps;
+
++ (id)sharedManager:(NSManagedObjectContext*)managedObjectContext {
+    static RPGame *currentGame = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        currentGame = [[self alloc] initWithManagedObjectContext:managedObjectContext];
+    });
+    return currentGame;
+}
+
 - (id)initWithManagedObjectContext:(NSManagedObjectContext*) managedObjectContext
 {
     self = [super init];
@@ -25,7 +41,7 @@
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
         
         // Add Sort Descriptors
-        [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"level" ascending:YES]]];
+        [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"updatedAt" ascending:YES]]];
         
         NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
         
@@ -40,13 +56,15 @@
         
         //NSLog(@".... ingredient count = %lu", (unsigned long)[fetchedResultsController.fetchedObjects count]);
 
-        if ([fetchedResultsController.fetchedObjects count] < 10) {
-            self.words = fetchedResultsController.fetchedObjects;
-            self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
-        } else {
-            self.words = fetchedResultsController.fetchedObjects;
-            self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
-        }
+        self.words = fetchedResultsController.fetchedObjects;
+        self.largeArray = [[NSMutableArray alloc] initWithArray:self.words];
+        
+        step = 1;
+        wrong_answers = 0;
+        successful_answers = 0;
+        last_was_success = YES;
+        maxSteps = [self quizCount];
+        [self incrementProgress];
     }
     return self;
 }
@@ -57,9 +75,11 @@
 
 - (NSArray*)getUpTo4RandomAnswers:(RPWord*)word {
     [self.largeArray shuffle];
+    
     NSMutableArray* allAnswersWithoutTheAnswer = [NSMutableArray arrayWithArray:self.largeArray];
     [allAnswersWithoutTheAnswer removeObject:word];
-    NSMutableArray* fourAnswers = [[NSMutableArray alloc] initWithArray:[allAnswersWithoutTheAnswer subarrayWithRange:NSMakeRange(0, MIN(3, allAnswersWithoutTheAnswer.count))]];
+    
+    NSMutableArray* fourAnswers = [[NSMutableArray alloc] initWithArray:[allAnswersWithoutTheAnswer subarrayWithRange:NSMakeRange(0, MIN(4, allAnswersWithoutTheAnswer.count))]];
     [fourAnswers addObject:word];
     [fourAnswers shuffle];
     return fourAnswers;
@@ -72,6 +92,37 @@
 
 - (id)objectAtIndex:(NSUInteger)index {
     return [self objectAtIndex:index];
+}
+
+- (int)quizCount {
+    int count = 0;
+    NSDateComponents *components = [[NSCalendar currentCalendar]
+                                    components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                    fromDate:[NSDate date]];
+    NSDate *today = [[NSCalendar currentCalendar] dateFromComponents:components];
+    for (int i=0; i< _words.count; i++) {
+        RPWord* word = [self words][i];
+        NSDateComponents *components = [[NSCalendar currentCalendar]
+                                        components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                        fromDate:[word smNextDate]];
+        NSDate *startDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+        if ([today isEqualToDate:startDate]) {
+            count++;
+        }
+    }
+    return count;
+}
+
+- (void)endGame {
+    /* reinitiliaze parameters for next game */
+    [self incrementProgress];
+    step = 1;
+    wrong_answers = 0;
+    successful_answers = 0;
+}
+
+- (void)incrementProgress {
+    progress += 1./maxSteps;
 }
 
 @end
