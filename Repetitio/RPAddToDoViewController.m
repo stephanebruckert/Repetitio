@@ -46,7 +46,6 @@
         if ([self.managedObjectContext save:&error]) {
             // Dismiss View Controller
             [self dismissViewControllerAnimated:YES completion:nil];
-            
         } else {
             if (error) {
                 NSLog(@"Unable to save record.");

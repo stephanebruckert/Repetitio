@@ -7,6 +7,7 @@
 #import "RPUpdateToDoViewController.h"
 #import "RPGameViewController.h"
 #import "DOPDropDownMenu.h"
+#import "RPWord.h"
 
 @interface RPViewController () <DOPDropDownMenuDataSource, DOPDropDownMenuDelegate, NSFetchedResultsControllerDelegate>
 
@@ -86,7 +87,7 @@
         
         if (self.selection) {
             // Fetch Record
-            NSManagedObject *record = [self.fetchedResultsController objectAtIndexPath:self.selection];
+            RPWord *record = [self.fetchedResultsController objectAtIndexPath:self.selection];
             
             if (record) {
                 [vc setRecord:record];

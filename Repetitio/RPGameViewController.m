@@ -45,22 +45,29 @@
 - (IBAction)forward:(id)sender {
     // Check if answer selected set
     if (self.answerGroup.value) {
-        // Check answer
         if ([_currentAnswer isEqual:self.answerGroup.value]) {
+            /* Success */
             _wrongArray = nil;
             [self currentGame].successful_answers++;
             [self currentGame].step++;
             [self currentGame].last_was_success = YES;
+            [_currentAnswer update:4];
+            NSLog(@"%@", _currentAnswer);
              if ([self currentGame].step <= [self currentGame].maxSteps) {
+                 /* Next question */
                  [[self currentGame] incrementProgress];
                  [self reloadStructure];
              } else {
+                 /* End of the game */
                  [MWKProgressIndicator showSuccessMessage:@"Congrats!"];
                  [self.navigationController popViewControllerAnimated:NO];
                  [[self currentGame] endGame];
                  return;
              }
         } else {
+            /* Fail */
+            [_currentAnswer update:2];
+            NSLog(@"%@", _currentAnswer);
             [self currentGame].wrong_answers++;
             if (_wrongArray == nil) _wrongArray = [NSMutableArray array];
             [_wrongArray addObject:self.answerGroup.value];

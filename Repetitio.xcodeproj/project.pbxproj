@@ -36,9 +36,7 @@
 		F492CC4B1AB22859008629C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F492CC4A1AB22859008629C5 /* Images.xcassets */; };
 		F492CC501AB22883008629C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F492CC4D1AB22883008629C5 /* main.m */; };
 		F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F492CC521AB2289D008629C5 /* InfoPlist.strings */; };
-		F492CC561AB2304B008629C5 /* Repetitio-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */; };
 		F492CC571AB23053008629C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F492CC3A1AB22805008629C5 /* Main.storyboard */; };
-		F499B5C51AC0257900BF890D /* RPAlgorithmSM2.m in Sources */ = {isa = PBXBuildFile; fileRef = F499B5C41AC0257900BF890D /* RPAlgorithmSM2.m */; };
 		F4F7D18D1AB359A400D2C1F1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F7D1851AB359A400D2C1F1 /* Contents.json */; };
 		F4F7D18E1AB359A400D2C1F1 /* de.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F7D1861AB359A400D2C1F1 /* de.png */; };
 		F4F7D18F1AB359A400D2C1F1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F7D1881AB359A400D2C1F1 /* Contents.json */; };
@@ -107,8 +105,6 @@
 		F492CC4E1AB22883008629C5 /* Repetitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Repetitio-Info.plist"; path = "Repetitio/Repetitio-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F492CC4F1AB22883008629C5 /* Repetitio-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Repetitio-Prefix.pch"; path = "Repetitio/Repetitio-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		F492CC531AB2289D008629C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Repetitio/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		F499B5C31AC0257900BF890D /* RPAlgorithmSM2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPAlgorithmSM2.h; path = Repetitio/RPAlgorithmSM2.h; sourceTree = SOURCE_ROOT; };
-		F499B5C41AC0257900BF890D /* RPAlgorithmSM2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPAlgorithmSM2.m; path = Repetitio/RPAlgorithmSM2.m; sourceTree = SOURCE_ROOT; };
 		F4F7D1851AB359A400D2C1F1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		F4F7D1861AB359A400D2C1F1 /* de.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = de.png; sourceTree = "<group>"; };
 		F4F7D1881AB359A400D2C1F1 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -178,8 +174,6 @@
 				F43D7C8D1AB831E900D1D8E6 /* Model */,
 				F492CC1B1AB22770008629C5 /* RPGameViewController.h */,
 				F492CC1C1AB22770008629C5 /* RPGameViewController.m */,
-				F499B5C31AC0257900BF890D /* RPAlgorithmSM2.h */,
-				F499B5C41AC0257900BF890D /* RPAlgorithmSM2.m */,
 				F492CC171AB22768008629C5 /* RPAddToDoViewController.h */,
 				F492CC181AB22770008629C5 /* RPAddToDoViewController.m */,
 				F492CC191AB22770008629C5 /* RPAppDelegate.h */,
@@ -350,7 +344,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TSP;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Tuts+";
 			};
 			buildConfigurationList = CC4DD9031972934F00FDBD03 /* Build configuration list for PBXProject "Repetitio" */;
@@ -377,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F492CC571AB23053008629C5 /* Main.storyboard in Resources */,
-				F492CC561AB2304B008629C5 /* Repetitio-Info.plist in Resources */,
 				F492CC431AB22820008629C5 /* button-done-normal@2x.png in Resources */,
 				F492CC421AB22820008629C5 /* button-done-normal.png in Resources */,
 				F492CC541AB2289D008629C5 /* InfoPlist.strings in Resources */,
@@ -443,7 +436,6 @@
 				F43D7C8C1AB82F8400D1D8E6 /* RPWord.m in Sources */,
 				F492CC231AB22770008629C5 /* RPAddToDoViewController.m in Sources */,
 				F492CC371AB2278B008629C5 /* README.md in Sources */,
-				F499B5C51AC0257900BF890D /* RPAlgorithmSM2.m in Sources */,
 				F492CC241AB22770008629C5 /* RPAppDelegate.m in Sources */,
 				F43D7C971AB85F9500D1D8E6 /* NSMutableArray_Shuffling.m in Sources */,
 				F492CC261AB22770008629C5 /* RPToDoCell.m in Sources */,

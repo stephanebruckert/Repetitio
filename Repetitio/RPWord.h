@@ -10,6 +10,8 @@
 
 @interface RPWord : NSManagedObject
 
+@property (strong, nonatomic) NSString *trans;
+@property (strong, nonatomic) NSString *word;
 @property (strong, nonatomic) NSNumber *smEF;
 @property (strong, nonatomic) NSNumber *smReps;
 @property (strong, nonatomic) NSNumber *smInterval;
@@ -17,5 +19,6 @@
 @property (strong, nonatomic) NSDate *smPrevDate;
 
 - (NSString *)description;
-
+- (void)update:(int)grade;
+- (void)calcIntervalEF:(int)grade;
 @end
