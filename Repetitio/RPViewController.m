@@ -26,7 +26,7 @@
 #pragma mark View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self addDemoWords];
     self.navigationController.toolbarHidden=NO;
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
@@ -290,6 +290,61 @@
 
 - (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column {
     return 3;
+}
+
+- (void)addDemoWords {
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:[NSEntityDescription entityForName:@"RPItem" inManagedObjectContext:self.managedObjectContext]];
+    [request setIncludesSubentities:NO]; //Omit subentities. Default is YES (i.e. include subentities)
+    NSError *err;
+    NSUInteger count = [self.managedObjectContext countForFetchRequest:request error:&err];
+    
+    if(count == NSNotFound) {
+        //Handle error
+    }
+    if (count == 0) {
+        // Create Entity
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"RPItem" inManagedObjectContext:self.managedObjectContext];
+        
+        NSArray *myArray = @[
+                             @[ @"abate", @"se calmer"],
+                             @[ @"gainsay", @"réfuter"],
+                             @[ @"garrulous", @"bavard"],
+                             @[ @"goad", @"provoquer"],
+                             @[ @"abscond", @"s'enfuir"],
+                             @[ @"cogent", @"convaincant"],
+                             @[ @"gouge", @"creuser"],
+                             @[ @"abstemious", @"sobre"],
+                             @[ @"levity", @"légèreté"],
+                             @[ @"admonish", @"réprimander"],
+                             @[ @"compendium", @"collection"],
+                             @[ @"gregarious", @"sociable"],
+                             @[ @"guileless", @"franc"],
+                             ];
+        for (int i = 0; i < myArray.count; i++) {
+            // Initialize Record
+            NSManagedObject *record = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+            
+            // Populate Record
+            [record setValue:myArray[i][0] forKey:@"word"];
+            [record setValue:myArray[i][1] forKey:@"trans"];
+            [record setValue:[NSDate date] forKey:@"createdAt"];
+            
+            // Save Record
+            NSError *error = nil;
+            
+            if ([self.managedObjectContext save:&error]) {
+                // Dismiss View Controller
+                [self dismissViewControllerAnimated:YES completion:nil];
+                
+            } else {
+                if (error) {
+                    NSLog(@"Unable to save record.");
+                    NSLog(@"%@, %@", error, error.localizedDescription);
+                }
+            }
+        }
+    }
 }
 
 @end
