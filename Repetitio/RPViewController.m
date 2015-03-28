@@ -188,6 +188,15 @@
         
         if (record) {
             [self.fetchedResultsController.managedObjectContext deleteObject:record];
+            // Save deletion
+            NSError *error = nil;
+            
+            if (![self.managedObjectContext save:&error]) {
+                if (error) {
+                    NSLog(@"Unable to delete record.");
+                    NSLog(@"%@, %@", error, error.localizedDescription);
+                }
+            }
         }
     }
 }
