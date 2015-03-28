@@ -9,8 +9,11 @@
 
 @property(nonatomic, getter = isCanceled) BOOL canceled;
 
+@property (strong, nonatomic) RPGame *currentGame;
 @property (strong, nonatomic) RPWord *currentAnswer;
 @property (strong, nonatomic) NSArray *last_answers;
+@property int currentSuccess;
+
 @property (strong, nonatomic) NSMutableArray *wrongArray;
 
 @property (nonatomic, retain) PAYFormTableBuilder *tableBuilder;
@@ -51,7 +54,7 @@
             [self currentGame].successful_answers++;
             [self currentGame].step++;
             [self currentGame].last_was_success = YES;
-            [_currentAnswer update:4];
+            [_currentAnswer update:_currentSuccess];
             NSLog(@"%@", _currentAnswer);
              if ([self currentGame].step <= [self currentGame].maxSteps) {
                  /* Next question */
@@ -66,7 +69,7 @@
              }
         } else {
             /* Fail */
-            [_currentAnswer update:2];
+            _currentSuccess = _currentSuccess - 2;
             NSLog(@"%@", _currentAnswer);
             [self currentGame].wrong_answers++;
             if (_wrongArray == nil) _wrongArray = [NSMutableArray array];
@@ -83,7 +86,10 @@
 }
 
 - (RPGame*)currentGame {
-    return [RPGame sharedManager:self.managedObjectContext];
+    if (_currentGame == nil) {
+        _currentGame = [[RPGame alloc] initWithManagedObjectContext:self.managedObjectContext];
+    }
+    return _currentGame;
 }
 
 - (void)loadStructure:(PAYFormTableBuilder *)tableBuilder {
@@ -97,6 +103,7 @@
         _currentAnswer = [[self currentGame] getRandomQuestion];
         NSLog(@"%@", _currentAnswer);
         _last_answers = [[self currentGame] getUpTo4RandomAnswers:_currentAnswer];
+        _currentSuccess = 5;
     }
     
     PAYHeaderView* header = [[PAYHeaderView alloc]initWithFrame:self.view.frame];

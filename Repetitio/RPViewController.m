@@ -310,17 +310,17 @@
         NSArray *myArray = @[
                              @[ @"abate", @"se calmer"],
                              @[ @"gainsay", @"réfuter"],
-                             @[ @"garrulous", @"bavard"],
-                             @[ @"goad", @"provoquer"],
-                             @[ @"abscond", @"s'enfuir"],
-                             @[ @"cogent", @"convaincant"],
-                             @[ @"gouge", @"creuser"],
-                             @[ @"abstemious", @"sobre"],
-                             @[ @"levity", @"légèreté"],
-                             @[ @"admonish", @"réprimander"],
-                             @[ @"compendium", @"collection"],
-                             @[ @"gregarious", @"sociable"],
-                             @[ @"guileless", @"franc"],
+//                             @[ @"garrulous", @"bavard"],
+//                             @[ @"goad", @"provoquer"],
+//                             @[ @"abscond", @"s'enfuir"],
+//                             @[ @"cogent", @"convaincant"],
+//                             @[ @"gouge", @"creuser"],
+//                             @[ @"abstemious", @"sobre"],
+//                             @[ @"levity", @"légèreté"],
+//                             @[ @"admonish", @"réprimander"],
+//                             @[ @"compendium", @"collection"],
+//                             @[ @"gregarious", @"sociable"],
+//                             @[ @"guileless", @"franc"],
                              ];
         for (int i = 0; i < myArray.count; i++) {
             // Initialize Record

@@ -22,7 +22,6 @@
 @property (assign, nonatomic) BOOL last_was_success;
 @property (nonatomic) int maxSteps;
 
-+ (id)sharedManager:(NSManagedObjectContext*) managedObjectContext;
 - (id)initWithManagedObjectContext:(NSManagedObjectContext*) managedObjectContext;
 - (NSUInteger)count;
 - (id)objectAtIndex:(NSUInteger)index;

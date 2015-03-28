@@ -23,20 +23,12 @@
 @synthesize last_was_success;
 @synthesize maxSteps;
 
-+ (id)sharedManager:(NSManagedObjectContext*)managedObjectContext {
-    static RPGame *currentGame = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        currentGame = [[self alloc] initWithManagedObjectContext:managedObjectContext];
-    });
-    return currentGame;
-}
-
 - (id)initWithManagedObjectContext:(NSManagedObjectContext*) managedObjectContext
 {
     self = [super init];
     if (self)
     {
+        NSLog(@"hoihoi");
         // Initialize Fetch Request
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
         
@@ -87,6 +79,7 @@
 
 - (RPWord*)getRandomQuestion {
     [self.largeArray shuffle];
+    NSLog(@"%@",self.largeArray);
     return [self.largeArray objectAtIndex:0];
 }
 

@@ -19,10 +19,13 @@
 @dynamic smPrevDate;
 
 - (NSString *)description {
-    return [NSString stringWithFormat: @"Word: name=%@ trans=%@ inter=%@ EF=%@ reps=%@ nextday=%@ prevdate=%@", self.word, self.trans, self.smInterval, self.smEF, self.smReps, self.smNextDate, self.smPrevDate];
+    return [NSString stringWithFormat: @"name=%@ inter=%@ EF=%@ reps=%@ nextday=%@ prevdate=%@", self.word, self.smInterval, self.smEF, self.smReps, self.smNextDate, self.smPrevDate];
 }
 
 - (void)update:(int)grade {
+    if (grade <= 0) {
+        grade = 0;
+    }
     [self calcIntervalEF:grade];
 }
 

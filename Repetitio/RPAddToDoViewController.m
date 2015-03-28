@@ -46,6 +46,8 @@
         if ([self.managedObjectContext save:&error]) {
             // Dismiss View Controller
             [self dismissViewControllerAnimated:YES completion:nil];
+            [[self managedObjectContext] refreshObject:record mergeChanges:YES];
+
         } else {
             if (error) {
                 NSLog(@"Unable to save record.");
