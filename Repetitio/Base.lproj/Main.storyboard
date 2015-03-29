@@ -71,17 +71,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="play" id="rWu-fR-qMJ">
+                        <barButtonItem title="Learn" id="rWu-fR-qMJ">
                             <connections>
-                                <segue destination="GS2-tE-6SK" kind="push" identifier="gameViewController" id="4B7-sT-5eK"/>
+                                <action selector="show:" destination="vXZ-lx-hvc" id="MJK-be-jEu"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="3Yd-re-q6k"/>
-                        <barButtonItem title="Item" id="Rqf-wM-RFW">
-                            <connections>
-                                <action selector="show:" destination="vXZ-lx-hvc" id="DWC-jt-fm9"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem systemItem="add" id="hNJ-Tv-nbz">
                             <connections>
                                 <segue destination="lHK-fl-j8Z" kind="modal" identifier="addToDoViewController" id="9Va-7g-IGN"/>
@@ -93,6 +88,7 @@
                     <connections>
                         <outlet property="tableView" destination="Rok-Ol-YaH" id="tA5-bd-7DV"/>
                         <segue destination="Bx7-Jp-urc" kind="push" identifier="updateToDoViewController" id="hkR-TU-VlK"/>
+                        <segue destination="GS2-tE-6SK" kind="push" identifier="gameViewController" id="cyd-2L-7Ze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -135,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS4-ce-XAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="889"/>
+            <point key="canvasLocation" x="820" y="797"/>
         </scene>
         <!--New word-->
         <scene sceneID="ZMw-pm-qY0">
