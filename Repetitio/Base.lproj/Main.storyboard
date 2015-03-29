@@ -77,6 +77,11 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="3Yd-re-q6k"/>
+                        <barButtonItem title="Item" id="Rqf-wM-RFW">
+                            <connections>
+                                <action selector="show:" destination="vXZ-lx-hvc" id="DWC-jt-fm9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem systemItem="add" id="hNJ-Tv-nbz">
                             <connections>
                                 <segue destination="lHK-fl-j8Z" kind="modal" identifier="addToDoViewController" id="9Va-7g-IGN"/>
