@@ -44,7 +44,7 @@
         if ([self.managedObjectContext save:&error]) {
             // Pop View Controller
             [self.navigationController popViewControllerAnimated:YES];
-            
+
         } else {
             if (error) {
                 NSLog(@"Unable to save record.");

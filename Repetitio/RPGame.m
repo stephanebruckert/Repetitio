@@ -28,7 +28,6 @@
     self = [super init];
     if (self)
     {
-        NSLog(@"hoihoi");
         // Initialize Fetch Request
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"RPItem"];
         
